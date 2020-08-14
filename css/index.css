@@ -519,3 +519,39 @@ footer p {
       max-width: 80%;
   }
 }
+
+
+/* Owl Carousel */
+.main-content, .main-content-2 {
+  position: relative;
+}
+.main-content .owl-theme .custom-nav, .main-content-2 .owl-theme .custom-nav {
+  position: absolute;
+  top: 32%;
+  left: 0;
+  right: 0;
+}
+.main-content .owl-theme .custom-nav .owl-prev, .main-content .owl-theme .custom-nav .owl-next, .main-content-2 .owl-theme .custom-nav .owl-prev, .main-content-2 .owl-theme .custom-nav .owl-next {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  color: inherit;
+  background: rgb(231, 231, 231);
+  border-radius: 50%;
+  z-index: 100;
+  border: 0;
+}
+.main-content .owl-theme .custom-nav .owl-prev i, .main-content .owl-theme .custom-nav .owl-next i, .main-content-2 .owl-theme .custom-nav .owl-prev i, .main-content-2 .owl-theme .custom-nav .owl-next i  {
+  font-size: 2.5rem;
+  color: #272727;
+}
+.main-content .owl-theme .custom-nav .owl-prev, .main-content-2 .owl-theme .custom-nav .owl-prev  {
+  left: 0;
+}
+.main-content .owl-theme .custom-nav .owl-next, .main-content-2 .owl-theme .custom-nav .owl-next {
+  right: 0;
+}
+
+.main-content .owl-theme .custom-nav .owl-prev:focus, .main-content .owl-theme .custom-nav .owl-next:focus, .main-content-2 .owl-theme .custom-nav .owl-prev:focus, .main-content-2 .owl-theme .custom-nav .owl-next:focus{
+  outline: none;
+}
