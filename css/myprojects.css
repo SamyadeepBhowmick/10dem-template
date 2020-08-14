@@ -865,3 +865,27 @@ body {
   margin-bottom:20px;
   opacity: 1;
 }
+
+/* Flatpickr */
+.flatpickr-day.today{
+  background-color: #FD585C;
+  border: 0;
+  color: #ffffff
+}
+
+.flatpickr-day.selected{
+  background-color: #ffffff;
+  border: 2px solid #FD585C;
+  color: #272727;
+}
+
+.flatpickr-day:hover{
+  background-color: #fd585c;
+  color: #ffffff;
+}
+
+.flatpickr-day.selected:hover{
+  background-color: #fd585c;
+  color: #ffffff;
+  border: 2px solid #FD585C;
+}

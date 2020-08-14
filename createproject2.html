@@ -11,6 +11,8 @@
         
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
         <link rel="stylesheet" href="css/myprojects.css">
 
 
@@ -102,7 +104,13 @@
                 </ul>
             </div>
         </nav>
-
+<!-- DatePicker -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+    $('.flatpicker').flatpickr({
+        
+    });
+</script>
         <div class="wrapper">
             <!-- Sidebar  -->
             <nav id="sidebar">
@@ -210,7 +218,7 @@
                                         <h2 style="position: absolute;bottom: 0px;">Due Date</h2>
                                     </div>
                                     <div class="col-lg-3">
-                                        <input class="input100" type="text" name="name" style="margin-bottom: 10px;border: none;border-bottom: 2px solid #70707033;">
+                                        <input class="input100 flatpickr" name="name" style="margin-bottom: 10px;border: none;border-bottom: 2px solid #70707033;">
                                     </div>
                                     <div class="col-lg-7">
                                         
@@ -268,7 +276,7 @@
                                         <h2 style="position: absolute;bottom: 0px;">Due Date</h2>
                                     </div>
                                     <div class="col-lg-3">
-                                        <input class="input100" type="text" name="name" style="margin-bottom: 10px;border: none;border-bottom: 2px solid #70707033;">
+                                        <input class="input100 flatpickr" type="text" name="name" style="margin-bottom: 10px;border: none;border-bottom: 2px solid #70707033;">
                                     </div>
                                     <div class="col-lg-7">
                                         
@@ -309,7 +317,7 @@
 
                             
                         </div>     
-                    </div>
+                    </div>text
                     <div class="col-lg-1">
                         &nbsp;
                     </div>
@@ -336,6 +344,14 @@
         <script src="https://kit.fontawesome.com/6f24662773.js" crossorigin="anonymous"></script>
 
         <script src="js/index.js"></script>
+
+        <!-- DatePicker -->
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script>
+            $('.flatpickr').flatpickr({
+                
+            });
+        </script>
 
     </body>
 </html>
