@@ -298,10 +298,10 @@
                                     </div>
                                     <div class="col-lg-1">
                                         <img src="img/drag.svg" alt="" class="listbutton" style="float: left;">
-                                        <img src="img/disable.svg" alt="" class="listbutton" data-toggle="tooltip">
+                                        <img src="img/disable.svg" alt="" class="listbutton keyword" data-toggle="tooltip">
                                     </div>
                                     <div class="col-lg-10">
-                                        <input class="input100" type="text" name="name" placeholder="Color">
+                                        <input class="input100 keyword-input" type="text" name="name" placeholder="Color">
                                     </div>
                                     <div class="col-lg-1">
                 
@@ -319,10 +319,10 @@
                                     </div>
                                     <div class="col-lg-1">
                                         <img src="img/drag.svg" alt="" class="listbutton" style="float: left;">
-                                        <img src="img/disable.svg" alt="" class="listbutton" data-toggle="tooltip">
+                                        <img src="img/disable.svg" alt="" class="listbutton inquiry" data-toggle="tooltip">
                                     </div>
                                     <div class="col-lg-10">
-                                        <input class="input100" type="text" name="name" placeholder="Eg. What is sustainability management ?">
+                                        <input class="input100 inquiry-input" type="text" name="name" placeholder="Eg. What is sustainability management ?">
                                     </div>
                                     <div class="col-lg-1">
                 
@@ -341,10 +341,10 @@
                                     </div>
                                     <div class="col-lg-1">
                                         <img src="img/drag.svg" alt="" class="listbutton" style="float: left;">
-                                        <img src="img/disable.svg" alt="" class="listbutton" data-toggle="tooltip">
+                                        <img src="img/disable.svg" alt="" class="listbutton discussion" data-toggle="tooltip">
                                     </div>
                                     <div class="col-lg-8">
-                                        <input class="input100" type="text" name="name" placeholder="Color" style="width: 100%;">
+                                        <input class="input100 discussion-input" type="text" name="name" placeholder="Color" style="width: 100%;">
                                     </div>
                                     <div class="col-lg-2">
                                         <button class="btn sortbutton" type="button">
@@ -411,10 +411,10 @@
                                     </div>
                                     <div class="col-lg-1">
                                         <img src="img/drag.svg" alt="" class="listbutton" style="float: left;">
-                                        <img src="img/disable.svg" alt="" class="listbutton" data-toggle="tooltip">
+                                        <img src="img/disable.svg" alt="" class="listbutton learn" data-toggle="tooltip">
                                     </div>
                                     <div class="col-lg-10">
-                                        <textarea class="textinput100" type="text" name="name" placeholder="Student learning at the end of the project.."></textarea>
+                                        <textarea class="textinput100 learn-input" type="text" name="name" placeholder="Student learning at the end of the project.."></textarea>
                                     </div>
                                     <div class="col-lg-1">
                 
@@ -433,10 +433,10 @@
                                     </div>
                                     <div class="col-lg-1">
                                         <img src="img/drag.svg" alt="" class="listbutton" style="float: left;">
-                                        <img src="img/disable.svg" alt="" class="listbutton" data-toggle="tooltip">
+                                        <img src="img/disable.svg" alt="" class="listbutton key" data-toggle="tooltip">
                                     </div>
                                     <div class="col-lg-10">
-                                        <textarea class="textinput100" type="text" name="name" placeholder="Eg. SDG alignment , community, impact etc"></textarea>
+                                        <textarea class="textinput100 key-input" type="text" name="name" placeholder="Eg. SDG alignment , community, impact etc"></textarea>
                                     </div>
                                     <div class="col-lg-1">
                 
@@ -496,6 +496,18 @@
                 });
                 $( "#sortable" ).disableSelection();
               })
+
+              $('.listbutton').click(function(){
+                  var className = $(this).attr('class').split(/\s+/)[1]+'-input';
+                  if( !$('.' + className).hasClass('disabled')){
+                    $('.'+className).prop('disabled', true);
+                    $('.'+className).addClass('disabled');
+                  } else{
+                    $('.'+className).prop('disabled', false);
+                    $('.'+className).removeClass('disabled');
+                  }
+              })
+
             });
 
         </script>
