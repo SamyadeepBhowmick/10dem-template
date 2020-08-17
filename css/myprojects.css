@@ -957,3 +957,30 @@ body {
   border-radius: 4px;
 }
 
+.dashedboxes {
+  height: 130%;
+  padding: 15px 0;
+  border: 1px dashed #80808066;
+  color: #2727274D;
+  border-radius: 3px;
+}
+
+.solidboxes {
+  height: 130%;
+  padding: 15px 0;
+  border: 1px solid #80808066;
+  border-radius: 3px;
+}
+
+.marginclass {
+  margin-bottom: 3rem;
+}
+
+textarea {
+    font-size: 24px;
+    font-family: ProductR;
+    letter-spacing: 0px;
+    color: #272727;
+    opacity: 1;
+  }
+
