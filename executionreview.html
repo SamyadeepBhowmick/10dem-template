@@ -8,8 +8,11 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         
+
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/assignment.css">
+        <link rel="stylesheet" href="css/reviewaccordian.css">
+
 
         <title>10dem Education|Assignment</title>
         
@@ -62,6 +65,7 @@
             </div>
             
         </div>
+
 
 
         <div class="row" style="width: 100%">
@@ -125,9 +129,6 @@
                                         </div>
                                     </a>
                                     <a href="#" class="memberfields">
-                                        <!-- <div class="memberfieldimage">
-                                            <img src="img/completed.svg" style="width: 30px;height: 30px;">
-                                        </div> -->
                                         <div class="memberfieldimage">
                                             <input type="checkbox" name="" id="checkbox" class="inputcheck">
                                         </div>
@@ -212,7 +213,7 @@
                                     <div class="dropdown" style="float:right;">
                                         <img src="img/more_ver.svg" style="width: 30px;height: 30px;" alt="">
                                         <div class="dropdown-content">
-                                            <a href="#"><img src="img/preview.svg" class="imagefix">Preview</a>
+                                            <a href="lib/ViewerJS/#../../../../demodoc.pdf"><img src="img/preview.svg" class="imagefix">Preview</a>
                                             <a data-toggle="modal" data-target="#exampleModalCenter2"><img src="img/rename.svg" class="imagefix">Rename</a>
                                             <a data-toggle="modal" data-target="#exampleModalCenter3"><img src="img/delete.svg" class="imagefix">Delete</a>
                                         </div>
@@ -370,133 +371,188 @@
 
                 </div>
             </div>
-            
 
-            <!-- Details -->
-
-
+             <!-- Details -->
             <div class="col-lg-3" style="padding-right: 0;">
                 <div class="container-fluid pad mt-3" style="height: 99%;">
                     <div class="row">
-                        <div class="col-lg-12 pad">
-                            <div class="detailbutton">
+
+                        <!-- detail button is yellow and chatbutton is white-->
+
+                        <div class="col-lg-6 pad">
+                            <div class="chatbutton">
                                 Activity List ( 3 )
                             </div>
                         </div>
-                        <div class="col-lg-12 pad">
-                            <div class="upcoming1">
+                        <div class="col-lg-6 pad">
+                            <div class="detailbutton">
+                                Review&nbsp;&nbsp;<span style="width: 64px;height: 23px;font-size: 15px ;padding: 5px;position: relative;bottom: 4px;color: #ffffff;background: #008D2F80 0% 0% no-repeat padding-box;border-radius: 10px;">&nbsp;&nbsp;New&nbsp;&nbsp;</span>
+                            </div>
+                        </div>
 
-                                <div class="row">                                                      
-    
-                                    <div class="col-lg-12">
-
-                                        <div class="row ro">
-
-                                            <div class="col-lg-2 activitydiv1">
-                                                <img src="img/done.svg" class="imagefix1" alt="">01
-                                            </div>
-                                            <div class="col-lg-10 pad">
-                                               
-                                                <div class="activitydiv2">
-                                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-lg-12">
-
-                                        <div class="row ro">
-
-                                            <div class="col-lg-2 activitydiv1">
-                                                <img src="img/done.svg" class="imagefix1" style="background: #4BB543;" alt="">02
-                                            </div>
-                                            <div class="col-lg-10 pad">
-                                               
-                                                <div class="activitydiv2">
-                                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-lg-12">
-
-                                        <div class="row ro">
-
-                                            <div class="col-lg-2 activitydiv1">
-                                                <img src="img/done.svg" class="imagefix1" alt="">03
-                                            </div>
-                                            <div class="col-lg-10 pad">
-                                               
-                                                <div class="activitydiv2">
-                                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-lg-12">
-
-                                        <div class="row ro">
-
-                                            <div class="col-lg-2 activitydiv1">
-                                                04
-                                            </div>
-                                            <div class="col-lg-10 pad">
-                                               
-                                                <div class="activitydiv2">
-                                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-lg-4"></div>
+                        <!-- Accordian Review Section -->
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12" style="margin-top: 60px;">
+                                
                                     
-                                </div>
-                            </div>
+                                    <div class="accordion" id="accordionExample">
+
+                                        <div class="card z-depth-0 bordered">
+                                            <div class="card-header" id="headingOne">
+
+                                                <div class="row">
+                                                    
+                                                    <div class="col-lg-10">
+                                                        <h4 class="accordianhead">
+                                                            Reflection Question<span class="dots">2</span>
+                                                        </h4>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <button type="button" class="accordianbutton" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                            <i class="fas fa-angle-down"></i>
+                                                        </button>
+                                                    </div>
+
+                                                </div>      
+                                                  
+                                            </div>
+                                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                <div class="card-body scrolling">
+                                                    
+                                                    <div class="row">
+                                                        <div class="col-lg-2">
+                                                            <div class="initials">
+                                                                <p>JD</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-10">
+                                                            <div class="details">
+                                                                <h4>John Doe</h4>
+                                                                <p>How was your experience while working?</p>
+                                                                <a href="#">Reply</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <hr/>
+
+                                                    <div class="row">
+                                                        <div class="col-lg-2">
+                                                            <div class="initials">
+                                                                <p>JD</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-10">
+                                                            <div class="details">
+                                                                <h4>John Doe</h4>
+                                                                <p>How was your experience while working?</p>
+                                                                <a href="#">Reply</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                        
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card z-depth-0 bordered">
+                                            <div class="card-header" id="headingTwo">
+                                                <div class="row">
+                                                    
+                                                    <div class="col-lg-10">
+                                                        <h4 class="accordianhead">
+                                                            Activity 1<span class="dots">2</span>
+                                                        </h4>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <button type="button" class="accordianbutton" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                            <i class="fas fa-angle-down"></i>
+                                                        </button>
+                                                    </div>
+
+                                                </div> 
+                                            </div>
+                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                                <div class="card-body scrolling">
+
+                                                    <div class="row">
+                                                        <div class="col-lg-2">
+                                                            <div class="initials">
+                                                                <p>JD</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-10">
+                                                            <div class="details">
+                                                                <h4>John Doe</h4>
+                                                                <p class="activityReviews">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et duej</p>
+                                                                <p class="activityReviews">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et duej</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>   
+                                            </div>
+                                        </div>
+
+                                        <div class="card z-depth-0 bordered">
+                                            <div class="card-header" id="headingThree">
+                                                <div class="row">
+                                                    
+                                                    <div class="col-lg-10">
+                                                        <h4 class="accordianhead">
+                                                            Activity 2<span class="dots">2</span>
+                                                        </h4>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <button type="button" class="accordianbutton" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                            <i class="fas fa-angle-down"></i>
+                                                        </button>
+                                                    </div>
+
+                                                </div> 
+                                            </div>
+                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                <div class="card-body scrolling">
+
+                                                    <div class="row">
+                                                        <div class="col-lg-2">
+                                                            <div class="initials">
+                                                                <p>JD</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-10">
+                                                            <div class="details">
+                                                                <h4>John Doe</h4>
+                                                                <p class="activityReviews">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et duej</p>
+                                                                <p class="activityReviews">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et duej</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+        
+                                    <!-- Accordian ends -->
                             
-                        </div>
-                        <div class="col-lg-12 pad">
-                            <button type="button" class="btn activitybutton" data-toggle="modal" data-target="#exampleModalCenter1">Done</button>
-                        </div>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
                                 </div>
-                                <div class="modal-body" style="text-align:justify">
-                                    <p>Your data is saved with us, you may continue uploading your files when you come back next time.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn modalbutton1" data-dismiss="modal">No, Edit Again</button>
-                                    <button type="button" class="btn modalbutton2">Sure Exit</button>
-                                </div>
-                            </div>
                             </div>
                         </div>
 
+                        
+                       
+                        
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
+            
+        
 
         <footer><p>10dem © 2020</p></footer>
-
 
 
         <!-- Optional JavaScript -->
@@ -506,5 +562,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
+        <script src="https://kit.fontawesome.com/6f24662773.js" crossorigin="anonymous"></script>
+        
     </body>
 </html>

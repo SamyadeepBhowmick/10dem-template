@@ -173,16 +173,16 @@
                                     <h4 class="accordianhead">
                                         Inquiry Introduction
                                     </h4>
-                                    <a href="#" class="accordianedit" style="color: #0CB244;">Save Changes</a>
+                                    <a href="#" class="accordianedit" style="color: #0CB244;display: block;" id="saveA1">Save Changes</a>
                                 </div>
                                 <div class="col-lg-1">
-                                    <button type="button" class="accordianbutton" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
-                                        <img src="img/expand.svg">
+                                    <button type="button" class="accordianbutton" id="A1" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                                        <i class="fas fa-angle-up" id="accordianiconA1"></i>
                                     </button>
                                 </div>
                             </div>      
                         </div>
-                        <div id="collapseOne2" class="collapse" aria-labelledby="headingOne2" data-parent="#accordionExample275">
+                        <div id="collapseOne2" class="collapse show" aria-labelledby="headingOne2" data-parent="#accordionExample275">
                             <div class="card-body">
 
                                     <div class="row" style="border-bottom: 1px solid #bbbaba;">
@@ -468,11 +468,11 @@
                                     <h4 class="accordianhead">
                                         Definition
                                     </h4>
-                                    <a href="#" class="accordianedit" style="color: #0CB244;">Save Changes</a>
+                                    <a href="#" class="accordianedit" style="color: #0CB244;" id="saveA2">Save Changes</a>
                                 </div>
                                 <div class="col-lg-1">
-                                    <button type="button" class="accordianbutton" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
-                                        <img src="img/expand.svg">
+                                    <button type="button" class="accordianbutton" id="A2" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                                        <i class="fas fa-angle-down" id="accordianiconA2"></i>
                                     </button>
                                 </div>
                             </div>      
@@ -583,11 +583,11 @@
                                     <h4 class="accordianhead">
                                         Execution
                                     </h4>
-                                    <a href="#" class="accordianedit" style="color: #0CB244;">Save Changes</a>
+                                    <a href="#" class="accordianedit" style="color: #0CB244;" id="saveA3">Save Changes</a>
                                 </div>
                                 <div class="col-lg-1">
-                                    <button type="button" class="accordianbutton" data-toggle="collapse" data-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
-                                        <img src="img/expand.svg">
+                                    <button type="button" class="accordianbutton" id="A3" data-toggle="collapse" data-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                                        <i class="fas fa-angle-down" id="accordianiconA3"></i>
                                     </button>
                                 </div>
                             </div>      
@@ -656,7 +656,7 @@
 
                                                 <div class="dashedboxes">
                                                     <div class="memberfieldimage2" data-toggle="modal" data-target="#exampleModalCenter">
-                                                        <img src="img/add.svg" class="imagefix">
+                                                        <img src="img/add.svg" style="width: 30px;height: 26px;padding: 0;">
                                                     </div>
                                                     <div class="memberfieldname">
                                                         Add Student
@@ -669,7 +669,7 @@
 
                                                 <div class="solidboxes">
                                                     <div class="memberfieldimage2">
-                                                        <img src="img/completed.svg" class="imagefix">
+                                                        <p>JD</p>
                                                     </div>
                                                     <div class="memberfieldname">
                                                         John Doe
@@ -682,7 +682,7 @@
                                                 
                                                 <div class="solidboxes">
                                                     <div class="memberfieldimage2">
-                                                        <img src="img/completed.svg" class="imagefix">
+                                                        <p>JD</p>
                                                     </div>
                                                     <div class="memberfieldname">
                                                         John Doe
@@ -695,7 +695,7 @@
                                                 
                                                 <div class="solidboxes">
                                                     <div class="memberfieldimage2">
-                                                        <img src="img/completed.svg" class="imagefix">
+                                                        <p>JD</p>
                                                     </div>
                                                     <div class="memberfieldname">
                                                         John Doe
@@ -710,7 +710,7 @@
                                                 
                                                 <div class="solidboxes">
                                                     <div class="memberfieldimage2">
-                                                        <img src="img/completed.svg" class="imagefix">
+                                                        <p>JD</p>
                                                     </div>
                                                     <div class="memberfieldname">
                                                         John Doe
@@ -725,7 +725,7 @@
                                                 
                                                 <div class="solidboxes">
                                                     <div class="memberfieldimage2">
-                                                        <img src="img/completed.svg" class="imagefix">
+                                                        <p>JD</p>
                                                     </div>
                                                     <div class="memberfieldname">
                                                         John Doe
@@ -740,7 +740,7 @@
                                                 
                                                 <div class="solidboxes">
                                                     <div class="memberfieldimage2">
-                                                        <img src="img/completed.svg" class="imagefix">
+                                                        <p>JD</p>
                                                     </div>
                                                     <div class="memberfieldname">
                                                         John Doe
@@ -755,7 +755,7 @@
                                                 
                                                 <div class="solidboxes">
                                                     <div class="memberfieldimage2">
-                                                        <img src="img/completed.svg" class="imagefix">
+                                                        <p>JD</p>
                                                     </div>
                                                     <div class="memberfieldname">
                                                         John Doe
@@ -807,53 +807,53 @@
                             <input type="text" name="" id="" placeholder="Start Typing student name..">
                         </div>
                         <div class="student-names">
-                            <div class="name d-flex align-items-center">
-                                <input type="checkbox" name="" id="">
+                            <div class="name name-one d-flex align-items-center">
+                                <input type="checkbox" name="" id="one">
                                 <p class="initials">JM</p>
                                 <p>John Marks</p>
                             </div>
-                            <div class="name d-flex align-items-center">
-                                <input type="checkbox" name="" id="">
+                            <div class="name name-two d-flex align-items-center">
+                                <input type="checkbox" name="" id="two">
                                 <p class="initials">JM</p>
                                 <p>John Marks</p>
                             </div>
-                            <div class="name d-flex align-items-center">
-                                <input type="checkbox" name="" id="">
+                            <div class="name name-three d-flex align-items-center">
+                                <input type="checkbox" name="" id="three">
                                 <p class="initials">JM</p>
                                 <p>John Marks</p>
                             </div>
-                            <div class="name d-flex align-items-center">
-                                <input type="checkbox" name="" id="">
+                            <div class="name name-four d-flex align-items-center">
+                                <input type="checkbox" name="" id="four">
                                 <p class="initials">JM</p>
                                 <p>John Marks</p>
                             </div>
-                            <div class="name d-flex align-items-center">
-                                <input type="checkbox" name="" id="">
+                            <div class="name name-five d-flex align-items-center">
+                                <input type="checkbox" name="" id="five">
                                 <p class="initials">JM</p>
                                 <p>John Marks</p>
                             </div>
-                            <div class="name d-flex align-items-center">
-                                <input type="checkbox" name="" id="">
+                            <div class="name name-six d-flex align-items-center">
+                                <input type="checkbox" name="" id="six">
                                 <p class="initials">JM</p>
                                 <p>John Marks</p>
                             </div>
-                            <div class="name d-flex align-items-center">
-                                <input type="checkbox" name="" id="">
+                            <div class="name name-seven d-flex align-items-center">
+                                <input type="checkbox" name="" id="seven">
                                 <p class="initials">JM</p>
                                 <p>John Marks</p>
                             </div>
-                            <div class="name d-flex align-items-center">
-                                <input type="checkbox" name="" id="">
+                            <div class="name name-eight d-flex align-items-center">
+                                <input type="checkbox" name="" id="eight">
                                 <p class="initials">JM</p>
                                 <p>John Marks</p>
                             </div>
-                            <div class="name d-flex align-items-center">
-                                <input type="checkbox" name="" id="">
+                            <div class="name name-nine d-flex align-items-center">
+                                <input type="checkbox" name="" id="nine">
                                 <p class="initials">JM</p>
                                 <p>John Marks</p>
                             </div>
-                            <div class="name d-flex align-items-center">
-                                <input type="checkbox" name="" id="">
+                            <div class="name name-10 d-flex align-items-center">
+                                <input type="checkbox" name="" id="10">
                                 <p class="initials">JM</p>
                                 <p>John Marks</p>
                             </div>
@@ -906,6 +906,30 @@
                     $('.'+className).prop('disabled', false);
                     $('.'+className).removeClass('disabled');
                   }
+              })
+              $('.accordianbutton').click(function(){  
+                    // var idName='#accordianicon1'
+                    var idName=$(this).attr('id')
+                  
+                    if ($('#accordianicon'+idName).hasClass("fa-angle-up")){
+                        $('#accordianicon'+idName).removeClass("fa-angle-up").addClass("fa-angle-down");
+                    }
+                    else {
+                    
+                        $('#accordianicon'+idName).removeClass("fa-angle-down").addClass("fa-angle-up");
+                    }
+                    if ($('#save'+idName).css('display')=='block'){
+                        $('#save'+idName).css('display','none');
+                    }
+                    else {
+                    
+                        $('#save'+idName).css('display','block');
+                    }
+                })
+
+                $('.student-names .name input').click(function(){
+                  var className = 'name-'+$(this).attr('id')
+                  $('.'+className).toggleClass('selected')
               })
 
             });
