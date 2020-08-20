@@ -932,6 +932,11 @@
                   $('.'+className).toggleClass('selected')
               })
 
+              $('.student-names .name input').click(function(){
+                  var className = 'name-'+$(this).attr('id')
+                  $('.'+className).toggleClass('selected')
+              })
+
             });
         </script>
     </body>
