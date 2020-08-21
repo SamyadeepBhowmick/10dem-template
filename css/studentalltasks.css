@@ -85,6 +85,11 @@ ol {
     margin-top: 20px;
 }
 
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .btn {
     width: 50%;
     height: 40px;

@@ -71,6 +71,11 @@ body {
     text-decoration: none;
     transition: all 0.3s;
   }
+
+  .btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
   
   .btn-primary {
     background-color: #47ADD3;
@@ -197,7 +202,7 @@ body {
   }
   
   #sidebar .sidebar-header {
-    margin: 20px 30px 20px 20px;
+    margin: 20px 30px 70px 20px;
     text-align: center;
     color: #FFFFFF;
     font-weight: bold;
@@ -1124,6 +1129,10 @@ textarea {
   padding: 10px;
 }
 
+.modal-lg {
+  max-width: 700px;
+}
+
 .modal-header{
   border-bottom: 0 !important;
 }
@@ -1178,13 +1187,58 @@ textarea {
 .student-names .name p{
   margin-bottom: 0;
   margin-left: 10px;
+  font-size: 18px;
+}
+
+.modal-title  {
+  font-size: 26px;
+  font-family: ProductR;
+  letter-spacing: 0px;
+  color: #272727;
+  opacity: 1;
+}
+
+button.close {
+  outline: none;
+}
+
+.modal-body p {
+  font-size: 26px;
+  font-family: ProductR;
+  letter-spacing: 0px;
+  color: #27272780;
+  opacity: 1;
+}
+
+.modal-footer {
+  border-top: none;
 }
 
 .modal-footer .modalbutton1 {
-  width: 180px;
+  width: 200px;
   height: 60px;
   background: #fd585c 0% 0% no-repeat padding-box;
   box-shadow: 0px 1px 3px #00000033;
   border-radius: 4px;
+
+  font-size: 20px;
+  font-family: ProductB;
+  letter-spacing: 0px;
   color: #ffffff;
 }
+
+.modal-footer .modalbutton2 {
+  width: 200px;
+  height: 60px;
+  box-shadow: 0px 1px 3px #00000033;
+  border: 2px solid #FD585C;
+  border-radius: 4px;
+  opacity: 1;
+
+  font-size: 20px;
+  font-family: ProductB;
+  letter-spacing: 0px;
+  color: #272727;
+
+}
+
