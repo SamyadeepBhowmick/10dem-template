@@ -371,8 +371,31 @@
         <script src="js/zabuto_calendar.min.js"></script>
         <script type="application/javascript">
             $(document).ready(function () {
-                $("#my-calendar").zabuto_calendar({language: "en"});
-            });
+                $('[data-toggle="popover"]').popover();
+                $("#my-calendar").zabuto_calendar({
+                    language: "en",
+                    data: [
+                            {
+                                'date': '2020-08-11',
+                                'badge': false,
+                                'title': 'Meeting with John'
+                            },
+                            {
+                                'date': '2020-08-26',
+                                'badge': false,
+                                'title': 'Meeting with John'
+                            },
+                            {
+                                'date': '2020-08-28',
+                                'badge': false,
+                                "title":"Tonight"
+                            }
+                
+                    ],
+                    
+
+                });  
+            });  
         </script>
         <script>
             $(document).ready(function(){
