@@ -100,9 +100,9 @@ h3 {
 .btn {
     width: 15%;
     height: 40px;
+    padding: 5px;
     background: #455997D6 0% 0% no-repeat padding-box;
     border-radius: 21px;
-    opacity: 1;
 
     font-size: 20px;
     font-family: ProductR;

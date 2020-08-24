@@ -355,6 +355,12 @@
             
         </div> 
 
+        <div id="date-popover" class="popover top">
+            <div id="date-popover-content" class="popover-content">
+
+            </div>
+        </div>
+
         <footer><p>10dem © 2020</p></footer>
 
 
@@ -373,6 +379,7 @@
             $(document).ready(function () {
                 $('[data-toggle="popover"]').popover();
                 $("#my-calendar").zabuto_calendar({
+
                     language: "en",
                     data: [
                             {
@@ -392,10 +399,30 @@
                             }
                 
                     ],
+
+                    action: function () {
+                        return myDateFunction(this.id, false);
+                    },
                     
 
                 });  
             });  
+
+            function myDateFunction(id, fromModal) {
+                $("#date-popover").hide();
+                if (fromModal) {
+                    $("#" + id + "_modal").modal("hide");
+                }
+                var date = $("#" + id).data("date");
+                var hasEvent = $("#" + id).data("hasEvent");
+                if (hasEvent && !fromModal) {
+                    return false;
+                }
+                $("#date-popover-content").html('You clicked on date ' + date);
+                $("#date-popover").show();
+                return true;
+            }
+
         </script>
         <script>
             $(document).ready(function(){
