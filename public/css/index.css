@@ -368,6 +368,14 @@ ul.CTAs a {
     TESTIMONIALS
 ----------------------------------------------------- */
 
+.owl-stage-outer {
+  height: 350px;
+}
+
+.owl-item {
+  width: 295px !important;
+}
+
 .testimonials .testimonial-item .testimonial-img {
   border-top-left-radius: 25px 25px;
   border-top-right-radius: 25px 25px;
@@ -528,7 +536,6 @@ footer p {
       max-width: 80%;
   }
 }
-
 
 /* Owl Carousel */
 .main-content, .main-content-2 {

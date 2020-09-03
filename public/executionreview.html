@@ -409,8 +409,8 @@
                                                         </h4>
                                                     </div>
                                                     <div class="col-lg-2">
-                                                        <button type="button" class="accordianbutton" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                            <i class="fas fa-angle-down"></i>
+                                                        <button type="button" class="accordianbutton" id="A1" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                            <i class="fas fa-angle-down" id="accordianiconA1"></i>
                                                         </button>
                                                     </div>
 
@@ -430,9 +430,9 @@
                                                             <div class="details">
                                                                 <h4>John Doe</h4>
                                                                 <p>How was your experience while working?</p>
-                                                                <a href="#">Reply</a>
-                                                                <div class="submitbox">
-                                                                    <textarea type="text" name="chat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et d</textarea>
+                                                                <a id="E1" class="reply disabled">Reply</a>
+                                                                <div class="submitbox" id="editE1" style="display: none;">
+                                                                    <textarea type="text" name="chat"></textarea>
                                                                     <a href="#">Cancel</a>
                                                                     <a href="#" style="color: #FD585C !important;">&nbsp;&nbsp;Submit&nbsp;&nbsp;</a>
                                                                 </div>
@@ -452,14 +452,14 @@
                                                             <div class="details">
                                                                 <h4>John Doe</h4>
                                                                 <p>How was your experience while working?</p>
-                                                                <i class="fas fa-caret-down"></i>
-                                                                <a href="#">Replied</a>
+                                                                <i class="fas fa-caret-right" id="I1" style="color: #808080B3;"></i>
+                                                                <a class="replied disabled" id="R1">Replied</a>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-2">
                                                             
                                                         </div>
-                                                        <div class="col-lg-10">
+                                                        <div class="col-lg-10" id="repliedR1" style="display: none;">
                                                             <!-- reply section -->
                                                             <div class="row replies">
                                                                 <div class="col-lg-2 pad">
@@ -498,8 +498,8 @@
                                                         </h4>
                                                     </div>
                                                     <div class="col-lg-2">
-                                                        <button type="button" class="accordianbutton" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                                            <i class="fas fa-angle-down"></i>
+                                                        <button type="button" class="accordianbutton" id="A2" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                            <i class="fas fa-angle-down" id="accordianiconA2"></i>
                                                         </button>
                                                     </div>
 
@@ -537,8 +537,8 @@
                                                         </h4>
                                                     </div>
                                                     <div class="col-lg-2">
-                                                        <button type="button" class="accordianbutton" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                                            <i class="fas fa-angle-down"></i>
+                                                        <button type="button" class="accordianbutton" id="A3" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                            <i class="fas fa-angle-down" id="accordianiconA3"></i>
                                                         </button>
                                                     </div>
 
@@ -595,6 +595,51 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
         <script src="https://kit.fontawesome.com/6f24662773.js" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $('.accordianbutton').click(function(){  
+                    // var idName='#accordianicon1'
+                    var idName=$(this).attr('id')
+                  
+                    if ($('#accordianicon'+idName).hasClass("fa-angle-up")){
+                        $('#accordianicon'+idName).removeClass("fa-angle-up").addClass("fa-angle-down");
+                    }
+                    else {
+                    
+                        $('#accordianicon'+idName).removeClass("fa-angle-down").addClass("fa-angle-up");
+                    }
+                    
+                })
+                $('.reply').click(function(){  
+                    var idName=$(this).attr('id')
+
+                    if ($('#edit'+idName).css('display')=='block'){
+                        $('#edit'+idName).css('display','none');
+                    }
+                    else {
+                    
+                        $('#edit'+idName).css('display','block');
+                    }
+
+                })
+                $('.replied').click(function(){  
+                    var idName=$(this).attr('id')
+                    
+                    if ($('#replied'+idName).css('display')=='block'){
+                        $('#replied'+idName).css('display','none');
+                        $('#I1').removeClass("fa-caret-down").addClass("fa-caret-right");
+                    }
+                    else {
+                    
+                        $('#replied'+idName).css('display','block');
+                        $('#I1').removeClass("fa-caret-right").addClass("fa-caret-down");
+                    }
+
+                })
+
+            });
+            
+        </script>
         
     </body>
 </html>

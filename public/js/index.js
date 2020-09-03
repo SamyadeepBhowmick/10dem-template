@@ -28,7 +28,7 @@ $(document).ready(function(){
       '<i class="fa fa-angle-right" aria-hidden="true"></i>'
     ], //new
     navContainer: '.main-content .custom-nav', //new
-    margin: 25,
+    margin: 38,
     responsive: {
       0: {
           items: 1
@@ -58,7 +58,7 @@ $(document).ready(function(){
       '<i class="fa fa-angle-right" aria-hidden="true"></i>'
     ], //new
     navContainer: '.main-content-2 .custom-nav', //new
-    margin: 25,
+    margin: 38,
     responsive: {
       0: {
           items: 1

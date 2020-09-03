@@ -15,6 +15,11 @@
     src: url(../fonts/product-sans/Product\ Sans\ Bold.ttf);
 }
 
+a.disabled {
+  cursor: pointer;
+  color: #808080B3 !important;
+}
+
 .scrolling {
   height: 300px !important;
   overflow-y: scroll;
