@@ -905,6 +905,30 @@ ol {
   background: rgb(255, 0, 0); 
 }
 
+/* width */
+.invitation::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+.invitation::-webkit-scrollbar-track {
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  border-radius: 11px;
+  opacity: 1;
+}
+ 
+/* Handle */
+.invitation::-webkit-scrollbar-thumb {
+  background: #FD585CCC 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  opacity: 1;
+}
+
+/* Handle on hover */
+.invitation::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 0, 0); 
+}
+
 
 /* The popup form - hidden by default */
 .form-popup {
