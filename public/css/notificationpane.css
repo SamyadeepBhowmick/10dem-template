@@ -1,0 +1,63 @@
+@font-face {
+    font-family: GilE;
+    src: url(../fonts/Gilroy-FREE/Gilroy-FREE/Gilroy-ExtraBold.otf);
+  }
+  @font-face {
+    font-family: GilL;
+    src: url(../fonts/Gilroy-FREE/Gilroy-FREE/Gilroy-Light.otf);
+  }
+  @font-face {
+    font-family: ProductR;
+    src: url(../fonts/product-sans/Product\ Sans\ Regular.ttf);
+  }
+  @font-face {
+    font-family: ProductB;
+    src: url(../fonts/product-sans/Product\ Sans\ Bold.ttf);
+}
+
+
+/* Toast */
+#notificationpane {
+    max-width: none;
+    width: 600px !important;
+    height: 60% !important;
+    padding: 15px;
+    position: fixed;
+    top: 80px;
+    right: 20%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #00000029;
+    border-radius: 4px;
+    z-index: 100;
+}
+
+#notificationpane .toast-header {
+
+}
+
+#notificationpane .toast-body .toastText {
+    text-align: justify;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-family: ProductR;
+    letter-spacing: 0px;
+    color: #272727;
+    opacity: 1;
+
+}
+
+#notificationpane .toast-body .toastSymbol {
+    float: left;
+    background: transparent;
+}
+
+#notificationpane .toast-body .toastSymbol img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#notificationpane .toast-body .toastbuttons {
+    border: 1px solid #FD585C;
+border-radius: 6px;
+}

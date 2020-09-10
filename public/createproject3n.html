@@ -177,7 +177,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2" style="max-width: 10%;padding-right: 0px;">
-                        <div style="border: 5px solid #dfdddd;border-radius: 10px;">
+                        <div style="border: 5px solid #fd585c;border-radius: 10px;">
 
                         </div>
                     </div>
@@ -190,6 +190,7 @@
                         &nbsp;
                     </div>
                     <div class="col-lg-10">
+                        <form>
                         <div class="row" style="width: 100%;padding: 50px 25px;margin: 3rem 0;background: #FFFFFF 0% 0% no-repeat padding-box;box-shadow: 0px 0px 6px #00000024;border-radius: 4px;opacity: 1;">
                             <!-- module -->
                             <div class="disable col-lg-12 pad">
@@ -234,10 +235,11 @@
                             </div>
                             <div class="col-lg-10 pad">
                                 <div id="drop-area">
-                                    <form class="my-form">
+                                    <div class="my-form">
+                                        <!-- <form class="my-form"></form> -->
                                       <input type="file" id="fileElem" multiple accept=".doc,.docx,.xls,.xlsx,.csv,.ppt,.pptx,.pdf,.png,.jpeg,.jpg" onchange="handleFiles(this.files)">
                                       <label class="button" for="fileElem"><img src="img/pin.svg"> Add or drag file to upload</label>
-                                    </form>
+                                    </div>
                                     <div id="gallery" class="row"></div>
                                 </div>
                             </div>
@@ -312,6 +314,7 @@
                                 
                             </div>
                         </div>     
+                        </form>
                     </div>
                     <div class="col-lg-1">
                         &nbsp;
@@ -404,23 +407,22 @@
 
             function handleFiles(files) {
                 files = [...files]
-                files.forEach(uploadFile)
+                // files.forEach(uploadFile)
                 files.forEach(previewFile)
             }
 
-            function uploadFile(file) {
-                let url = 'YOUR URL HERE'
-                let formData = new FormData()
-                formData.append('file', file)
-                fetch(url, {
-                method: 'POST',
-                body: formData
-                })
-                .then(() => { /* Done. Inform the user */ })
-                .catch(() => { /* Error. Inform the user */ })
-            }
-
-
+            // function uploadFile(file) {
+            //     let url = 'YOUR URL HERE'
+            //     let formData = new FormData()
+            //     formData.append('file', file)
+            //     fetch(url, {
+            //     method: 'POST',
+            //     body: formData
+            //     })
+            //     .then(() => { /* Done. Inform the user */ })
+            //     .catch(() => { /* Error. Inform the user */ })
+            // }
+   
             function previewFile(file) {
                 // let reader = new FileReader()
                 // reader.readAsDataURL(file)

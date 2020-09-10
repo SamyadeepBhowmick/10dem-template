@@ -345,6 +345,47 @@ button.close {
     color: #FFDB64;
 }
 
+/* For collaborator modal */
+.modal-body .symbol {
+    margin: 0 auto;
+    border: none;
+}
+
+.modal-body .cm1 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 24px;
+    font-family: ProductB;
+}
+
+.modal-body .cm2 {
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+    font-family: ProductR;
+    color: #272727;
+}
+
+.modal-body .cm3 {
+    line-height: 1.4rem;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: ProductR;
+    color: #272727;
+}
+
+.modal-footer .view {
+    width: 210px;
+    height: 50px;
+    background: #FD585C 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 3px #00000033;
+    border-radius: 29px;
+    font-size: 18px;
+    font-family: ProductR;
+    letter-spacing: 1.6px;
+    color: #FFFFFF;
+}
+
 .input100 {
     display: block;
     width: 100%;
@@ -442,8 +483,39 @@ button.close {
     background: transparent;
     border: 2px solid #FFFFFF;
 }
-  
 
+.expressInterest {
+    height: 60px;
+    float: right    ;
+    background: #FD585C 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 3px #00000033;
+    border-radius: 4px;
+
+    font-size: 22px;
+    font-family: ProductB;
+    letter-spacing: 1.96px;
+    color: #FFFFFF;
+}
+
+.upgrade h3 {
+    font-size: 36px;
+    font-family: ProductB;
+    letter-spacing: 0px;
+    color: #03293D;
+
+}
+
+.upgrade p {
+    margin: 0;
+    font-size: 30px;
+    font-family: ProductR;
+    color: #272727;
+}
+
+.upgrade .expressInterest {
+    float: none;
+    margin: 30px;
+}
 
 
 
