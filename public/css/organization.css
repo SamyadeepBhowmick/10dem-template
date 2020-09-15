@@ -497,6 +497,30 @@ ol {
     color: #272727;;
   }
 
+  .educatorDetails {
+    padding: 20px;
+    margin: 20px 0;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 20px #8888882E;
+    border-radius: 10px;
+    border-left: 6px solid #65587F;
+  }
+
+  .educatorDetails p{
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
+    font-family: ProductR;
+    letter-spacing: 0px;
+    color: #272727;
+  }
+
+  .educatorDetails img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+
 
   .classDetails {
     padding: 20px;
@@ -570,6 +594,7 @@ ol {
 }
 
 .navtabs {
+    cursor: pointer;
     display: inline;
     padding-bottom: 10px;
     font-size: 20px;
