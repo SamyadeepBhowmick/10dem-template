@@ -691,9 +691,9 @@ input:focus {
 }
 
 .classDetails {
-    height: 186px;
+    height: 190px;
     padding: 20px;
-
+    margin-bottom: 40px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 10px 20px #8888882E;
     border-radius: 10px;
@@ -701,6 +701,7 @@ input:focus {
 }
 
 .classDetails p {
+    margin: 0;
     font-size: 18px;
     font-family: ProductB;
     letter-spacing: 0px;

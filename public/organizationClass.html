@@ -15,7 +15,26 @@
     <link rel="stylesheet" href="css/organization.css">
    
     <title>10dem Education|Organization</title>
-
+    <style>
+        /* Tooltip */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        .tooltip > .tooltip-inner {
+            height: 70px !important;
+            padding: 10px;
+            text-align: justify;
+            color: #000000;
+            line-height: 2rem; 
+            
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 0px 3px #00000029;
+            border: 2px solid #FFDB64CC;
+            opacity: 1;
+        }
+        
+    </style>
 </head>
 
 <body>
@@ -204,7 +223,16 @@
                 <!--  -->
 
                 <div class="col-lg-12">
-                    <div class="classes">Class 9</div>
+                    <div class="d-flex justify-content-left">
+                        <div class="classes">Class 9</div>
+                        <div class="exported d-flex justify-content-between">
+                            <img class="successSymbol" src="img/done.svg">
+                            <p class="successp1"><span>Class 9A</span> successfully exported to your class</p>
+                            <a class="successp2">Undo</a>
+                            <span class="successp3">x</span>
+                        </div>
+                    </div>
+                    
 
                     <div class="row">
                         <div class="col-lg-3">
@@ -226,7 +254,7 @@
                                             <a href="#">John Doe</a>
                                         </div>
                                     </div>
-                                    <a href="#"><img src="img/language.svg"></a>
+                                    <a href="#"><img src="img/language.svg" data-toggle="tooltip"></a>
                                     
                                 </div>
                             </div>
@@ -251,7 +279,7 @@
                                             <a href="#">John Doe</a>
                                         </div>
                                     </div>
-                                    <a href="#"><img src="img/language.svg"></a>
+                                    <a href="#"><img src="img/language.svg" data-toggle="tooltip"></a>
 
                                 </div>
                             </div>
@@ -276,7 +304,7 @@
                                             <a href="#">John Doe</a>
                                         </div>
                                     </div>
-                                    <a href="#"><img src="img/language.svg"></a>
+                                    <a href="#"><img src="img/language.svg" data-toggle="tooltip"></a>
                                     
                                 </div>
                             </div>
@@ -289,7 +317,16 @@
                 <!--  -->
 
                 <div class="col-lg-12">
-                    <div class="classes">Class 8</div>
+                    <div class="d-flex justify-content-left">
+                        <div class="classes">Class 8</div>
+                        <div class="exported d-flex justify-content-between">
+                            <img class="successSymbol" src="img/done.svg">
+                            <p class="successp1"><span>Class 8A</span> successfully exported to your class</p>
+                            <a class="successp2">Undo</a>
+                            <span class="successp3">x</span>
+                        </div>
+                    </div>
+                    
 
                     <div class="row">
                         <div class="col-lg-3">
@@ -311,7 +348,7 @@
                                             <a href="#">John Doe</a>
                                         </div>
                                     </div>
-                                    <a href="#"><img src="img/language.svg"></a>
+                                    <a href="#"><img src="img/language.svg" data-toggle="tooltip"></a>
                                     
                                 </div>
                             </div>
@@ -336,7 +373,7 @@
                                             <a href="#">John Doe</a>
                                         </div>
                                     </div>
-                                    <a href="#"><img src="img/language.svg"></a>
+                                    <a href="#"><img src="img/language.svg" data-toggle="tooltip"></a>
                                     
                                 </div>
                             </div>
@@ -361,7 +398,7 @@
                                             <a href="#">John Doe</a>
                                         </div>
                                     </div>
-                                    <a href="#"><img src="img/language.svg"></a>
+                                    <a href="#"><img src="img/language.svg" data-toggle="tooltip"></a>
                                     
                                 </div>
                             </div>
@@ -386,7 +423,7 @@
                                             <a href="#">John Doe</a>
                                         </div>
                                     </div>
-                                    <a href="#"><img src="img/language.svg"></a>
+                                    <a href="#"><img src="img/language.svg" data-toggle="tooltip"></a>
                                    
                                 </div>
                             </div>
@@ -411,7 +448,7 @@
                                             <a href="#">John Doe</a>
                                         </div>
                                     </div>
-                                    <a href="#"><img src="img/language.svg"></a>
+                                    <a href="#"><img src="img/language.svg" data-toggle="tooltip"></a>
                                     
                                 </div>
                             </div>
@@ -448,6 +485,11 @@
     <script src="https://kit.fontawesome.com/6f24662773.js" crossorigin="anonymous"></script>
 
     <script src="js/index.js"></script>
+    <script>
+        $(document).ready(function(){
+              $('[data-toggle="tooltip"]').tooltip({title: '<p style="color: #272727;">Export this class under your class section</p>', html: true, placement: "top"});
+        })
+    </script>
  
 </body>
 
