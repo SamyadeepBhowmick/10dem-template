@@ -137,8 +137,17 @@
                     <img src="img/help.svg" class="my-float" style="width: 30px;height: 30px;" alt="">
                 </a>
 
+                <div style="margin-left: 2%;padding-left: 4px;">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item active"><a href="#">My Projects</a></li>
+                        </ol>
+                    </nav>
+                </div>
+
                 <!-- Tabs -->
-                <section id="tabs">
+                <section id="tabs" style="margin-top: 0;">
                     <div class="">
                         <div class="row">
                             <div class="col-xs-12 ">
@@ -147,6 +156,7 @@
                                         <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><img src="img/loading.svg" style="width: 60px;height: 60px;margin: 15px;padding: 15px;border: 3px solid #A3C0F5;border-radius: 50%;" alt="">Ongoing Project <span></span></a>
                                         <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-profile" aria-selected="false"><img src="img/drafts.svg" style="width: 60px;height: 60px;margin: 15px;padding: 15px;border: 3px solid #FFDB64;border-radius: 50%;" alt="">Draft<span></span></a>
                                         <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-contact" aria-selected="false"><img src="img/completed.svg" style="width: 60px;height: 60px;margin: 15px;padding: 15px;border: 3px solid #A8CF94;border-radius: 50%;" alt="">Completed <span></span></a>
+                                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-contact" aria-selected="false"><img src="img/collaboration2.svg" style="width: 60px;height: 60px;margin: 15px;padding: 15px;border: 3px solid rgb(255, 182, 210);border-radius: 50%;" alt="">External collaboration<span></span></a>
                                     </div>
                                 </nav>
                                 <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
@@ -193,7 +203,7 @@
                     <div class="card col-lg-2 col-md-2 col-sm-12" style="box-shadow: black;">
                         <box-icon name='plus' size="xl" border='circle' id="create"></box-icon>
                         <div class="card-body" style="padding: 0rem;">
-                            <a href="#"><h5 class="card-title" id="createproject" style="text-align: center;padding-bottom: 2rem;margin: 0;background: #FFFFFF 0% 0% no-repeat padding-box;border-radius: 25px;opacity: 1;color: #272727">Create Project</h5></a>
+                            <a href="#"><h5 class="card-title" id="createproject" style="text-align: center;padding-bottom: 2rem;margin: 0;background: #FFFFFF 0% 0% no-repeat padding-box;border-radius: 25px;opacity: 1;color: #272727;font-weight: 500;">Start External Collaboration</h5></a>
                         </div>
                     </div>
 
@@ -202,8 +212,15 @@
 
                 <h3>Ongoing Projects</h3>
 
-                <!-- ongoing projects -->
+                <div style="text-align: center;">
+                    <img src="img/assignProject.png" style="margin: 80px auto 20px auto">
+                    <p style="font-size: 28px;font-family: ProductB;color: #272727;margin: 0;">You have no projects yet</p>
+                    <p>Start creating your projects</p>
+                    <button class="btn savebutton" style="width: 210px;float: none;font-size: 18px;font-family: ProductR;letter-spacing: 0;">Create a new project</button>
+                </div>
 
+                <!-- ongoing projects -->
+                <!-- disable below row when no ongoing projects are there -->
                 <div class="row">
                     <div class="card col-lg-2 col-md-2 col-sm-12">
                         <img src="img/download.jpeg" class="card-img-top" alt="...">
