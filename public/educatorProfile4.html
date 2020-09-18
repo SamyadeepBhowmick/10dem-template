@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="css/studentProfile.css">
+
+        <title>10dem Education|Student Profile</title>
+        <style>
+            /* Tooltip */
+            .tooltip {
+                position: relative;
+                display: inline-block;
+            }
+            .tooltip > .tooltip-inner {
+                max-width: 300px !important;
+                height: 130px !important;
+                padding: 10px;
+                text-align: justify;
+                color: #000000;
+                line-height: 2rem; 
+                
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 0px 3px #00000029;
+                border: 2px solid #FFDB64CC;
+                opacity: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <a class="navbar-brand" href="#">10dem Education</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ongoing Project</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Resources</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Membership
+                        </a> -->
+                        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div> -->
+                        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <h5 class="innerhead">Free</h5>
+                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                    <a href="#" class="innertag">View all</a>
+                                </li>
+                                <li class="nav-item">
+                                    <h5 class="innerhead">Pro</h5>
+                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                    <a href="#" class="innertag">View all</a>
+                                </li>
+                                <li class="nav-item">
+                                    <h5 class="innerhead">Organization</h5>
+                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                    <a href="#" class="innertag">View all</a>
+                                </li>
+                                <li class="nav-item">
+                                    <h5 class="innerhead">Education</h5>
+                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                    <a href="#" class="innertag">View all</a>
+                                </li>
+                                <li class="nav-item">
+                                    <h5 class="innerhead">Non Profits</h5>
+                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                    <a href="#" class="innertag">View all</a>
+                                </li>
+                            </ul>
+                        </div>     -->
+                    <!-- </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-crown" style="color: rgb(233, 233, 3);padding-right: 10px;"></i>Try 10dem pro</a>
+                    </li>
+                </ul> -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Contribute Resource</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-primary"  style="border-radius: 5px;" href="#"><i class="fas fa-plus" style="color: rgb(255, 255, 255);"></i>  Create Project</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link btn-primary" id="login" href="#">S</a>
+                    </li>
+                    <li class="nav-item dropdown" style="margin-left: -30px;">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                        <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">My Profile</a>
+                            <a class="dropdown-item" href="#">Dashboard</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="content" class="container" style="max-width: 90%;">
+            <div class="row" style="margin-bottom: 155px;">
+                <div class="col-lg-12">
+                    <div class="d-flex justify-content-between">
+                        <h2 style="margin: 50px 0;font-family: ProductB;">Profile Settings</h2>
+                        <button class="btn Bdashboard">Back to Dashboard</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="profile" style="text-align: left;padding: 0;">
+                        <div class="educatorTabs">
+                            Account Settings
+                        </div>
+                        <div class="educatorTabs">
+                            Change Password
+                        </div>
+                        <div class="educatorTabs">
+                            Notification Settings
+                        </div>
+                        <div class="educatorTabs" style="color: #FD585C;border-left: 3px solid #FD585C;">
+                            Class Settings
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-9">
+                    <div class="profileDetails">
+                        <div class="col-lg-12" style="margin-bottom: 20px;border-bottom: 1px solid #e2e2e2;">
+                            <div class="d-flex justify-content-between">
+                                <p style="color: #272727;margin: 15px 0;position: relative;bottom: 5px;">Class Settings</p>
+                                <img src="img/disable.svg" data-toggle="tooltip">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12" style="margin-bottom: 20px;border-bottom: 1px solid #e2e2e2;">
+                            <div class="d-flex justify-content-between">
+                                <p class="classes">Class 9A</p>
+                                <p style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter1">Remove</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12" style="margin-bottom: 20px;border-bottom: 1px solid #e2e2e2;">
+                            <div class="d-flex justify-content-between">
+                                <p class="classes">Class 8A</p>
+                                <p style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter1">Remove</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12" style="margin-bottom: 20px;border-bottom: 1px solid #e2e2e2;">
+                            <div class="d-flex justify-content-between">
+                                <p class="classes">Class 7C</p>
+                                <p style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter1">Remove</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12" style="margin-bottom: 20px;border-bottom: 1px solid #e2e2e2;">
+                            <div class="d-flex justify-content-between">
+                                <p class="classes">Class 6D</p>
+                                <p style="cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter1">Remove</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12" style="margin-bottom: 20px;border-bottom: 1px solid #e2e2e2;">
+                            <div class="d-flex justify-content-between">
+                                <p><span style="color: #FD585C;cursor: pointer;">Add Class</span> or <span style="color: #FD585C;cursor: pointer;">Export Class</span></p>
+                                
+                            </div>
+                        </div>
+
+                       
+                         
+                    </div>
+                    
+                </div>
+        
+            </div>    
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #ffffff;">
+                <div class="title-header"></div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #000000;font-weight: 500;">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body" style="text-align: center;">
+                    <p>Are you sure you want to remove this class?</p>
+                </div>
+                <div class="modal-footer" style="justify-content: center;">
+                    <button type="button" class="btn modalbutton2" style="left: 0;" data-dismiss="modal">No, Go back</button>
+                    <button type="button" class="btn modalbutton1" style="left: 0;">Yes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <p>10dem © 2020</p>
+        </footer>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        
+        <script src="https://kit.fontawesome.com/6f24662773.js" crossorigin="anonymous"></script>
+
+        <script src="js/signup.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('[data-toggle="tooltip"]').tooltip({title: '<p style="color: #272727;">Once you remove a class you will lose all the data related to the class including details of the assignments you have assigned to the students</p>', html: true, placement: "left"});
+            })
+        </script>
+    </body>
+</html>

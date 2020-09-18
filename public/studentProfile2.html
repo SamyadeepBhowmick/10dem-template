@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="css/studentProfile.css">
+
+
+        <title>10dem Education|Student Profile</title>
+       
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <a class="navbar-brand" href="#">10dem Education</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ongoing Project</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Resources</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Membership
+                        </a> -->
+                        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div> -->
+                        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <h5 class="innerhead">Free</h5>
+                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                    <a href="#" class="innertag">View all</a>
+                                </li>
+                                <li class="nav-item">
+                                    <h5 class="innerhead">Pro</h5>
+                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                    <a href="#" class="innertag">View all</a>
+                                </li>
+                                <li class="nav-item">
+                                    <h5 class="innerhead">Organization</h5>
+                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                    <a href="#" class="innertag">View all</a>
+                                </li>
+                                <li class="nav-item">
+                                    <h5 class="innerhead">Education</h5>
+                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                    <a href="#" class="innertag">View all</a>
+                                </li>
+                                <li class="nav-item">
+                                    <h5 class="innerhead">Non Profits</h5>
+                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                    <a href="#" class="innertag">View all</a>
+                                </li>
+                            </ul>
+                        </div>     -->
+                    <!-- </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-crown" style="color: rgb(233, 233, 3);padding-right: 10px;"></i>Try 10dem pro</a>
+                    </li>
+                </ul> -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Contribute Resource</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-primary"  style="border-radius: 5px;" href="#"><i class="fas fa-plus" style="color: rgb(255, 255, 255);"></i>  Create Project</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link btn-primary" id="login" href="#">S</a>
+                    </li>
+                    <li class="nav-item dropdown" style="margin-left: -30px;">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                        <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">My Profile</a>
+                            <a class="dropdown-item" href="#">Dashboard</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="content" class="container" style="max-width: 90%;">
+            <div class="row" style="margin-bottom: 155px;">
+                <div class="col-lg-12">
+                    <div class="d-flex justify-content-between">
+                        <h2 style="margin: 50px 0;font-family: ProductB;">Profile Settings</h2>
+                        <button class="btn Bdashboard">Back to Dashboard</button>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="profile">
+                        <div style="height: 200px;">
+                            <img class="profilePic" src="img/person_circle.svg">
+                            <div class="cameraIcon">
+                                
+                                <div class="dropdown">
+                                    <img src="img/error.svg">
+                                    <div class="dropdown-content">
+                                        
+                                        <a href="#"><img src="img/delete.svg"> Remove Photo</a>
+                                        <a href="#"><img src="img/add.svg"> Upload New</a>
+                                        <a href="#"><img src="img/editblack.svg"> Edit</a>
+
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <p class="profileName">Donatella Nobatti</p>
+                        <div class="profileClass">
+                            Class 9A
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-9">
+                    <div class="profileDetails">
+                        <div class="row">
+                            <div class="col-lg-4" style="display: inline-block;margin-bottom: 20px;border-bottom: 2px solid #e2e2e2;">
+                                <p style="color: #2727274D;text-align: center;cursor: pointer;">Account Settings</p>
+                            </div>
+                            <div class="col-lg-4" style="margin-bottom: 20px;border-bottom: 2px solid #FD585C;">
+                                <p style="color: #FD585C;text-align: center;cursor: pointer;">Change Password</p>
+                            </div>
+                            <div class="col-lg-4" style="margin-bottom: 20px;border-bottom: 1px solid #e2e2e2;">
+                            </div>
+                            <div class="col-lg-12" style="margin-bottom: 50px;">
+                                <div class="d-flex justify-content-between" style="height: 50px;padding: 12px 20px;background: #F4F5F9CC 0% 0% no-repeat padding-box;border-left: 5px solid #FD585C;">
+                                    <p style="color: #2727274D;margin: 0;font-size: 18px;font-family: ProductR;">It's recommended to use strong password</p>
+                                    <p style="color: #2727274D;margin: 0;font-size: 18px;font-family: ProductB;">Last Changed On : Aug 30,2020</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-5">
+                                <div class="message" style="display: none;">
+                                    <div class="exported d-flex justify-content-between">
+                                        <img class="successSymbol" src="img/done.svg">
+                                        <p class="successp1">Password Changed Successfully</p>
+                                        <span class="successp3">x</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-5">
+                                <h4>Type your current password</h4>
+                                <div class="d-flex justify-content-between">
+                                    <input class="input100" type="password" name="name">
+                                    <img class="hideButton" src="img/hide.svg">
+                                </div>
+                                
+                            </div>
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-5">
+                                <h4>Type your new password</h4>
+                                <div class="d-flex justify-content-between">
+                                    <input class="input100" type="password" id="txtNewPassword" name="name">
+                                    <img class="hideButton" src="img/hide.svg">
+                                </div>
+                            </div>
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-5">
+                                <h4>Retype your new password</h4>
+                                <div class="d-flex justify-content-between">
+                                    <input class="input100" type="password" id="txtConfirmPassword" name="name">
+                                    <img class="hideButton" src="img/hide.svg">
+                                </div>
+                                <p id="CheckPasswordMatch">The password you entered do not match</p>
+                            </div>
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-5">
+                                <button type="button" class="btn modalbutton1" style="left: 0;display: block;margin: 20px auto;">Update</button>
+                            </div>
+                            <div class="col-lg-4"></div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>    
+        </div>
+
+        <footer>
+            <p>10dem © 2020</p>
+        </footer>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        
+        <script src="https://kit.fontawesome.com/6f24662773.js" crossorigin="anonymous"></script>
+
+        <script src="js/signup.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                $(".successp3").click(function(){
+                    if ($('.message').css('display')=='block'){
+                        $('.message').css('display','none');
+                    
+                    }
+                    else
+                        $('.message').css('display','block');
+
+                });
+
+                $('.hideButton').click(function(){
+                    $(".hideButton").attr('src',"img/show.svg");
+                    $("input").attr('type',"text");
+                    return false;
+                });
+
+                $(".modalbutton1").click(function(){
+                    if ($('.message').css('display')=='block'){
+                        $('.message').css('display','none');
+                    
+                    }
+                    else
+                        $('.message').css('display','block');
+                    
+                    var password = $("#txtNewPassword").val();
+                    var confirmPassword = $("#txtConfirmPassword").val();
+                    if (password != confirmPassword)
+                        $("#CheckPasswordMatch").css('display','block');
+                    else
+                        $("#CheckPasswordMatch").css('display','none');
+                });
+
+                $("input").click(function(){
+                    $("#CheckPasswordMatch").css('display','none');
+                    $("input").attr('type',"password");
+                    $(".hideButton").attr('src',"img/hide.svg");
+                });
+
+
+            });
+            
+        </script>
+
+    </body>
+</html>
