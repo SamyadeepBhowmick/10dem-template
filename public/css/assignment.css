@@ -155,7 +155,6 @@ p {
     text-align: justify;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 15%;
     font-size: 24px;
     font-family: ProductR;
     letter-spacing: 0px;
@@ -195,14 +194,15 @@ p {
 .imagefix {
     width: 24px;
     height: 24px;
-    margin-right: 5px;
+    margin-right: 6px;
     background: transparent 0% 0% no-repeat padding-box;
 }
 
 .imagefix1 {
+    cursor: pointer;
     height: 30px;
     width: 30px;
-    background: #F7CB73;
+    background: #7070704D;
     position: absolute;
     left: -20px;
     top: 5px;
@@ -597,7 +597,7 @@ p {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     padding: 1.25rem;
-    height: 70px;
+    height: 100%;
     width: 100%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     

@@ -38,7 +38,6 @@ h1 {
 }
 
 #mylisth1 {
-  margin-top: 7rem;
   margin-bottom: 5rem;
   font-size: 50px;
   font-family: ProductB;
@@ -167,9 +166,9 @@ a:focus {
 }
 
 .btn-primary:hover {
-background-color:#FFDB64 !important;
-border-color: #FFDB64;
-color: #272727;
+  background-color:#FFDB64 !important;
+  border-color: #FFDB64;
+  color: #272727;
 }
 
 .btn:hover
@@ -178,6 +177,27 @@ background-color:#FFDB64 !important;
 border-color: #FFDB64;
 color: #272727;
 }
+
+/* ---------------------------------------------------
+  Button dropdown
+  ----------------------------------------------------- */
+
+  #dropdownMenuButton{
+    width: 176px;
+    height: 64px;
+    text-align: center;
+    padding: 0;
+    font-size: 22px;
+    color: #272727;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #FD585C;
+    border-radius: 6px;
+    opacity: 1;
+  }
+
+  #dropdownMenuButton:hover {
+    border: 1px solid #FFDB64;
+  }
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
@@ -299,6 +319,37 @@ ul.CTAs a {
   border-radius: 6px;
   opacity: 1;
 }
+
+/* ---------------------------------------------------
+    Breadcrumb
+    ----------------------------------------------------- */
+
+    .breadcrumb {
+      display: -ms-flexbox;
+      font-family: ProductB;
+      font-size: 26px;
+      color: #272727;
+      padding: 2rem 0;
+      margin-bottom: 1rem;
+      list-style: none;
+      background-color: #ffffff;
+      border-radius: .25rem;
+  }
+  
+  .breadcrumb-item.active {
+      color: #FD585C;
+  }
+  
+  .breadcrumb-item+.breadcrumb-item::before {
+      display: inline-block;
+      padding-right: .5rem;
+      color: #272727;
+      content: ">>";
+  }
+  
+  ol {
+      margin-top: 20px;
+  }
 
 
 /* ---------------------------------------------------
@@ -571,3 +622,47 @@ footer p {
 .main-content .owl-theme .custom-nav .owl-prev:focus, .main-content .owl-theme .custom-nav .owl-next:focus, .main-content-2 .owl-theme .custom-nav .owl-prev:focus, .main-content-2 .owl-theme .custom-nav .owl-next:focus{
   outline: none;
 }
+
+
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 10 !important;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 22px;
+    font-family: ProductR;
+    letter-spacing: 0px;
+    color: #272727;
+    opacity: 1;
+    
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: rgb(238, 238, 238);
+    border-left: 5px solid #FD585C;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}

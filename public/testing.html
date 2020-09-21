@@ -4,151 +4,387 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/index.css">
         <style>
+            .sidenav {
+                height: 100%;
+                width: 300px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #FFDB64;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+            }
 
-        .sidenav {
-            height: 100%;
-            width: 300px;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #FFDB64;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
+            .bx-fw {
+                position: relative;
+                top: 4px;
+                margin: 5px;
+            }
 
-        .bx-fw {
-            position: relative;
-            top: 4px;
-            margin: 5px;
-        }
+            .sidenav a {
+                padding: 20px 30px;
+                text-decoration: none;
+                font-size: 1.3rem;
+                color: #272727;
+                display: block;
+            }
 
-        .sidenav a {
-            padding: 20px 30px;
-            text-decoration: none;
-            font-size: 1.3rem;
-            color: #272727;
-            display: block;
-        }
+            .sidenav a:hover {
+                background: #FFFFFF;
+                color: #272727;
+            }
 
-        .sidenav a:hover {
-            background: #FFFFFF;
-            color: #272727;
-        }
+            .sidenav img {
+                width: 120px;
+                height: 120px;
+                margin: 50px auto;
+                position: relative;
+                left: 30%;
+                right: 30%;
+            }
 
-        .sidenav img {
-            width: 120px;
-            height: 120px;
-            margin: 50px auto;
-            position: relative;
-            left: 30%;
-            right: 30%;
-        }
+            .sidenav .closebtn {
+                position: absolute;
+                top: 60px;
+                right: 5px;
+                font-size: 24px;
+                padding: 2px 10px;
+                font-weight: 600;
+            }
 
-        .sidenav .closebtn {
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+            .dropdown-toggle::after {
+                display: inline-block;
+                margin: 0;
+                /* margin-top: 0px; */
+                color: #fff;
+            }
+        </style>
+        <style>
+            #header.header-scrolled {
+                background: #043650;
+                padding: 20px 0;
+                height: 72px;
+                transition: all 0.5s;
+            }
+            #header {
+                padding: 4px 20px;
+                position: relative;
+                left: 0;
+                top: 0;
+                right: 0;
+                transition: all 0.5s;
+                z-index: 997;
+                background-color: #043650;
+                box-shadow: 5px 0px 15px #c3c3c3;
+            }
+            #header #logo h1 {
+                font-size: 30px;
+                margin: 0;
+                padding: 0;
+                line-height: 1;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+            #header #logo h1 a, #header #logo h1 a:hover {
+                color: #000;
+                padding-left: 10px;
+                border-left: 4px solid grey;
+            }
+            #nav-menu-container {
+                margin: 0;
+            }
+
+            .nav-menu > li {
+                margin-left: 10px;
+            }
+
+            .menu-has-children ul {
+                display: none;
+                /* right: 0 !important;
+                left: auto !important;
+                width: fit-content;
+                padding-left: 1px !important;
+                padding-right: 1px !important;
+                padding-inline-start: 0px;
+                background: #fff !important; */
+            }
+
+            .menu-has-children ul li {
+                padding: 2px 20px;
+            }
+
+            .menu-has-children ul li a {
+                color: #000;
+            }
+
+            .nav-menu ul {
+                top: 60% !important;
+            }
+
+            .nav-item {
+                display: inline-block;
+            }
+
+            .nav-menu > li {
+                float: left;
+            }
+            .nav-menu li {
+                position: relative;
+                white-space: nowrap;
+            }
+            .nav-menu, .nav-menu * {
+                margin: 0;
+                margin-top: 6px;
+                padding: 0;
+                list-style: none;
+            }
+            .header-scrolled .nav-menu li:hover > a, .header-scrolled .nav-menu > .menu-active > a {
+                color: #18d26e;
+            }
+            .header-scrolled .nav-menu a {
+                color: black;
+            }
+            .nav-menu li:hover > a, .nav-menu > .menu-active > a {
+                color: #18d26e;
+            }
+            .nav-menu a {
+                padding: 0 8px 10px 8px;
+                text-decoration: none;
+                display: inline-block;
+                color: #fff;
+                font-size: 16px;
+                outline: none;
+            }
+
+
+            #mobile-nav-toggle {
+                display: inline;
+            }
+            #mobile-nav-toggle {
+                position: fixed;
+                right: 0;
+                top: 0;
+                z-index: 999;
+                margin: 20px 20px 0 0;
+                border: 0;
+                background: none;
+                font-size: 24px;
+                display: none;
+                transition: all 0.4s;
+                outline: none;
+                cursor: pointer;
+            }
+            #mobile-body-overly {
+                width: 100%;
+                height: 100%;
+                z-index: 997;
+                top: 0;
+                left: 0;
+                position: fixed;
+                background: rgba(0, 0, 0, 0.7);
+                display: none;
+            }
+            body.mobile-nav-active #mobile-nav {
+                left: 0;
+            }
+            #mobile-nav {
+                position: fixed;
+                top: 0;
+                padding-top: 18px;
+                bottom: 0;
+                z-index: 998;
+                background: rgba(0, 0, 0, 0.8);
+                left: -260px;
+                width: 260px;
+                overflow-y: auto;
+                transition: 0.4s;
+            }
+            #mobile-nav ul {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+            #mobile-nav ul li {
+                position: relative;
+            }
+            #mobile-nav ul li a {
+                color: #fff;
+                font-size: 13px;
+                text-transform: uppercase;
+                overflow: hidden;
+                padding: 10px 40px 10px 15px;
+                position: relative;
+                text-decoration: none;
+                width: 100%;
+                display: block;
+                outline: none;
+                font-weight: 700;
+                font-family: "Montserrat", sans-serif;
+            }
+            #mobile-nav ul .menu-has-children i.fa-chevron-up {
+                color: #18d26e;
+            }
+            #mobile-nav ul .menu-has-children i {
+                position: absolute;
+                right: 0;
+                z-index: 99;
+                padding: 15px;
+                cursor: pointer;
+                color: #fff;
+            }
+            #mobile-nav ul .menu-item-active {
+                color: #18d26e;
+            }
+            #mobile-nav ul li li {
+                padding-left: 30px;
+            }
+
+            .menu-has-children ul
+            {display: none;}
+
+            .sf-arrows .sf-with-ul {
+            padding-right: 30px;
+            }
+
+            .sf-arrows .sf-with-ul:after {
+            content: "\f107";
             position: absolute;
-            top: 5px;
-            right: 5px;
-            font-size: 24px;
-            padding: 2px 10px;
-            font-weight: 600;
-        }
+            right: 15px;
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            color:black;
+            }
 
-        @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 18px;}
-        }
+            .sf-arrows ul .sf-with-ul:after {
+            content: "\f105";
+            }
+
+
+            .nav-menu li:hover > ul,
+            .nav-menu li.sfHover > ul {
+            display: block;
+            }
+            .nav-menu ul {
+                margin: 4px 0 0 0;
+                padding: 10px;
+                box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+                background: #fff;
+            }
+            .nav-menu ul {
+                position: absolute;
+                display: none;
+                top: 100%;
+                left: 0;
+                z-index: 99;
+            }
+
+            .sf-arrows .sf-with-ul {
+                padding-right: 30px;
+            }
+            .nav-menu li {
+                position: relative;
+                white-space: nowrap;
+                padding: 0 20px;
+            }
+
+
+            @media (max-width: 768px){
+            #nav-menu-container {
+                display: none;
+            }
+
+            #mobile-nav-toggle {
+                display: inline;
+            }
+            }
+            .innerhead {
+                padding: 10px;
+                margin: 10px 0px;
+                font-size: 20px;font-weight: 600;border-left: 5px solid #fd585c;
+            }
+
+            .innerpara {
+                text-align: justify;color: #272727;
+            }
+
+            .innertag {
+                color: #fd585c;padding: 0px 0px !important;font-weight: 600;
+            }
+
         </style>
     </head>
     <body>
 
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-xl navbar-light">
-            <a class="navbar-brand" href="#"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ongoing Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Resources</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Membership
-                        </a>
-                        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div> -->
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item">
-                                    <h5 class="innerhead">Free</h5>
-                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
-                                    <a href="#" class="innertag">View all</a>
-                                </li>
-                                <li class="nav-item">
-                                    <h5 class="innerhead">Pro</h5>
-                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
-                                    <a href="#" class="innertag">View all</a>
-                                </li>
-                                <li class="nav-item">
-                                    <h5 class="innerhead">Organization</h5>
-                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
-                                    <a href="#" class="innertag">View all</a>
-                                </li>
-                                <li class="nav-item">
-                                    <h5 class="innerhead">Education</h5>
-                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
-                                    <a href="#" class="innertag">View all</a>
-                                </li>
-                                <li class="nav-item">
-                                    <h5 class="innerhead">Non Profits</h5>
-                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
-                                    <a href="#" class="innertag">View all</a>
-                                </li>
-                            </ul>
-                        </div>    
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-crown" style="color: rgb(233, 233, 3);padding-right: 10px;"></i>Try 10dem pro</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contribute Resource</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn-primary"  style="border-radius: 5px;" href="#"><i class="fas fa-plus" style="color: rgb(255, 255, 255);"></i>  Create Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn-primary" id="login" href="#">S</a>
-                    </li>
-                    <li class="nav-item dropdown" style="margin-left: -30px;">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
-                        <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">My Profile</a>
-                            <a class="dropdown-item" href="#">Dashboard</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Logout</a>
+        <header id="header">
+                
+            <nav id="nav-menu-container">
+
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-left">
+                        <div id="logo">
+                        
+                            <a class="navbar-brand" href="#"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span></a>
+                            
                         </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                        <ul class="nav-menu">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Ongoing Project</a></li>
+                            <li class="menu-has-children dropdown-toggle"><a href="">Membership</a>
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item" style="display: block;border-bottom: 1px solid rgb(192, 185, 185);">
+                                        <h5 class="innerhead">Pro</h5>
+                                        <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                        <a href="#" class="innertag">View all</a>
+                                    </li>
+                                    <li class="nav-item" style="display: block;border-bottom: 1px solid rgb(192, 185, 185);">
+                                        <h5 class="innerhead">Organization</h5>
+                                        <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                        <a href="#" class="innertag">View all</a>
+                                    </li>
+                                    <li class="nav-item" style="display: block;">
+                                        <h5 class="innerhead">Non Profits</h5>
+                                        <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                        <a href="#" class="innertag">View all</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="">Try 10dem Pro</a></li>
+                        </ul>
+                    </div>
+                    
+                    <ul class="nav-menu">
+                        <li class="menu-has-children dropdown-toggle" style="margin-top: 0;"><a href="#" style="color: #000;background: #FFFFFF;border-radius: 50%;
+                            height: 35px;
+                            width: 35px;
+                            text-align: center;
+                            padding: 7px;">S</a>
+                            <ul style="
+                            right: 0 !important;
+                            left: auto !important;
+                            width: fit-content;
+                            padding-left: 1px !important;
+                            padding-right: 1px !important;
+                            padding-inline-start: 0px;
+                            background: #fff !important;">
+                                <li><a href="#">My profile</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            
+            </nav><!-- #nav-menu-container -->
+
+        </header><!-- #header -->
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -168,34 +404,6 @@
                 </li>
             </ul>
         </div>
-
-        <div class="wrapper">
-            
-
-            <!-- Page Content  -->
-            <div id="content" class="container">
-                
-                <div style="text-align: center;">
-                    <h1>Hello, Sam</h1>
-                </div>
-
-                
-                
-                <a href="#" class="float">
-                    <img src="img/help.svg" class="my-float" style="width: 30px;height: 30px;" alt="">
-                </a>
-                
-            </div> 
-        </div>
-
-       
-        
-
-        <footer>
-            <p>10dem © 2020</p>
-        </footer>
-
-
 
 
         <!-- Optional JavaScript -->
@@ -220,5 +428,81 @@
               document.getElementById("mySidenav").style.width = "0";
             }
         </script>
-</body>
+
+        <script>
+            // Mobile Navigation
+            if ($('#nav-menu-container').length) {
+                var $mobile_nav = $('#nav-menu-container').clone().prop({
+                id: 'mobile-nav'
+                });
+                $mobile_nav.find('> ul').attr({
+                'class': '',
+                'id': ''
+                });
+                $('body').append($mobile_nav);
+                $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>');
+                $('body').append('<div id="mobile-body-overly"></div>');
+                $('#mobile-nav').find('.menu-has-children').prepend('<i class="fa fa-chevron-down"></i>');
+
+                $(document).on('click', '.menu-has-children i', function(e) {
+                $(this).next().toggleClass('menu-item-active');
+                $(this).nextAll('ul').eq(0).slideToggle();
+                $(this).toggleClass("fa-chevron-up fa-chevron-down");
+                });
+
+                $(document).on('click', '#mobile-nav-toggle', function(e) {
+                $('body').toggleClass('mobile-nav-active');
+                $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+                $('#mobile-body-overly').toggle();
+                });
+
+                $(document).click(function(e) {
+                var container = $("#mobile-nav, #mobile-nav-toggle");
+                if (!container.is(e.target) && container.has(e.target).length === 0) {
+                    if ($('body').hasClass('mobile-nav-active')) {
+                    $('body').removeClass('mobile-nav-active');
+                    $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+                    $('#mobile-body-overly').fadeOut();
+                    }
+                }
+                });
+            } else if ($("#mobile-nav, #mobile-nav-toggle").length) {
+                $("#mobile-nav, #mobile-nav-toggle").hide();
+            }
+
+            // Smooth scroll for the menu and links with .scrollto classes
+            $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                if (target.length) {
+                    var top_space = 0;
+
+                    if ($('#header').length) {
+                    top_space = $('#header').outerHeight();
+
+                    if( ! $('#header').hasClass('header-fixed') ) {
+                        top_space = top_space - 20;
+                    }
+                    }
+
+                    $('html, body').animate({
+                    scrollTop: target.offset().top - top_space
+                    }, 1500, 'easeInOutExpo');
+
+                    if ($(this).parents('.nav-menu').length) {
+                    $('.nav-menu .menu-active').removeClass('menu-active');
+                    $(this).closest('li').addClass('menu-active');
+                    }
+
+                    if ($('body').hasClass('mobile-nav-active')) {
+                    $('body').removeClass('mobile-nav-active');
+                    $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+                    $('#mobile-body-overly').fadeOut();
+                    }
+                    return false;
+                }
+                }
+            });
+        </script>
+    </body>
 </html> 

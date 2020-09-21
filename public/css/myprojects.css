@@ -325,17 +325,14 @@ ol {
     Button dropdown
     ----------------------------------------------------- */
 
-    #dropdownright {
-      left: 90%;
-      bottom: 20%;
-    }
-
     #dropdownMenuButton{
       width: 176px;
       height: 64px;
       text-align: center;
       padding: 0;
-      background: #FD585C 0% 0% no-repeat padding-box;
+      font-size: 22px;
+      color: #272727;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
       border: 1px solid #FD585C;
       border-radius: 6px;
       opacity: 1;
@@ -387,7 +384,7 @@ ol {
       -ms-flex: 1 1 auto;
       flex: 1 1 auto;
       text-align: center;
-      padding: 1rem 2rem;
+      /* padding: 1rem 2rem; */
       
     }
 
