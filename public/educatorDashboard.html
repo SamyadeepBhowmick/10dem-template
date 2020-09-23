@@ -18,6 +18,7 @@
 
     <link rel="stylesheet" href="css/educatorDashboard.css">
     <link rel="stylesheet" href="css/notificationpane.css">
+    <link rel="stylesheet" href="css/flashMessage.css">
 
     <title>10dem Education|Dashboard</title>
 </head>
@@ -434,10 +435,10 @@
                 </div>
             </div>
 
-
-
         </div>
     </div>
+
+
     <!-- modal starts -->
     <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width: 600px;">
@@ -486,14 +487,15 @@
     </div>
     <!-- modal ends -->
 
-    <!-- Toast -->
-    <div class="toast" id="notificationpane" data-autohide="false">
+
+    <!-- Toast for notification panel-->
+    <div class="allNotifications" id="notificationpane" data-autohide="false" style="display: none;">
         <div class="toast-header">
             <!-- <div class="d-flex justify-content-center"> -->
                 <img src="img/togglebutton.svg">
                 <strong class="mr-auto text-primary">Notifications</strong>
                 <!-- <small class="text-muted">5 mins ago</small> -->
-                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" style="color: black;font-size: 30px;font-weight: 100;">&times;</button>
+                <button type="button" class="ml-2 mb-1 close" id="notificationClose" style="color: black;font-size: 30px;font-weight: 100;">&times;</button>
             <!-- </div>    -->
         </div>
         <div class="toast-body">
@@ -620,6 +622,69 @@
             
         </div>
     </div>
+    <!-- toast ends -->
+
+        <div style="position: fixed; top: 70px; right: 10px;height: 100%;">
+            <div class="toast ml-auto flash" role="alert" data-delay="3000" data-autohide="true">
+                <div class="toast-header">
+                    
+                    <strong class="mr-auto">Begin Collaboration</strong>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close" style="color: black;font-size: 30px;font-weight: 100;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="toast-body">
+                    <div class="d-flex justify-content-left">
+                        <img src="img/person_circle.svg" class="image">
+                        <div>
+                            <p class="para">John Doe, from Australia has accept your collaboration request for "Sustainable development for environment" project</p>
+                            <a class="view">View project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="toast ml-auto flash" role="alert" data-delay="5000" data-autohide="true">
+                <div class="toast-header">
+                    
+                    <strong class="mr-auto">Collaboration Invitation</strong>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close" style="color: black;font-size: 30px;font-weight: 100;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="toast-body">
+                    <div class="d-flex justify-content-left">
+                        <img src="img/person_circle.svg" class="image">
+                        <div>
+                            <p class="para">You have received collaboration invite for "Sustainable development for environment" project from John Doe, Australia</p>
+                            <a class="view">View project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="toast ml-auto flash" role="alert" data-delay="7000" data-autohide="true">
+                <div class="toast-header">
+                    
+                    <strong class="mr-auto">Begin Collaboration</strong>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close" style="color: black;font-size: 30px;font-weight: 100;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="toast-body">
+                    <div class="d-flex justify-content-left">
+                        <img src="img/collaboration.svg" class="image">
+                        <div>
+                            <p class="para">John Doe, from Australia has accept your collaboration request for "Sustainable development for environment" project</p>
+                            <a class="view">View project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <footer>
         <p>10dem © 2020</p>
@@ -642,12 +707,19 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
         $('.flatpickr').flatpickr({
-            inline: true
+            inline: true/* margin-bottom: 10px; */
         });
 
         $('#notifications').click(function(){
-            $("#notificationpane").toast('show');
+            $(".allNotifications").css('display','block');
         });
+
+        $('#notificationClose').click(function(){
+            $(".allNotifications").css('display','none');
+        });
+
+        $('.toast').toast('show');
+
     </script>
     <script>
         $('.owl-carousel').owlCarousel({

@@ -485,6 +485,10 @@ ol {
     
 }
 
+.owl-carousel {
+  z-index: 0;
+}
+
 .owl-carousel .owl-item img {
     width: inherit;
 }
@@ -567,6 +571,10 @@ span.flatpickr-weekday {
     background-color: #fd585c;
     color: #ffffff;
     border: 2px solid #FD585C;
+}
+
+.flatpickr-months .flatpickr-prev-month, .flatpickr-months .flatpickr-next-month {
+    z-index: 0;
 }
 
   /* .flatpickr-day.today {

@@ -4,323 +4,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <style>
-            .sidenav {
-                height: 100%;
-                width: 300px;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                left: 0;
-                background-color: #FFDB64;
-                overflow-x: hidden;
-                transition: 0.5s;
-                padding-top: 60px;
-            }
-
-            .bx-fw {
-                position: relative;
-                top: 4px;
-                margin: 5px;
-            }
-
-            .sidenav a {
-                padding: 20px 30px;
-                text-decoration: none;
-                font-size: 1.3rem;
-                color: #272727;
-                display: block;
-            }
-
-            .sidenav a:hover {
-                background: #FFFFFF;
-                color: #272727;
-            }
-
-            .sidenav img {
-                width: 120px;
-                height: 120px;
-                margin: 50px auto;
-                position: relative;
-                left: 30%;
-                right: 30%;
-            }
-
-            .sidenav .closebtn {
-                position: absolute;
-                top: 60px;
-                right: 5px;
-                font-size: 24px;
-                padding: 2px 10px;
-                font-weight: 600;
-            }
-
-            @media screen and (max-height: 450px) {
-                .sidenav {padding-top: 15px;}
-                .sidenav a {font-size: 18px;}
-            }
-            .dropdown-toggle::after {
-                display: inline-block;
-                margin: 0;
-                /* margin-top: 0px; */
-                color: #fff;
-            }
-        </style>
-        <style>
-            #header.header-scrolled {
-                background: #043650;
-                padding: 20px 0;
-                height: 72px;
-                transition: all 0.5s;
-            }
-            #header {
-                padding: 4px 20px;
-                position: relative;
-                left: 0;
-                top: 0;
-                right: 0;
-                transition: all 0.5s;
-                z-index: 997;
-                background-color: #043650;
-                box-shadow: 5px 0px 15px #c3c3c3;
-            }
-            #header #logo h1 {
-                font-size: 30px;
-                margin: 0;
-                padding: 0;
-                line-height: 1;
-                font-family: "Montserrat", sans-serif;
-                font-weight: 700;
-                letter-spacing: 1px;
-            }
-            #header #logo h1 a, #header #logo h1 a:hover {
-                color: #000;
-                padding-left: 10px;
-                border-left: 4px solid grey;
-            }
-            #nav-menu-container {
-                margin: 0;
-            }
-
-            .nav-menu > li {
-                margin-left: 10px;
-            }
-
-            .menu-has-children ul {
-                display: none;
-                /* right: 0 !important;
-                left: auto !important;
-                width: fit-content;
-                padding-left: 1px !important;
-                padding-right: 1px !important;
-                padding-inline-start: 0px;
-                background: #fff !important; */
-            }
-
-            .menu-has-children ul li {
-                padding: 2px 20px;
-            }
-
-            .menu-has-children ul li a {
-                color: #000;
-            }
-
-            .nav-menu ul {
-                top: 60% !important;
-            }
-
-            .nav-item {
-                display: inline-block;
-            }
-
-            .nav-menu > li {
-                float: left;
-            }
-            .nav-menu li {
-                position: relative;
-                white-space: nowrap;
-            }
-            .nav-menu, .nav-menu * {
-                margin: 0;
-                margin-top: 6px;
-                padding: 0;
-                list-style: none;
-            }
-            .header-scrolled .nav-menu li:hover > a, .header-scrolled .nav-menu > .menu-active > a {
-                color: #18d26e;
-            }
-            .header-scrolled .nav-menu a {
-                color: black;
-            }
-            .nav-menu li:hover > a, .nav-menu > .menu-active > a {
-                color: #18d26e;
-            }
-            .nav-menu a {
-                padding: 0 8px 10px 8px;
-                text-decoration: none;
-                display: inline-block;
-                color: #fff;
-                font-size: 16px;
-                outline: none;
-            }
-
-
-            #mobile-nav-toggle {
-                display: inline;
-            }
-            #mobile-nav-toggle {
-                position: fixed;
-                right: 0;
-                top: 0;
-                z-index: 999;
-                margin: 20px 20px 0 0;
-                border: 0;
-                background: none;
-                font-size: 24px;
-                display: none;
-                transition: all 0.4s;
-                outline: none;
-                cursor: pointer;
-            }
-            #mobile-body-overly {
-                width: 100%;
-                height: 100%;
-                z-index: 997;
-                top: 0;
-                left: 0;
-                position: fixed;
-                background: rgba(0, 0, 0, 0.7);
-                display: none;
-            }
-            body.mobile-nav-active #mobile-nav {
-                left: 0;
-            }
-            #mobile-nav {
-                position: fixed;
-                top: 0;
-                padding-top: 18px;
-                bottom: 0;
-                z-index: 998;
-                background: rgba(0, 0, 0, 0.8);
-                left: -260px;
-                width: 260px;
-                overflow-y: auto;
-                transition: 0.4s;
-            }
-            #mobile-nav ul {
-                padding: 0;
-                margin: 0;
-                list-style: none;
-            }
-            #mobile-nav ul li {
-                position: relative;
-            }
-            #mobile-nav ul li a {
-                color: #fff;
-                font-size: 13px;
-                text-transform: uppercase;
-                overflow: hidden;
-                padding: 10px 40px 10px 15px;
-                position: relative;
-                text-decoration: none;
-                width: 100%;
-                display: block;
-                outline: none;
-                font-weight: 700;
-                font-family: "Montserrat", sans-serif;
-            }
-            #mobile-nav ul .menu-has-children i.fa-chevron-up {
-                color: #18d26e;
-            }
-            #mobile-nav ul .menu-has-children i {
-                position: absolute;
-                right: 0;
-                z-index: 99;
-                padding: 15px;
-                cursor: pointer;
-                color: #fff;
-            }
-            #mobile-nav ul .menu-item-active {
-                color: #18d26e;
-            }
-            #mobile-nav ul li li {
-                padding-left: 30px;
-            }
-
-            .menu-has-children ul
-            {display: none;}
-
-            .sf-arrows .sf-with-ul {
-            padding-right: 30px;
-            }
-
-            .sf-arrows .sf-with-ul:after {
-            content: "\f107";
-            position: absolute;
-            right: 15px;
-            font-family: FontAwesome;
-            font-style: normal;
-            font-weight: normal;
-            color:black;
-            }
-
-            .sf-arrows ul .sf-with-ul:after {
-            content: "\f105";
-            }
-
-
-            .nav-menu li:hover > ul,
-            .nav-menu li.sfHover > ul {
-            display: block;
-            }
-            .nav-menu ul {
-                margin: 4px 0 0 0;
-                padding: 10px;
-                box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-                background: #fff;
-            }
-            .nav-menu ul {
-                position: absolute;
-                display: none;
-                top: 100%;
-                left: 0;
-                z-index: 99;
-            }
-
-            .sf-arrows .sf-with-ul {
-                padding-right: 30px;
-            }
-            .nav-menu li {
-                position: relative;
-                white-space: nowrap;
-                padding: 0 20px;
-            }
-
-
-            @media (max-width: 768px){
-            #nav-menu-container {
-                display: none;
-            }
-
-            #mobile-nav-toggle {
-                display: inline;
-            }
-            }
-            .innerhead {
-                padding: 10px;
-                margin: 10px 0px;
-                font-size: 20px;font-weight: 600;border-left: 5px solid #fd585c;
-            }
-
-            .innerpara {
-                text-align: justify;color: #272727;
-            }
-
-            .innertag {
-                color: #fd585c;padding: 0px 0px !important;font-weight: 600;
-            }
-
-        </style>
+        <link rel="stylesheet" href="css/testing2.css">
+        <link rel="stylesheet" href="css/testing.css">
     </head>
     <body>
 
@@ -404,6 +89,229 @@
                 </li>
             </ul>
         </div>
+        
+
+        <!-- Page Content  -->
+        <div id="content" class="container">
+                
+            <div style="text-align: center;">
+                <h1>Hello, Sam</h1>
+            </div>
+
+            <!-- Search Section -->
+            <section class="search-sec" style="margin-bottom: 100px;">
+                <div class="container" style="justify-content: center;">
+                    <form action="#" method="post" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 style="text-align: center;margin-top: 0px;">Search Anything</h2>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+                                        <input type="text" class="form-control search-slt" placeholder="Eg.Botanical Garden">
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                        <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                            <option>Grade Level</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                        <button type="button" class="btn btn-danger wrn-btn">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="d-flex justify-content-between">
+                        <p style="font-size: 22px;">72 results for<span style="font-size: 24px;font-family: ProductB;color: #272727;"> Physics: </span><span style="font-size: 24px;font-family: ProductB;color: #FD585C;">"Refraction of light | Grade 8-9"</span></p>
+                        <div class="dropdown" id="dropdownright">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sort
+                            </button>
+                            <div class="dropdown-content">
+                                <a class="dropdown-item" href="#">Trending projects</a>
+                                <a class="dropdown-item" href="#">Most Related</a>
+                                <a class="dropdown-item" href="#">Most Recent</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <h2>Trending Projects</h2>
+
+
+            <!-- Testimonials Section -->
+            <section id="testimonials" class="testimonials">
+                <div class="main-content" data-aos="fade-up">
+
+        
+                    <div class="owl-carousel testimonials-carousel owl-theme">
+        
+                        <div class="testimonial-item">
+                            <img src="img/download.jpeg" class="testimonial-img" alt="">
+                            <h3>Project 1</h3>
+                            <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                            <p id="innerp">
+                                <a href="#" style="float:left;color: #fd585c;font-size: medium;padding-left: 5px;">View more</a>
+                                <a href="#" style="float:right;padding-right: 10px;"><i class="far fa-bookmark"></i></a>&nbsp;
+                            </p>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <img src="img/download.jpeg" class="testimonial-img" alt="">
+                            <h3>Project 2</h3>
+                            <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                            <p id="innerp">
+                                <a href="#" style="float:left;color: #fd585c;font-size: medium;padding-left: 2px;">View more</a>
+                                <a href="#" style="float:right;padding-right: 10px;"><i class="far fa-bookmark"></i></a>&nbsp;
+                            </p>
+                            
+                        </div>
+
+                        <div class="testimonial-item">
+                            <img src="img/download.jpeg" class="testimonial-img" alt="">
+                            <h3>Project 3</h3>
+                            <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                            <p id="innerp">
+                                <a href="#" style="float:left;color: #fd585c;font-size: medium;padding-left: 2px;">View more</a>
+                                <a href="#" style="float:right;padding-right: 10px;"><i class="far fa-bookmark"></i></a>&nbsp;
+                            </p>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <img src="img/download.jpeg" class="testimonial-img" alt="">
+                            <h3>Project 4</h3>
+                            <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                            <p id="innerp">
+                                <a href="#" style="float:left;color: #fd585c;font-size: medium;padding-left: 2px;">View more</a>
+                                <a href="#" style="float:right;padding-right: 10px;"><i class="far fa-bookmark"></i></a>&nbsp;
+                            </p>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <img src="img/download.jpeg" class="testimonial-img" alt="">
+                            <h3>Project 5</h3>
+                            <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                            <p id="innerp">
+                                <a href="#" style="float:left;color: #fd585c;font-size: medium;padding-left: 2px;">View more</a>
+                                <a href="#" style="float:right;padding-right: 10px;"><i class="far fa-bookmark"></i></a>&nbsp;
+                            </p>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <img src="img/download.jpeg" class="testimonial-img" alt="">
+                            <h3>Project 6</h3>
+                            <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                            <p id="innerp">
+                                <a href="#" style="float:left;color: #fd585c;font-size: medium;padding-left: 2px;">View more</a>
+                                <a href="#" style="float:right;padding-right: 10px;"><i class="far fa-bookmark"></i></a>&nbsp;
+                            </p>
+                        </div>
+                
+                    </div>
+                    <div class="owl-theme">
+                        <div class="owl-controls">
+                            <div class="custom-nav owl-nav"></div>
+                        </div>
+                    </div>
+        
+                </div>
+            </section>       
+
+
+            <h2>Recommended For You</h2>
+            
+
+            <!-- Testimonials Section -->
+            <section id="testimonials" class="testimonials">
+                <div class="main-content-2" data-aos="fade-up">
+
+        
+                    <div class="owl-carousel testimonials-carousel">
+        
+                        <div class="testimonial-item">
+                            <img src="img/download.jpeg" class="testimonial-img" alt="">
+                            <h3>Project 1</h3>
+                            <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                            <p id="innerp">
+                                <a href="#" style="float:left;color: #fd585c;font-size: medium;padding-left: 5px;">View more</a>
+                                <a href="#" style="float:right;padding-right: 10px;"><i class="far fa-bookmark"></i></a>&nbsp;
+                            </p>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <img src="img/download.jpeg" class="testimonial-img" alt="">
+                            <h3>Project 2</h3>
+                            <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                            <p id="innerp">
+                                <a href="#" style="float:left;color: #fd585c;font-size: medium;padding-left: 2px;">View more</a>
+                                <a href="#" style="float:right;padding-right: 10px;"><i class="far fa-bookmark"></i></a>&nbsp;
+                            </p>    
+                            
+                        </div>
+
+                        <div class="testimonial-item">
+                            <img src="img/download.jpeg" class="testimonial-img" alt="">
+                            <h3>Project 3</h3>
+                            <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                            <p id="innerp">
+                                <a href="#" style="float:left;color: #fd585c;font-size: medium;padding-left: 2px;">View more</a>
+                                <a href="#" style="float:right;padding-right: 10px;"><i class="far fa-bookmark"></i></a>&nbsp;
+                            </p>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <img src="img/download.jpeg" class="testimonial-img" alt="">
+                            <h3>Project 4</h3>
+                            <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                            <p id="innerp">
+                                <a href="#" style="float:left;color: #fd585c;font-size: medium;padding-left: 2px;">View more</a>
+                                <a href="#" style="float:right;padding-right: 10px;"><i class="far fa-bookmark"></i></a>&nbsp;
+                            </p>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <img src="img/download.jpeg" class="testimonial-img" alt="">
+                            <h3>Project 5</h3>
+                            <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                            <p id="innerp">
+                                <a href="#" style="float:left;color: #fd585c;font-size: medium;padding-left: 2px;">View more</a>
+                                <a href="#" style="float:right;padding-right: 10px;"><i class="far fa-bookmark"></i></a>&nbsp;
+                            </p>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <img src="img/download.jpeg" class="testimonial-img" alt="">
+                            <h3>Project 6</h3>
+                            <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                            <p id="innerp">
+                                <a href="#" style="float:left;color: #fd585c;font-size: medium;padding-left: 2px;">View more</a>
+                                <a href="#" style="float:right;padding-right: 10px;"><i class="far fa-bookmark"></i></a>&nbsp;
+                            </p>
+                        </div>
+                
+                    </div>
+                    <div class="owl-theme">
+                        <div class="owl-controls">
+                            <div class="custom-nav owl-nav"></div>
+                        </div>
+                    </div>
+        
+                </div>
+            </section>
+            
+        </div> 
 
 
         <!-- Optional JavaScript -->
