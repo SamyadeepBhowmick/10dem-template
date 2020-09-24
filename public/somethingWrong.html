@@ -9,95 +9,66 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/header.css">
 
         <title>10dem Education|Home</title>
     </head>
 
     <body>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-xl navbar-light">
-            <a class="navbar-brand" href="#">10dem Education</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ongoing Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Resources</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Membership
-                        </a>
-                        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+        <header id="header">
+                
+            <nav id="nav-menu-container">
+
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-left">
+                        <!-- <div id="logo">
+                        
+                            <a class="navbar-brand" href="#"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span></a>
+                            
                         </div> -->
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item">
-                                    <h5 class="innerhead">Free</h5>
-                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
-                                    <a href="#" class="innertag">View all</a>
-                                </li>
-                                <li class="nav-item">
-                                    <h5 class="innerhead">Pro</h5>
-                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
-                                    <a href="#" class="innertag">View all</a>
-                                </li>
-                                <li class="nav-item">
-                                    <h5 class="innerhead">Organization</h5>
-                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
-                                    <a href="#" class="innertag">View all</a>
-                                </li>
-                                <li class="nav-item">
-                                    <h5 class="innerhead">Education</h5>
-                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
-                                    <a href="#" class="innertag">View all</a>
-                                </li>
-                                <li class="nav-item">
-                                    <h5 class="innerhead">Non Profits</h5>
-                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
-                                    <a href="#" class="innertag">View all</a>
-                                </li>
+                        <ul class="nav-menu">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Ongoing Project</a></li>
+                            <li class="menu-has-children dropdown-toggle"><a href="">Membership</a>
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item navMember">
+                                        <h5 class="innerhead">Pro</h5>
+                                        <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                        <a href="#" class="innertag">View all</a>
+                                    </li>
+                                    <li class="nav-item navMember">
+                                        <h5 class="innerhead">Organization</h5>
+                                        <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                        <a href="#" class="innertag">View all</a>
+                                    </li>
+                                    <li class="nav-item navMember">
+                                        <h5 class="innerhead">Non Profits</h5>
+                                        <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                        <a href="#" class="innertag">View all</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li style="position: relative;top: -3px;"><a href="#"><i class="fas fa-crown" style="color: rgb(233, 233, 3);"></i>Try 10dem pro</a></li>
+                            <l1><a href="#"><img src="img/notifications.svg"><span style="position: relative;right: 10px;bottom: 10px;padding: 2px 6px;border-radius: 50%;background: red;font-size: 14px;">2</span></a></l1>
+                        </ul>
+                    </div>
+                    
+                    <ul class="nav-menu">
+                        <li><a class="btn-primary" style="border-radius: 5px;position: relative;top: -6px;padding: 4px 8px 6px 8px;" href="#"><i class="fas fa-plus" style="color: rgb(255, 255, 255);"></i>  Start Collaboration</a></li>
+                        <li class="menu-has-children dropdown-toggle navprofile" style="margin-top: 0;"><a href="#" style="color: #000;background: #FFFFFF;border-radius: 50%;height: 35px;width: 35px;text-align: center;padding: 7px;">S</a>
+                            <ul style="right: 0 !important;left: auto !important;width: fit-content;padding-left: 1px !important;padding-right: 1px !important;padding-inline-start: 0px;background: #fff !important;">
+                                <li><a href="#">My profile</a></li>
+                                <li><a href="#">Logout</a></li>
                             </ul>
-                        </div>    
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-crown" style="color: rgb(233, 233, 3);padding-right: 10px;"></i>Try 10dem pro</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contribute Resource</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn-primary"  style="border-radius: 5px;" href="#"><i class="fas fa-plus" style="color: rgb(255, 255, 255);"></i>  Create Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn-primary" id="login" href="#">S</a>
-                    </li>
-                    <li class="nav-item dropdown" style="margin-left: -30px;">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
-                        <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">My Profile</a>
-                            <a class="dropdown-item" href="#">Dashboard</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Logout</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                        </li>
+                    </ul>
+
+                </div>
+            
+            </nav><!-- #nav-menu-container -->
+
+        </header><!-- #header -->
+
 
 
         <div class="wrapper">

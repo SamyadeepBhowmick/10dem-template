@@ -13,119 +13,122 @@
 
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/myprojects.css">
+        <link rel="stylesheet" href="css/header.css">
+        <style>
+            .grid {
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+                grid-auto-rows: 20px;
+                }
+
+                .item {
+                background-color: #ffffff;
+                }
+
+                .photothumb{
+                width: 100%;
+            }
+        </style>
 
         <title>10dem Education|My List</title>
     </head>
 
     <body>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-xl navbar-light">
-            <a class="navbar-brand" href="#">10dem Education</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ongoing Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Resources</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Membership
-                        </a>
-                        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+        <header id="header">
+                
+            <nav id="nav-menu-container">
+
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-left">
+                        <!-- <div id="logo">
+                        
+                            <a class="navbar-brand" href="#"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span></a>
+                            
                         </div> -->
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item">
-                                    <h5 class="innerhead">Free</h5>
-                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
-                                    <a href="#" class="innertag">View all</a>
-                                </li>
-                                <li class="nav-item">
-                                    <h5 class="innerhead">Pro</h5>
-                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
-                                    <a href="#" class="innertag">View all</a>
-                                </li>
-                                <li class="nav-item">
-                                    <h5 class="innerhead">Organization</h5>
-                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
-                                    <a href="#" class="innertag">View all</a>
-                                </li>
-                                <li class="nav-item">
-                                    <h5 class="innerhead">Education</h5>
-                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
-                                    <a href="#" class="innertag">View all</a>
-                                </li>
-                                <li class="nav-item">
-                                    <h5 class="innerhead">Non Profits</h5>
-                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
-                                    <a href="#" class="innertag">View all</a>
-                                </li>
+                        <ul class="nav-menu">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Ongoing Project</a></li>
+                            <li class="menu-has-children dropdown-toggle"><a href="">Membership</a>
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item navMember">
+                                        <h5 class="innerhead">Pro</h5>
+                                        <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                        <a href="#" class="innertag">View all</a>
+                                    </li>
+                                    <li class="nav-item navMember">
+                                        <h5 class="innerhead">Organization</h5>
+                                        <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                        <a href="#" class="innertag">View all</a>
+                                    </li>
+                                    <li class="nav-item navMember">
+                                        <h5 class="innerhead">Non Profits</h5>
+                                        <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                        <a href="#" class="innertag">View all</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li style="position: relative;top: -3px;"><a href="#"><i class="fas fa-crown" style="color: rgb(233, 233, 3);"></i>Try 10dem pro</a></li>
+                            <l1><a href="#"><img src="img/notifications.svg"><span style="position: relative;right: 10px;bottom: 10px;padding: 2px 6px;border-radius: 50%;background: red;font-size: 14px;">2</span></a></l1>
+                        </ul>
+                    </div>
+                    
+                    <ul class="nav-menu">
+                        <li><a class="btn-primary" style="border-radius: 5px;position: relative;top: -6px;padding: 4px 8px 6px 8px;" href="#"><i class="fas fa-plus" style="color: rgb(255, 255, 255);"></i>  Start Collaboration</a></li>
+                        <li class="menu-has-children dropdown-toggle navprofile" style="margin-top: 0;"><a href="#" style="color: #000;background: #FFFFFF;border-radius: 50%;height: 35px;width: 35px;text-align: center;padding: 7px;">S</a>
+                            <ul style="right: 0 !important;left: auto !important;width: fit-content;padding-left: 1px !important;padding-right: 1px !important;padding-inline-start: 0px;background: #fff !important;">
+                                <li><a href="#">My profile</a></li>
+                                <li><a href="#">Logout</a></li>
                             </ul>
-                        </div>    
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-crown" style="color: rgb(233, 233, 3);padding-right: 10px;"></i>Try 10dem pro</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contribute Resource</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn-primary"  style="border-radius: 5px;" href="#"><i class="fas fa-plus" style="color: rgb(255, 255, 255);"></i>  Create Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn-primary" id="login" href="#">S</a>
-                    </li>
-                    <li class="nav-item dropdown" style="margin-left: -30px;">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
-                        <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">My Profile</a>
-                            <a class="dropdown-item" href="#">Dashboard</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Logout</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                        </li>
+                    </ul>
+
+                </div>
+            
+            </nav><!-- #nav-menu-container -->
+
+        </header><!-- #header -->
+
 
         <div class="wrapper">
             <!-- Sidebar  -->
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <img src="img/logo.jpeg" alt="">
+                    <img src="img/10-dem@2x.png" alt="">
                 </div>
+
+                <button type="button" id="sidebarCollapse" class="btn bg-light sidebutton">
+                    <i id="collapse-icon" class="fas fa-angle-left" style="font-size: 50px;"></i>
+                </button>
 
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="#"><box-icon class="bx-fw" name="laptop"></box-icon>  My Projects</a>
+                        <a href="#"><box-icon class="bx-fw" name="file"></box-icon> My Projects&nbsp;&nbsp;&nbsp;&nbsp;</a>
                     </li>
                     <li>
-                        <a href="#"><box-icon class="bx-fw" name='bookmark'></box-icon>  Bookmarks</a>
+                        <a href="#"><box-icon class="bx-fw" name='bookmarks'></box-icon> Bookmarks&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#"><box-icon class="bx-fw" name='folder' ></box-icon>    My Folders</a>
+                    </li> -->
+                    <li>
+                        <a href="#"><box-icon class="bx-fw" name='chat' ></box-icon> Conversations&nbsp;&nbsp;&nbsp;&nbsp;</a>
                     </li>
                     <li>
-                        <a href="#"><box-icon class="bx-fw" name='folder' ></box-icon>  My Folders</a>
+                        <a href="#"><box-icon class="bx-fw" name='user-circle' ></box-icon> Manage Students&nbsp;&nbsp;&nbsp;&nbsp;</a>
                     </li>
                     <li>
-                        <a href="#"><box-icon class="bx-fw" name='user-check' ></box-icon>  Manage Students</a>
+                        <a href="#"><box-icon class="bx-fw" name='book-reader'></box-icon> ABC Organization&nbsp;&nbsp;&nbsp;&nbsp;</a>
                     </li>
                 </ul>
+
+                <div class="learnMore">
+                    <img src="img/explore.svg">
+                    <p>Hello John <br/> Explore <span style="color: #FD585C;cursor: pointer;">Pro account</span> with Premium features.</p>
+                    <button class="btn">Learn more</button>
+                </div>
+
             </nav>
-            
 
             <!-- Page Content  -->
             <div id="content" class="container">
@@ -139,9 +142,9 @@
 
                 <h1 id="mylisth1" style="margin-top: 0;">My List</h1>
 
-                <button type="button" id="sidebarCollapse" class="btn bg-light sidebutton">
+                <!-- <button type="button" id="sidebarCollapse" class="btn bg-light sidebutton">
                     <i id="collapse-icon" class="fas fa-angle-left" style="font-size: 60px;"></i>
-                </button>
+                </button> -->
                 
                 <a href="#" class="float">
                     <img src="img/help.svg" class="my-float" style="width: 30px;height: 30px;" alt="">
@@ -151,28 +154,9 @@
 
                 <div class="listtab">
                     <a href="#"><img src="img/apps2.svg"></a>
-                    <a href="#"><img src="img/dots2.svg" style="background-color: #FD585C;"></a>
-                    <a href="#"><img src="img/bulleted_list.svg"></a>
-                
-                    
-                <!-- sort button -->
+                    <a href="#"><img src="img/dots.svg"></a>
+                    <a href="#"><img src="img/bulleted_list.svg" style="background-color: #FD585C;"></a>
 
-                    <div class="dropdown" id="dropdownright" style="left: 75%;">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Sort
-                        </button>
-                        <div class="dropdown-content">
-                            <a class="dropdown-item" href="#">Date</a>
-                            <a class="dropdown-item" href="#">Grade</a>
-                            <a class="dropdown-item" href="#">Name A-Z</a>
-                            <a class="dropdown-item" href="#">Name Z-A</a>
-                            <a class="dropdown-item" href="#">Globally Collaborated</a>
-                            <a class="dropdown-item" href="#">Assigned Internally</a>
-                        </div>
-                    </div>
-
-                    
-    
                 </div>
 
                 <div style="text-align: center;">
@@ -183,7 +167,7 @@
 
                 <section></section>
 
-                <!-- disable below when no ongoing projects are there -->
+                
                 <!-- <div class="row">
 
                     <div class="col-lg-6">
@@ -309,141 +293,124 @@
 
                 </div> -->
 
-                <style>
-                    .grid {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
-  grid-auto-rows: 20px;
-}
 
-/* Non-grid specific CSS */  
-/* body {
-  margin: 10px;
-    color: #374046;
-    background-color: #374046;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 1.15em;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-} */
 
-.item {
-  background-color: #ffffff;
-}
-
-.photothumb{
-  width: 100%;
-}
-
-.title {
-  padding: 20px;
- }
-
-.title h3{
-  font-size: 1.2em;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.project .title{
-  background-color: #607D8B;
-}
-
-.blog .title{
-  background-color: #ff9800;
-}
-
-.photo .title{
-  background-color: #f44336;
-}
-
-.desc{
-  padding: 10px 10px 5px 10px;
-}
-
-.desc img{
-  width: 50%;
-  margin: 0 10px 10px 0;
-  float: left;
-}
-
-.desc p{
-  margin-bottom: 10px;
-}
-                </style>
+                <!-- disable below when no ongoing projects are there -->
+                
 
                 <div class="row">
                     <div class="col-lg-6">
+
                         <div class="grid">
-                            <div class="item photo">
-                            <div class="content">
-                                <div class="title">
-                                <h3>2: Photo</h3>
-                                </div>
-                                <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg">
-                                <!-- <div class="desc">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
-                                </div> -->
-                            </div>
-                            </div>
-                            <div class="item project">
-                            <div class="content">
-                                <div class="title">
-                                <h3>2: Photo</h3>
-                                </div>
-                                <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg">
-                                <!-- <div class="desc">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
-                                </div> -->
-                            </div>
-                            </div>
-                            <div class="item photo">
-                            <div class="content">
-                                <div class="title">
-                                <h3>2: Photo</h3>
-                                </div>
-                                <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg">
-                                <!-- <div class="desc">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel .</p>
-                                </div> -->
-                            </div>
-                            </div>
-                            <div class="item project">
-                            <div class="content">
-                                <div class="title">
-                                <h3>4: Project</h3>
-                                </div>
-                                <div class="desc">
-                                <img src="http://www.andybarefoot.com/codepen/images/dogs/dog3.jpg">
-                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p> -->
+                            <div class="item">
+                                <div class="content">
+                                    <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg" style="height: 250px;">
                                 </div>
                             </div>
-                            </div>
-                            <div class="item project">
-                            <div class="content">
-                                <div class="title">
-                                <h3>5: Project</h3>
-                                </div>
-                                <div class="desc">
-                                <img src="http://www.andybarefoot.com/codepen/images/dogs/dog4.jpg">
-                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p> -->
+                            <div class="item">
+                                <div class="content">
+                                    <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg" style="height: 250px;">                
                                 </div>
                             </div>
-                            </div>
-                            <div class="item project">
-                            <div class="content">
-                                <div class="title">
-                                <h3>5: Project</h3>
-                                </div>
-                                <div class="desc">
-                                <img src="http://www.andybarefoot.com/codepen/images/dogs/dog4.jpg">
-                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p> -->
+                            <div class="item">
+                                <div class="content">
+                                    <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg" style="height: 312px;">
                                 </div>
                             </div>
+                            <div class="item">
+                                <div class="content">                                 
+                                    <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg" style="height: 250px;">      
+                                </div>
                             </div>
-                            
+                            <div class="item">
+                                <div class="content">
+                                    <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg" style="height: 250px;">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">  
+                                    <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg" style="height: 190px;">
+                                </div>
+                            </div>             
                         </div>
+
+                        <h3 style="margin: 15px 0px 30px 0;">Social Science</h3>
+                            
+                    </div>
+                    <div class="col-lg-6">
+
+                        <div class="grid">
+                            <div class="item">
+                                <div class="content">
+                                    <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg" style="height: 250px;">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg" style="height: 250px;">                
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg" style="height: 312px;">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">                                 
+                                    <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg" style="height: 250px;">      
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg" style="height: 250px;">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">  
+                                    <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg" style="height: 190px;">
+                                </div>
+                            </div>             
+                        </div>
+
+                        <h3 style="margin: 15px 0px 30px 0;">Social Science</h3>
+                            
+                    </div>
+                    <div class="col-lg-6">
+
+                        <div class="grid">
+                            <div class="item">
+                                <div class="content">
+                                    <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg" style="height: 250px;">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg" style="height: 250px;">                
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg" style="height: 312px;">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">                                 
+                                    <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg" style="height: 250px;">      
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg" style="height: 250px;">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">  
+                                    <img class="photothumb" src="http://www.andybarefoot.com/codepen/images/dogs/dog1.jpg" style="height: 190px;">
+                                </div>
+                            </div>             
+                        </div>
+
+                        <h3 style="margin: 15px 0px 30px 0;">Social Science</h3>
                             
                     </div>
                 </div>
@@ -469,32 +436,32 @@
         <script src="js/index.js"></script>
         <script>
             function resizeGridItem(item){
-  grid = document.getElementsByClassName("grid")[0];
-  rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
-  rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
-  rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
-    item.style.gridRowEnd = "span "+rowSpan;
-}
+                grid = document.getElementsByClassName("grid")[0];
+                rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+                rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+                rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+                    item.style.gridRowEnd = "span "+rowSpan;
+            }
 
-function resizeAllGridItems(){
-  allItems = document.getElementsByClassName("item");
-  for(x=0;x<allItems.length;x++){
-    resizeGridItem(allItems[x]);
-  }
-}
+            function resizeAllGridItems(){
+                allItems = document.getElementsByClassName("item");
+                for(x=0;x<allItems.length;x++){
+                    resizeGridItem(allItems[x]);
+                }
+            }
 
-function resizeInstance(instance){
-    item = instance.elements[0];
-  resizeGridItem(item);
-}
+            function resizeInstance(instance){
+                    item = instance.elements[0];
+                resizeGridItem(item);
+            }
 
-window.onload = resizeAllGridItems();
-window.addEventListener("resize", resizeAllGridItems);
+            window.onload = resizeAllGridItems();
+            window.addEventListener("resize", resizeAllGridItems);
 
-allItems = document.getElementsByClassName("item");
-for(x=0;x<allItems.length;x++){
-  imagesLoaded( allItems[x], resizeInstance);
-}
+            allItems = document.getElementsByClassName("item");
+            for(x=0;x<allItems.length;x++){
+            imagesLoaded( allItems[x], resizeInstance);
+            }
         </script>
     </body>
 </html>
