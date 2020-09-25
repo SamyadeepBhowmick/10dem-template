@@ -724,6 +724,43 @@ input:focus {
   color: #272727;;
 }
 
+   /* Search option */
+   #custom-search-input2 {
+    /* margin: 7px 0; */
+    padding: 0;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  #custom-search-input2 .search-query {
+    width: 80%;
+    height: 40px;
+    padding: 2px;
+    position: relative;
+    top: 15px;
+  
+    border: 1px solid #80808066;
+    border-right: none;
+  
+  }
+  
+  #custom-search-input2 button {
+    height: 40px;
+    border: 0;
+    background: none;
+    margin: 10px 0;
+
+    position: relative;
+    top: 5px;
+    
+    border: 1px solid #80808066;
+    border-left: none;
+    border-radius: 0;
+    color: #272727;;
+  }
+
 /* 
 /* pagination */
 /* .page-link {
@@ -875,7 +912,7 @@ input:focus {
 }
 .input100{
     width: 100%;
-    height: 60px;
+    height: 50px;
     margin-bottom: 20px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 2px solid #70707029;
@@ -1081,7 +1118,7 @@ button.close {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-.input100 {
+.input110 {
   display: block;
   width: 100%;
   height: 60px;
