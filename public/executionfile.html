@@ -8,17 +8,21 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         
+
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/assignment.css">
         <link rel="stylesheet" href="css/droparea.css">
         <link rel="stylesheet" href="css/header.css">
 
+
         <title>10dem Education|Assignment</title>
+        <style>
+            
+        </style>
         
     </head>
 
     <body>
-        
         <header id="header">
                 
             <nav id="nav-menu-container">
@@ -73,358 +77,137 @@
 
         </header><!-- #header -->
 
-
-        <div style="background: #ffffff;height: 100px;width: 100%;justify-content: center;padding: 20px;">
-            <div class="row">
-                <div class="col-lg-4"></div>
-                <div class="col-lg-4" style="text-align: center;"><h2>Fundamental of Design</h2></div>
-                <div class="col-lg-4"><img src="img/cross.svg" style="float: right;"></div>
-            </div>
-        </div>
-
+        
 
         <div class="row" style="width: 100%">
             <div class="col-lg-9" style="padding-right: 0;">
-                <div class="container-fluid" style="height: 98.6%;">
-                   
-                    <!-- breadcrumb -->                    
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Physics Project</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Execution</li>
-                        </ol>
-                    </nav>
-            
-                    <!-- Activity -->
-                    <div class="d-flex justify-content-left">
-                        <h1>Activity 2</h1>
-                        <div class="indication" style="margin: 3rem 20px;">
-                            <a>Due By 22/08/2020</a>
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb" style="margin-left: 50px;">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Physics Project</li>
+                    </ol>
+                </nav>
+
+                <div class="container-fluid">
+
+                    <h1>Fundamental of Design</h1>
+                    <p>Social Science | Ecommerce and Economics | Sustainable Development Goals</p>
+                    <div class="d-flex justify-content-left keywords">
+                        <p>Art</p>
+                        <p>Color theory</p>
+                        <p>Asthetics</p>
+                    </div>
+                    <div class="row" style="margin: 40px 0;padding: 20px 0;border-bottom: 1px solid #c5c5c5;border-top: 1px solid #c5c5c5;">
+                        <div class="col-lg-2 pad">
+                            <h5 class="activity" style="color: #2727274D;border: none;">Project Info</h5>
+                        </div>
+                        <div class="col-lg-2 pad">
+                            <h5 class="activity">Submission</h5>
                         </div>
                     </div>
-
                     
-                    <p id="innerpara">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur dolore eu fugiat nulla pariatur Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eusss fugiat nulla pariatur lore eu fugiat nulla pariatur pariatur.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur lored seu fugiat nulla pariatur pariatur Duis aute irure dolor in reprehenderit in voluptate velit essecillumssss dolore eu fugiat nulla pariatur lore eu fugiat nulla pariatur pariatur
-                    </p>
-
-                    <hr style="border: 2px solid #FFDB64;margin-bottom: 30px;">
                     
+                    <h3>Attach Files</h3>
+
                     <!-- Uploaded files -->
 
-                    <div class="row">
-
-                        <!-- <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="card" style="background: #ffffff;align-items: center;">
-                                <div style="padding: 25px;">
-                                    <img src="img/add.svg" style="width: 120px;height: 120px;border-radius: 50%;background: #FFFFFF 0% 0% no-repeat padding-box;box-shadow: 0px 0px 6px #0000001A;opacity: 1;" class="" alt="...">
-                                    <p style="padding-left: 20px;margin-top: 10px;color: #272727;">Add File<p>
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <!-- <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="card">
-                                <img src="img/download.jpeg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <a href="#" style="float:left;"><img src="img/pdf.png" class="imagefix2" alt="">Research report1</a>
-                                    <div class="dropdown" style="float:right;">
-                                        <img src="img/more_ver.svg" style="width: 30px;height: 30px;" alt="">
-                                        <div class="dropdown-content">
-                                            <a href="#"><img src="img/preview.svg" class="imagefix">Preview</a>
-                                            <a data-toggle="modal" data-target="#exampleModalCenter2"><img src="img/rename.svg" class="imagefix">Rename</a>
-                                            <a data-toggle="modal" data-target="#exampleModalCenter3"><img src="img/delete.svg" class="imagefix">Delete</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                  
+                    <div id="drop-area">
+                        <div class="my-form">
+                            <input type="file" id="fileElem" multiple accept=".doc,.docx,.xls,.xlsx,.csv,.ppt,.pptx,.pdf,.png,.jpeg,.jpg" onchange="handleFiles(this.files)">
+                            <label class="button" for="fileElem"><img src="img/pin.svg">Drop your files here or choose files</label>
                         </div>
-
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="card">
-                                <img src="img/download.jpeg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <a href="#" style="float:left;"><img src="img/image.svg" class="imagefix2" alt="">Research report2</a>
-                                    <div class="dropdown" style="float:right;">
-                                        <img src="img/more_ver.svg" style="width: 30px;height: 30px;" alt="">
-                                        <div class="dropdown-content">
-                                            <a href="#"><img src="img/preview.svg" class="imagefix">Preview</a>
-                                            <a data-toggle="modal" data-target="#exampleModalCenter2"><img src="img/rename.svg" class="imagefix">Rename</a>
-                                            <a data-toggle="modal" data-target="#exampleModalCenter3"><img src="img/delete.svg" class="imagefix">Delete</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="card">
-                                <img src="img/download.jpeg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <a href="#" style="float:left;"><img src="img/image.svg" class="imagefix2" alt="">Research report3</a>
-                                    <div class="dropdown" style="float:right;">
-                                        <img src="img/more_ver.svg" style="width: 30px;height: 30px;" alt="">
-                                        <div class="dropdown-content">
-                                            <a href="#"><img src="img/preview.svg" class="imagefix">Preview</a>
-                                            <a data-toggle="modal" data-target="#exampleModalCenter2"><img src="img/rename.svg" class="imagefix">Rename</a>
-                                            <a data-toggle="modal" data-target="#exampleModalCenter3"><img src="img/delete.svg" class="imagefix">Delete</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="card">
-                                <img src="img/download.jpeg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <a href="#" style="float:left;"><img src="img/doc.png" class="imagefix2" alt="">Research report4</a>
-                                    <div class="dropdown" style="float:right;">
-                                        <img src="img/more_ver.svg" style="width: 30px;height: 30px;" alt="">
-                                        <div class="dropdown-content">
-                                            <a href="#"><img src="img/preview.svg" class="imagefix">Preview</a>
-                                            <a data-toggle="modal" data-target="#exampleModalCenter2"><img src="img/rename.svg" class="imagefix">Rename</a>
-                                            <a data-toggle="modal" data-target="#exampleModalCenter3"><img src="img/delete.svg" class="imagefix">Delete</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="card">
-                                <img src="img/download.jpeg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <a href="#" style="float:left;"><img src="img/pdf.png" class="imagefix2" alt="">Research report5</a>
-                                    <div class="dropdown" style="float:right;">
-                                        <img src="img/more_ver.svg" style="width: 30px;height: 30px;" alt="">
-                                        <div class="dropdown-content">
-                                            <a href="#"><img src="img/preview.svg" class="imagefix">Preview</a>
-                                            <a data-toggle="modal" data-target="#exampleModalCenter2"><img src="img/rename.svg" class="imagefix">Rename</a>
-                                            <a data-toggle="modal" data-target="#exampleModalCenter3"><img src="img/delete.svg" class="imagefix">Delete</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <!-- module -->
-                       
-                        <div class="col-lg-12">
-                            <h2>Attach Files</h2>
-                            <div id="drop-area">
-                                <div class="my-form">
-                                  <input type="file" id="fileElem" multiple accept=".doc,.docx,.xls,.xlsx,.csv,.ppt,.pptx,.pdf,.png,.jpeg,.jpg" onchange="handleFiles(this.files)">
-                                  <label class="button" for="fileElem"><img src="img/pin.svg"> Add or drag file to upload</label>
-                                </div>
-                                <div id="gallery" class="row"></div>
-                            </div>
-                        </div>
-
-                        
-                        
-
-                        <!-- Rename Modal -->
-                        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                <h4 class="modal-title" id="exampleModalLongTitle">Rename</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                </div>
-                                <div class="modal-body" style="text-align:justify">
-                                    <p>Please enter the new name for the item</p>
-                                    <form>
-                                          <textarea class="form-control"></textarea>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn modalbutton1" data-dismiss="modal">Cancel</button>
-                                    <button type="button" class="btn modalbutton2">Ok</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-
-                        
-
-                        <!-- Delete Modal -->
-                        <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                <h4 class="modal-title" id="exampleModalLongTitle">Delete the project?</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>You will not be able to recover <span style="color: #494949;">"Research report1"</span></p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn modalbutton1" data-dismiss="modal">Cancel</button>
-                                    <button type="button" class="btn modalbutton2">Delete</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-
-                        
-
+                        <div id="gallery" class="row"></div>
                     </div>
-                 
-    
+
+
+                    <!-- Text Area -->
+
                     <div class="col-lg-12 pad">
-                        <button type="button" class="btn linkbutton" data-toggle="modal" data-target="#exampleModalCenter1">Save and Continue</button>
-                    </div>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                            <h4 class="modal-title" id="exampleModalLongTitle">Confirm Submit Project?</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Once you submit the project you can't edit again</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn modalbutton1" data-dismiss="modal">No, Edit Again</button>
-                                <button type="button" class="btn modalbutton2">Yes</button>
-                            </div>
-                        </div>
+                        <div class="texteditor">
+                            <textarea id="editor"></textarea>
                         </div>
                     </div>
+                       
 
+                    <div style="margin-top: 60px;margin-bottom: 60px;text-align: center;">
+                        <button type="button" class="btn">Submit</button>
+                    </div>
 
-                    
                     <section>&nbsp;</section>
 
                 </div>
             </div>
-            
 
-            <!-- Details -->
-
-
+             <!-- Details -->
             <div class="col-lg-3" style="padding-right: 0;">
                 <div class="container-fluid pad mt-3" style="height: 99%;">
                     <div class="row">
                         <div class="col-lg-12 pad">
                             <div class="detailbutton">
-                                Activity List ( 3 )
+                                Details
                             </div>
                         </div>
-                        <div class="col-lg-12 pad">
-                            <div class="upcoming1">
-
-                                <div class="row">                                                      
-    
-                                    <div class="col-lg-12">
-
-                                        <div class="row ro">
-
-                                            <div class="col-lg-2 activitydiv1">
-                                                <img src="img/done.svg" id="1" class="imagefix1" alt="">01
-                                            </div>
-                                            <div class="col-lg-10 pad">
-                                               
-                                                <div class="activitydiv2">
-                                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-lg-12">
-
-                                        <div class="row ro">
-
-                                            <div class="col-lg-2 activitydiv1">
-                                                <img src="img/done.svg" id="2" class="imagefix1" alt="">02
-                                            </div>
-                                            <div class="col-lg-10 pad">
-                                               
-                                                <div class="activitydiv2">
-                                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-lg-12">
-
-                                        <div class="row ro">
-
-                                            <div class="col-lg-2 activitydiv1">
-                                                <img src="img/done.svg" id="3" class="imagefix1" alt="">03
-                                            </div>
-                                            <div class="col-lg-10 pad">
-                                               
-                                                <div class="activitydiv2">
-                                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                    
-
-                                    <div class="col-lg-4"></div>
-                                    
-                                </div>
+                        <!-- <div class="col-lg-6 pad">
+                            <div class="chatbutton">
+                                Chat
                             </div>
-                            
-                        </div>
+                        </div> -->
                         <div class="col-lg-12">
-                            <div style="margin: 40px;">
-                                <h3>Comment:</h3>
-                                <textarea placeholder="Type something(Optional)..."></textarea>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 pad">
-                            <button type="button" class="btn activitybutton" data-toggle="modal" data-target="#exampleModalCenter">Submit</button>
-                        </div>
+                            <div class="row">
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                                <div class="col-lg-2">
+                                    <div class="symbol1"><img src="img/peopletick.svg" class="imagefix" alt=""></div>
                                 </div>
-                                <div class="modal-body" style="text-align:justify">
-                                    <p>Your data is saved with us, you may continue uploading your files when you come back next time.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn modalbutton1" data-dismiss="modal">No, Edit Again</button>
-                                    <button type="button" class="btn modalbutton2">Sure Exit</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
 
+                                <div class="col-lg-10">
+                                    <h3>Assign By</h3>
+                                    <p id="innerpara">Ms. Priya Parkar</p>
+                                </div>
+
+                                <div class="col-lg-2">
+                                    <div class="symbol1"><img src="img/group2.svg" class="imagefix" alt=""></div>
+                                </div>
+
+                                <div class="col-lg-10">
+                                    <h3>Group Members</h3>
+                                    <p id="innerpara">Olive Yew</p>
+                                </div>
+
+                                <div class="col-lg-2">
+                                    <div class="symbol1"><img src="img/info.svg" class="imagefix" alt=""></div>
+                                </div>
+
+                                <div class="col-lg-10">
+                                    <h3>Submission Details</h3>
+                                    <!-- <h5 class="activity">Activity 1</h5> -->
+                                    <div class="row">
+                                        
+                                        <div class="col-lg-6 pad">
+                                            <h5 style="font-family: ProductR;">Assigned On</h5>
+                                            <p id="innerpara">22/02/2020</p>
+                                        </div>
+                                        <div class="col-lg-6 pad">
+                                            <h5 style="font-family: ProductR;">Due By</h5>
+                                            <p id="innerpara">28/02/2020</p>
+                                        </div>
+                                    </div>
+                                   
+                                          
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
+            
+        
 
         <footer><p>10dem © 2020</p></footer>
-
 
 
         <!-- Optional JavaScript -->
@@ -539,40 +322,70 @@
                 let files=document.createElement('div')
                 files.classList.add('col-lg-4')
                 files.innerHTML=`
-                        <div class="card">
-                            <img src="img/download.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <a href="#" style="float:left;"><img src="${src}" class="imagefix2" alt="">${file.name}</a>
-                                    <div class="dropdown" style="float:right;">
-                                        <img src="img/more_ver.svg" style="width: 30px;height: 30px;" alt="">
-                                        <div class="dropdown-content">
-                                            <a href="#"><img src="img/preview.svg" class="imagefix">Preview</a>
-                                            <a data-toggle="modal" data-target="#exampleModalCenter2"><img src="img/rename.svg" class="imagefix">Rename</a>
-                                            <a data-toggle="modal" data-target="#exampleModalCenter3"><img src="img/delete.svg" class="imagefix">Delete</a>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div style="margin: 10px;">
+                        <div class="row" style="padding: 10px;background: #FCFCFC 0% 0% no-repeat padding-box;border: 2px solid #70707029">
+                            <div class="col-lg-11 p-0 d-flex justify-content-left">
+                                <img src="${src}" style="height: 56px;width: 56px;margin-right: 15px;">
+                                <div>
+                                    <p>${file.name}</p>
+                                    <p class="filesize">${((file.size)/1000).toFixed(0)}&nbsp;KB</p>
+                                </div> 
+                            </div>
+                            
+                            <div class="col-lg-1 p-0">
+                                <img src="img/cross.svg" style="height: 24px;width: 24px;margin: 0;">
                             </div>
                         </div>
+                    </div>
                     `
                 document.getElementById('gallery').appendChild(files)
 
             }
-
-            $('.imagefix1').click(function(){
-                var idName=$(this).attr('id')
-                if ($('#'+idName).css('background-color')=='rgba(112, 112, 112, 0.3)'){
-                    $('#'+idName).css('background-color','#4BB543');
-                }
-                else {
-                    $('#'+idName).css('background-color','rgba(112, 112, 112, 0.3)');
-                }
-            
-            })
-
-            
-
         </script>
+        <script src="js/build/ckeditor.js"></script>
+        <script>ClassicEditor
+			.create( document.querySelector( '#editor' ), {
+				
+				toolbar: {
+					items: [
+						'undo',
+						'redo',
+						'|',
+						'bold',
+						'italic',
+						'underline',
+						'|',
+						'fontColor',
+						'fontSize',
+						'fontFamily',
+						'|',
+						'bulletedList',
+						'numberedList',
+						'alignment',
+						'|',
+						'specialCharacters',
+						'pageBreak',
+						'exportPdf',
+					]
+				},
+				language: 'en',
+				licenseKey: '',
+                
+				
+			} )
+			.then( editor => {
+				window.editor = editor;
+		
+
+				
+			} )
+			.catch( error => {
+				console.error( 'Oops, something went wrong!' );
+				console.error( 'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:' );
+				console.warn( 'Build id: lx24fbxhq5yi-iz5wel70h9kx' );
+				console.error( error );
+			} );
+	</script>
+        
     </body>
 </html>

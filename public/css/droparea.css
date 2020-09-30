@@ -8,9 +8,20 @@
     border-color: purple;
 }
 
+.my-form {
+    width: 100%;
+    height: 170px;
+    background: #FD585C1A 0% 0% no-repeat padding-box;
+    border: 2px dashed #FD585C80;
+    border-radius: 4px;
+}
+
 .my-form .button {
-    display: inline-block;
-    color: #fd585c;
+    text-align: center;
+    display: block;
+    position: relative;
+    top: 45%;
+    color: #272727;
     font-weight: 600;
     font-size: 18px;
     cursor: pointer;
