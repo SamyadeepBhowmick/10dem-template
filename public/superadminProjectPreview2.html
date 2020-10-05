@@ -1,0 +1,901 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/adminDashboard.css">
+        <link rel="stylesheet" href="css/droparea.css">
+        <title>10dem Education|Dashboard</title>
+
+        <style>
+            #drop-area1 {
+                width: 100%;
+                height: 180px;
+                background: #FD585C1A 0% 0% no-repeat padding-box;
+                border: 2px dashed #FD585C80;
+                border-radius: 4px;
+            }
+
+            #gallery1 {
+                margin-top: 0px;
+                position: relative;
+                bottom: 52x;
+            }
+
+            #gallery1 img {
+                width: 100%;
+                height: 172px;
+                padding: 0;
+                vertical-align: middle;
+            }
+
+            .my-form1 .button {
+                text-align: center;
+                display: block;
+                position: absolute;
+                top: 44%;
+                left: 29%;
+                color: #272727;
+                font-weight: 600;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            #fileElem1 {
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="sidebar">
+            <div style="height: 100px;"></div>
+            <div class="sidebarDiv">
+                <img src="img/language.svg" class="sidebarImg">
+            </div>
+            <div class="sidebarDiv">
+                <img src="img/language.svg" class="sidebarImg">
+            </div>
+            <div class="sidebarDiv">
+                <img src="img/language.svg" class="sidebarImg">
+            </div>
+            <div class="sidebarDiv">
+                <img src="img/language.svg" class="sidebarImg">
+            </div>
+        </div>
+
+        <div style="background: #FCFCFC;position: absolute;left: 70px;right: 0px;">
+
+            <header>
+                
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between">
+                        <img src="img/logo.jpeg" style="width: 50px;height: 50px;">
+                        <p style="padding: 0 8px;">LIFECOACHING<br/>Betterlife</p>
+                    </div>
+                    
+                    <div class="d-flex justify-content-left">
+                        <img src="img/person_circle.svg" style="width: 40px;height: 40px;border-radius: 50%;">
+                        <p style="padding: 8px;font-size: 18px;">John Doe</p>
+                    </div>
+                </div>
+                
+            </header>
+
+            <div class="container" style="max-width: 80%;margin-top: 50px;padding: 40px 80px;background: #FFFFFF 0% 0% no-repeat padding-box;box-shadow: 0px 0px 6px #00000024;">
+
+                <h5 style="padding: 5px 15px;color: #27272780;text-transform: uppercase;">New project</h5>
+                <h4 style="font-family: ProductB;font-size: 30px;padding: 5px 15px;">Create a new project</h4>
+    
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="row" style="width: 100%;height: 70px;border-bottom: 2px solid #00000029;border-top: 2px solid #00000029;margin: 2rem 0 1rem 0;">
+                            <div class="col-lg-6">
+                                <h4 style="padding: 20px 0;">Preview Project</h4>
+                            </div>
+                            <div class="col-lg-6">
+                                <h4 style="float: right;padding: 20px 0;color: #FD585C;cursor: pointer;">Save</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" style="text-align: center;">
+                        <div class="dropdown">
+                            <button class="btn" style="width: 210px;height: 50px;position: relative;top: 40px;box-shadow: 0px 1px 3px #00000033;border: 2px solid #FD585C;color: #FD585C;">Publish</button>
+                            <div class="dropdown-content" style="width: 320px;height: 185px;padding: 20px;background: #FFFFFF 0% 0% no-repeat padding-box;box-shadow: 0px 9px 19px #00000029;opacity: 1;top: 90px;left: 40px;">
+
+                                <p style="float: left;margin: 0;font-size: 16px;color: #0000004C;cursor: pointer;">Save as Draft</p>
+                                <hr style="float: left;width: 280px;margin: 5px 0;background: #E6E8F1;">
+                                <p style="float: left;color: #272727;font-size: 16px;margin: 0 30px 0 0;">Share with</p>
+
+                                <div class="d-flex justify-content-between" style="float: left;">
+                                    <input type="radio" id="all" name="">
+                                    <label for="all" style="margin: 0 20px 5px 10px;position: relative;bottom: 5px;">All</label><br>
+                                    <input type="radio" id="others" name="">
+                                    <label for="others" style="margin: 0 20px 5px 10px;position: relative;bottom: 5px;">Org / Pro / Non-profit</label><br>
+                                </div>
+                                
+                                <div style="text-align: right;float: right;">
+                                    <button class="btn selectEducator2">Cancel</button>
+                                    <button class="btn selectEducator1">Publish</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+
+                        <div class="row adminform">
+
+                            <section  id="section1">
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h3>Basic Information</h3>
+                                        <div class="underline"></div>
+                                    </div>
+                                    
+                                    <div class="col-lg-12">
+                                        <h4>Project Title</h4>                             
+                                    </div>
+                                
+                                    <div class="col-lg-12">
+                                        <input class="input100" type="text" name="name" value="Fundamental of Design">
+                                    </div>
+    
+                                    <div class="col-lg-12">
+                                        <h4>Summary</h4>                             
+                                    </div>
+    
+                                    <!-- Text Area -->
+    
+                                    <div class="col-lg-12 pad">
+                                        <div class="texteditor" style="margin-bottom: 30px;">
+                                            <textarea id="editor" placeholder="Overview of project..">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</textarea>
+                                        </div>
+                                   </div>   
+                                </div>
+
+                            </section>
+
+                            <section id="section2">
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h3>Subject and Grade</h3>
+                                        <div class="underline"></div>
+                                    </div>
+    
+                                    <div class="col-lg-12">
+                                        <h4>Subject</h4>                             
+                                    </div>
+    
+                                    <div class="col-lg-12">
+                                        <div class="dropdown" style="width: 100%;">
+                                            <div class="d-flex">
+                                                <input class="input100" id="subject" style="overflow-y: hidden;">
+                                                <img src="img/expand.svg" style="float: right;position: absolute;top: 14px;right: 8px;">
+                                            </div>
+                                            <div class="dropdown-content" style="width: 100%;background: #FFFFFF 0% 0% no-repeat padding-box;box-shadow: 0px 3px 14px #00000029;border-radius: 6px;opacity: 1;top: 50px;">
+                                                <div class="upcoming1" style="height: 300px;">
+    
+                                                    <div id="custom-search-input2">
+                                                        <div class="input-group col-lg-12">
+                                                            <input type="text" class="search-query form-control" placeholder="Search"/>
+                                                            <span class="input-group-btn">
+                                                                <button class="btn btn-danger" type="button">
+                                                                    <i class="fas fa-search"></i>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                
+                                                    <a class="memberfields 0">
+                                                        <div class="d-flex justify-content-left">
+                                                            <div class="memberfieldimage">
+                                                                <input type="checkbox" name="" id="0" class="inputcheck">
+                                                            </div>
+                                                            <div class="memberfieldname 0">All</div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="memberfields 1">
+                                                        <div class="d-flex justify-content-left">
+                                                            <div class="memberfieldimage">
+                                                                <input type="checkbox" name="" id="1" class="inputcheck">
+                                                            </div>
+                                                            <div class="memberfieldname 1">Chemistry</div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="memberfields 2">
+                                                        <div class="d-flex justify-content-left">
+                                                            <div class="memberfieldimage">
+                                                                <input type="checkbox" name="" id="2" class="inputcheck">
+                                                            </div>
+                                                            <div class="memberfieldname 2">
+                                                                Physics
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="memberfields 3">
+                                                        <div class="d-flex justify-content-left">
+                                                            <div class="memberfieldimage">
+                                                                <input type="checkbox" name="" id="3" class="inputcheck">
+                                                            </div>
+                                                            <div class="memberfieldname 3">
+                                                                Sustainable Development Goals
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="memberfields 4">
+                                                        <div class="d-flex justify-content-left">
+                                                            <div class="memberfieldimage">
+                                                                <input type="checkbox" name="" id="4" class="inputcheck">
+                                                            </div>
+                                                            <div class="memberfieldname 4">
+                                                                Language
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="memberfields 5">
+                                                        <div class="d-flex justify-content-left">
+                                                            <div class="memberfieldimage">
+                                                                <input type="checkbox" name="" id="5" class="inputcheck">
+                                                            </div>
+                                                            <div class="memberfieldname 5">
+                                                                Health
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="memberfields 6">
+                                                        <div class="d-flex justify-content-left">
+                                                            <div class="memberfieldimage">
+                                                                <input type="checkbox" name="" id="6" class="inputcheck">
+                                                            </div>
+                                                            <div class="memberfieldname 6">
+                                                                Science
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="memberfields 7">
+                                                        <div class="d-flex justify-content-left">
+                                                            <div class="memberfieldimage">
+                                                                <input type="checkbox" name="" id="7" class="inputcheck">
+                                                            </div>
+                                                            <div class="memberfieldname 7">
+                                                                Map
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="memberfields 8">
+                                                        <div class="d-flex justify-content-left">
+                                                            <div class="memberfieldimage">
+                                                                <input type="checkbox" name="" id="8" class="inputcheck">
+                                                            </div>
+                                                            <div class="memberfieldname 8">
+                                                                Social Science
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="memberfields 9">
+                                                        <div class="d-flex justify-content-left">
+                                                            <div class="memberfieldimage">
+                                                                <input type="checkbox" name="" id="9" class="inputcheck">
+                                                            </div>
+                                                            <div class="memberfieldname 9">
+                                                                Ecommerce and Economics
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-12">
+                                        <h4>Grade</h4>                             
+                                    </div>
+    
+                                    <div class="col-lg-12">
+                                        <div class="dropdown" style="width: 100%;">
+                                            <div class="d-flex">
+                                                <input class="input100" id="subject" style="overflow-y: hidden;">
+                                                <img src="img/expand.svg" style="float: right;position: absolute;top: 14px;right: 8px;">
+                                            </div>
+                                            <div class="dropdown-content" style="width: 100%;background: #FFFFFF 0% 0% no-repeat padding-box;box-shadow: 0px 3px 14px #00000029;border-radius: 6px;opacity: 1;top: 50px;">
+                                                <div class="upcoming1" style="height: 300px;">
+    
+                                                    <div id="custom-search-input2">
+                                                        <div class="input-group col-lg-12">
+                                                            <input type="text" class="search-query form-control" placeholder="Search"/>
+                                                            <span class="input-group-btn">
+                                                                <button class="btn btn-danger" type="button">
+                                                                    <i class="fas fa-search"></i>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                
+                                                    <a class="memberfields 0">
+                                                        <div class="d-flex justify-content-left">
+                                                            <div class="memberfieldimage">
+                                                                <input type="checkbox" name="" id="0" class="inputcheck">
+                                                            </div>
+                                                            <div class="memberfieldname 0">All</div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="memberfields 1">
+                                                        <div class="d-flex justify-content-left">
+                                                            <div class="memberfieldimage">
+                                                                <input type="checkbox" name="" id="1" class="inputcheck">
+                                                            </div>
+                                                            <div class="memberfieldname 1">Grade 8-9</div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="memberfields 2">
+                                                        <div class="d-flex justify-content-left">
+                                                            <div class="memberfieldimage">
+                                                                <input type="checkbox" name="" id="2" class="inputcheck">
+                                                            </div>
+                                                            <div class="memberfieldname 2">
+                                                                Grade 6-7
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a class="memberfields 3">
+                                                        <div class="d-flex justify-content-left">
+                                                            <div class="memberfieldimage">
+                                                                <input type="checkbox" name="" id="3" class="inputcheck">
+                                                            </div>
+                                                            <div class="memberfieldname 3">
+                                                                Grade 4-5
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </section>
+
+                            <section id="section3">
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h3>Keywords and Questions</h3>
+                                        <div class="underline"></div>
+                                    </div>
+        
+                                    <div class="col-lg-12">
+                                        <h4>Keywords</h4>                             
+                                    </div>
+        
+                                    <div class="col-lg-12">
+                                        <input class="input100" type="text" name="name">
+                                    </div>
+        
+                                    <div class="col-lg-12">
+                                        <h4>Inquiry Question</h4>                             
+                                    </div>
+        
+                                    <div class="col-lg-12">
+                                        <div class="d-flex justify-content-between">
+                                            <input class="input100" type="text" name="name" value="What is sustainability management ?">
+                                            <button class="btn" style="width: 160px;height: 50px;margin-left: 30px;box-shadow: 0px 1px 3px #00000033;border: 2px solid #FD585C;color: #FD585C;"><img src="img/redplus.svg">Add More</button>                                   
+                                        </div>
+                                        
+                                        <div class="d-flex justify-content-between inquiry">
+                                            <p>What was your idea behind the concept?</p>
+                                            <img src="img/close.svg">
+                                        </div>
+        
+                                        <div class="d-flex justify-content-between inquiry">
+                                            <p>What was your idea behind the concept?</p>
+                                            <img src="img/close.svg">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </section>
+
+                            <section id="section4">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h3>Section 4</h3>
+                                        <div class="underline"></div>
+                                    </div>
+        
+                                    <div class="col-lg-12">
+                                        <h4>Learning Outcome</h4>                             
+                                    </div>
+        
+                                    <div class="col-lg-12">
+                                        <textarea class="textinput100" type="text" name="name" placeholder="Student learning at the end of the project..">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</textarea>
+                                    </div>
+        
+                                    <div class="col-lg-12">
+                                        <h4>Key Contribution (Key Contribution)</h4>                             
+                                    </div>
+        
+                                    <div class="col-lg-12">
+                                        <textarea class="textinput100" type="text" name="name" placeholder="Eg. SDG alignment , community, impact etc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</textarea>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="section5">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h3>Project Cover</h3>
+                                        <div class="underline"></div>
+                                    </div>
+        
+                                    <div class="col-lg-12">
+                                        <h4>Project Cover</h4>
+                                        <div class="d-flex justify-content-between">
+                                            <p style="color: #27272780;">Upload image less than 1200px * 600px and 100kb</p>
+                                            <a style="color: #FD585C;cursor: pointer;">Remove</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div id="drop-area1">
+                                            <div class="my-form1">
+                                                <!-- <input type="file" id="fileElem1" multiple accept=".png,.jpeg,.jpg" onchange="handleFiles1(this.files1)">
+                                                <label class="button" for="fileElem1"><img src="img/redplus.svg">Drop your image here or choose files</label> -->
+                                            </div>
+                                            <div id="gallery1">
+                                                <img src="img/10-dem@2x.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="section6">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h3>Activity</h3>
+                                        <div class="underline"></div>
+                                    </div>
+
+                                    <div class="row" style="width: 100%;height: 60px;border-bottom: 2px solid #00000029;margin: 0;">
+                                        <div class="col-xl-3 col-lg-4 col-md-4">
+                                            <p class="navtabs" style="color: #FD585C;border-bottom: 4px solid #FD585C;font-size: 24px;padding-bottom: 24px;">Activity 1</p>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4">
+                                            <p class="navtabs" style="font-size: 24px;padding-bottom: 24px;">Activity 2</p>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col-lg-12">
+                                        <div class="row adminform" style="margin: 30px 0px;padding: 40px;background: #FFFFFF 0% 0% no-repeat padding-box;
+                                        border: 2px solid #EFEFEF;">
+                                            
+                                            <div class="col-lg-12">
+                                                <h4>Activity 1</h4>                             
+                                            </div>
+                                           
+                                            <div class="col-lg-12">
+                                                <input class="input100" type="text" name="name" placeholder="Activity title" value="Lorem ipsum dolor sit amet">
+                                            </div>
+                
+                                            <div class="col-lg-12">
+                                                <h4>Description</h4>                             
+                                            </div>
+                
+                                            <!-- Text Area -->
+                
+                                            <div class="col-lg-12">
+                                                <textarea class="textinput100" type="text" name="name" placeholder="Activity Details..">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</textarea>
+                                            </div>
+                
+                                            <div class="col-lg-2">
+                                                <div id="drop-area">
+                                                    <div class="my-form" style="height: 234px;">
+                                                        <input type="file" id="fileElem" multiple accept=".doc,.docx,.xls,.xlsx,.csv,.ppt,.pptx,.pdf,.png,.jpeg,.jpg" onchange="handleFiles(this.files)">
+                                                        <label class="button" for="fileElem"><img src="img/redplus.svg" style="width: 45px;height: 45px;position: relative;bottom: 14px;"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <div class="d-flex justify-content-between inquiry" style="width: 100%;height: 35px;margin: 0 0 10px 0;padding: 6px 10px;border-left: 4px solid #325981;">
+                                                    <p>Allowed type: doc. docx. pdf. txt. png. jpg</p>
+                                                    <p>Maximum: 4 files</p>
+                                                </div>
+                                                <div id="gallery" style="margin-top: 0;" class="row"></div>
+                                            </div>
+                                            
+                                           
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <button class="btn cancel" style="float: right;position: relative;top: 10px;width: 170px;height: 50px;padding: 10px;font-size: 14px;color: #FD585C;"><img src="img/delete4.svg">Delete Activity</button>
+                                    </div>
+                
+                                </div>
+                            </section>
+   
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 sidebarw">
+                        <div style="position: fixed;top: 420px;padding: 0 80px;">
+                            <h3>Contents</h3>
+
+                            <nav class="">
+                                
+                                <ul style="list-style-type: none;padding: 0;">
+                
+                                    <li><a href="#section1" class="sidenavigation">Basic Information</a></li>
+                
+                                    <li><a href="#section2" class="sidenavigation">Subject and Grade</a></li>
+                
+                                    <li><a href="#section3" class="sidenavigation">Keywords and Questions</a></li>
+                
+                                    <li><a href="#section4" class="sidenavigation">Section 4</a></li>
+                
+                                    <li><a href="#section5" class="sidenavigation">Project Cover</a></li>
+
+                                    <li><a href="#section6" class="sidenavigation">Activity</a></li>
+                
+                                </ul>
+                
+                            </nav>
+
+
+                        </div> 
+                    </div>
+
+                </div>
+
+            </div>
+
+            <footer><p>10dem © 2020</p></footer>
+
+        </div>
+        <!-- end of container -->
+
+        
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/6f24662773.js" crossorigin="anonymous"></script>
+        <script src="js/build/ckeditor.js"></script>
+        <script>ClassicEditor
+			.create( document.querySelector( '#editor' ), {
+				
+				toolbar: {
+					items: [
+						'undo',
+						'redo',
+						'|',
+						'bold',
+						'italic',
+						'underline',
+						'|',
+						'fontColor',
+						'fontSize',
+						'fontFamily',
+						'|',
+						'bulletedList',
+						'numberedList',
+						'alignment',
+						'|',
+						'specialCharacters',
+						'pageBreak',
+						'exportPdf',
+					]
+				},
+				language: 'en',
+				licenseKey: '',
+                
+				
+			} )
+			.then( editor => {
+				window.editor = editor;
+		
+
+				
+			} )
+			.catch( error => {
+				console.error( 'Oops, something went wrong!' );
+				console.error( 'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:' );
+				console.warn( 'Build id: lx24fbxhq5yi-iz5wel70h9kx' );
+				console.error( error );
+			} );
+    </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        
+        $(document).ready(function () {
+        
+            $(window).scroll(function(){
+            
+                var window_top = $(window).scrollTop() + 12;
+        
+                // the "12" should equal the margin-top value for nav.stickydiv
+        
+                var div_top = $('#checkdiv').offset().top;
+        
+                if (window_top >= div_top) {
+        
+                        $('nav').addClass('stickydiv');
+        
+                } else {
+    
+                    $('nav').removeClass('stickydiv');
+    
+                }
+        
+            }); 
+
+            $(document).on("scroll", onScroll);
+
+            $('a[href^="#"]').on('click', function (e) {
+            
+                e.preventDefault();
+            
+                $(document).off("scroll");
+        
+                $('a').each(function () {
+        
+                    $(this).removeClass('active');
+        
+                })
+        
+                $(this).addClass('active');
+        
+                var target = this.hash,
+        
+                menu = target;
+        
+                $target = $(target);
+            
+                $('html, body').stop().animate({
+            
+                        'scrollTop': $target.offset().top+2
+            
+                }, 600, 'swing', function () {
+            
+                    window.location.hash = target;
+        
+                    $(document).on("scroll", onScroll);
+            
+                });
+            
+            });
+            
+        });
+
+        function onScroll(event){
+            
+            var scrollPos = $(document).scrollTop();
+        
+            $('.sidebarw a').each(function () {
+        
+                var currLink = $(this);
+    
+                var refElement = $(currLink.attr("href"));
+        
+                if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        
+                    $('.sidebarw ul li a').removeClass("active");
+        
+                    currLink.addClass("active");
+        
+                }
+        
+                else{
+        
+                    currLink.removeClass("active");
+        
+                }
+        
+            });
+        
+        }
+        
+    </script>
+    
+    <script>
+        let dropArea = document.getElementById('drop-area')
+
+        ;['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            dropArea.addEventListener(eventName, preventDefaults, false)
+        })
+
+        function preventDefaults (e) {
+            e.preventDefault()
+            e.stopPropagation()
+        }
+
+
+        ;['dragenter', 'dragover'].forEach(eventName => {
+            dropArea.addEventListener(eventName, highlight, false)
+        })
+
+        ;['dragleave', 'drop'].forEach(eventName => {
+            dropArea.addEventListener(eventName, unhighlight, false)
+        })
+
+        function highlight(e) {
+            dropArea.classList.add('highlight')
+        }
+
+        function unhighlight(e) {
+            dropArea.classList.remove('highlight')
+        }
+
+        dropArea.addEventListener('drop', handleDrop, false)
+
+        function handleDrop(e) {
+            let dt = e.dataTransfer
+            let files = dt.files
+
+            handleFiles(files)
+        }
+
+        function handleFiles(files) {
+            files = [...files]
+            // files.forEach(uploadFile)
+            files.forEach(previewFile)
+        }
+
+        // function uploadFile(file) {
+        //     let url = 'YOUR URL HERE'
+        //     let formData = new FormData()
+        //     formData.append('file', file)
+        //     fetch(url, {
+        //     method: 'POST',
+        //     body: formData
+        //     })
+        //     .then(() => { /* Done. Inform the user */ })
+        //     .catch(() => { /* Error. Inform the user */ })
+        // }
+
+        function previewFile(file) {
+            // let reader = new FileReader()
+            // reader.readAsDataURL(file)
+            // reader.onloadend = function() {
+            // let img = document.createElement('img')
+            // img.src = reader.result
+            // document.getElementById('gallery').appendChild(img)
+            var src;
+            switch (file.type) {
+                case 'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
+                    src = 'img/doc.png'
+                    break;
+                case 'application/vnd.openxmlformats-officedocument.presentationml.presentation':
+                    src = 'img/doc.png'
+                    break;
+                case 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
+                    src = 'img/doc.png'
+                    break;
+                case 'application/msword':
+                    src = 'img/doc.png'
+                    break;
+                case 'application/vnd.ms-excel':
+                    src = 'img/doc.png'
+                    break; 
+                case 'application/vnd.ms-powerpoint':
+                    src = 'img/doc.png'
+                    break;
+                case 'text/csv':
+                    src = 'img/doc.png'
+                    break;
+                case 'application/pdf':
+                    src = 'img/pdf.png'
+                    break;
+                case 'image/jpg':
+                    src = 'img/image.svg'
+                    break;
+                case 'image/png':
+                    src = 'img/image.svg'
+                    break;
+                case 'image/jpeg':
+                    src = 'img/image.svg'
+                    break;  
+            }
+
+
+            let files=document.createElement('div')
+            files.classList.add('col-lg-6')
+            files.innerHTML=`
+                <div style="margin: 10px 15px;">
+                    <div class="row" style="padding: 10px;background: #FCFCFC 0% 0% no-repeat padding-box;border: 2px solid #70707029">
+                        <div class="col-lg-11 p-0 d-flex justify-content-left">
+                            <img src="${src}" style="height: 56px;width: 56px;margin-right: 15px;">
+                            <div>
+                                <p>${file.name}</p>
+                                <p class="filesize">${((file.size)/1000).toFixed(0)}&nbsp;KB</p>
+                            </div> 
+                        </div>
+                        
+                        <div class="col-lg-1 p-0">
+                            <img src="img/cross.svg" style="height: 24px;width: 24px;margin: 0;">
+                        </div>
+                    </div>
+                </div>
+                `
+            document.getElementById('gallery').appendChild(files)
+
+        }
+
+    </script>
+    <script>
+        let dropArea1 = document.getElementById('drop-area1')
+            
+        ;['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+        dropArea1.addEventListener(eventName, preventDefaults1, false)
+        })
+
+        function preventDefaults1 (e) {
+            e.preventDefault()
+            e.stopPropagation()
+        }
+
+        ;['dragenter', 'dragover'].forEach(eventName => {
+        dropArea1.addEventListener(eventName, highlight1, false)
+        })
+
+        ;['dragleave', 'drop'].forEach(eventName => {
+        dropArea1.addEventListener(eventName, unhighlight1, false)
+        })
+
+        function highlight1(e) {
+            dropArea1.classList.add('highlight')
+        }
+
+        function unhighlight1(e) {
+            dropArea1.classList.remove('highlight')
+        }
+        
+        dropArea1.addEventListener('drop', handleDrop1, false)
+
+        function handleDrop1(e) {
+            let dt = e.dataTransfer
+            let files1 = dt.files1
+
+            handleFiles1(files1)
+        }
+
+        function previewFile1(file) {
+            let reader = new FileReader()
+            reader.readAsDataURL(file)
+            reader.onloadend = function() {
+                let img = document.createElement('img')
+                img.src = reader.result
+                document.getElementById('gallery1').appendChild(img)
+            }
+        }
+
+        function handleFiles1(files1) {
+            files1 = [...files1]
+            // files1.forEach(uploadFile)
+            files1.forEach(previewFile1)
+        }
+
+    </script>
+        
+    </body>
+</html>

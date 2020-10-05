@@ -804,6 +804,7 @@ footer p {
     
   }
   .input100{
+      display: block;
       width: 100%;
       height: 50px;
       margin-bottom: 20px;
@@ -1233,4 +1234,116 @@ footer p {
   /* box-shadow: 0px 1px 3px #00000033; */
   border-radius: 4px;
   border: 1px solid #dddddd;
+}
+
+.sidenavigation {
+  display: block;
+  padding: 15px;
+  margin: 0;
+  font-size: 20px;
+  color: #27272780;
+  border-left: 4px solid #E6E8F1;
+  cursor: pointer;
+}
+
+.sidenavigation.active {
+  color: #FD585C;border-left: 4px solid #FD585C;font-weight: 600;
+}
+
+.sidenavigation:hover {
+  color: #FC787C;
+}
+
+.adminform{
+  padding: 12px 15px 12px 30px;
+}
+
+.adminform .inquiry {
+  height: 50px;
+  padding: 15px;
+  margin: 10px 168px 10px 0;
+  color: #272727B3;
+  background: #F3F7FD;
+}
+
+.adminform .underline {
+  width: 32px;
+  height: 4px;
+  margin-bottom: 30px;
+  background: transparent linear-gradient(90deg, #FD585C 0%, #FD585C80 100%) 0% 0% no-repeat padding-box;
+  border-radius: 2px;  
+}
+
+.adminform h3 {
+  color: #686868;
+  font-size: 26px;
+  padding: 0;
+  padding-bottom: 10px;
+  margin: 50px 0 0 0;
+  
+}
+
+.adminform h4{
+  padding: 0;
+}
+
+.adminform .input100 {
+  margin-bottom: 30px;
+}
+
+.preview-p {
+  padding: 15px 0;
+  font-size: 18px;
+  color: #03293D;
+  text-align: justify;
+}
+
+.previewp1 {
+  padding: 5px 10px;
+  margin: 15px 10px 25px 0;
+  background: #E2EAFA66 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #272727B3;
+}
+
+.textinput100 {
+  display: block;
+  outline: none;
+  width: 100%;
+  height: 175px;
+  padding: 20px 5px;
+  margin-bottom: 50px;
+  
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #70707029;
+  border-radius: 4px;
+}
+
+.texteditor {
+  overflow-y: scroll;
+  height: 200px;
+  border: 2px solid #70707029;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+.ck.ck-editor__main>.ck-editor__editable:not(.ck-focused) {
+  border: none;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 22px;
+  font-family: ProductR;
+  letter-spacing: 0px;
+  color: #272727;
+  opacity: 0.31;
+}
+
+textarea::-webkit-input-placeholder {
+  font-size: 22px;
+  font-family: ProductR;
+  letter-spacing: 0px;
+  color: #272727;
+  opacity: 0.31;
 }
