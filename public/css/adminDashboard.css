@@ -1347,3 +1347,68 @@ textarea::-webkit-input-placeholder {
   color: #272727;
   opacity: 0.31;
 }
+
+/* admin dashboard page 2 */
+.stats {
+  width: 100%;
+  height: 160px;
+  padding: 20px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 20px 80px #00000011;
+  border-radius: 10px;
+}
+
+.stats h1 {
+  font-size: 55px;
+  font-family: ProductR;
+  color: #161616;  
+}
+
+.stats p {
+  margin: 0;
+  font-size: 17px;
+  font-family: ProductR;
+  color: #8D8D8D;
+}
+
+.arrow-adjust {
+  width: 25px;
+  height: 125px;
+  position: relative;
+  top: 15px;
+  right: 10px;
+  background: transparent linear-gradient(181deg, #FD585C7F 0%, #FD585C 100%) 0% 0% no-repeat padding-box;
+  border-radius: 7px;  
+}
+
+.arrow-adjust img {
+  position: relative;
+  top: 50px;
+  left: 4px;
+}
+
+.add-on {
+  width: 100%;
+  height: 140px;
+  padding: 24px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 20px 50px #00000012;
+  border-radius: 8px;
+}
+
+.add-on img {
+  width: 93px;
+  height: 93px;
+  border-radius: 50%;
+  padding: 10px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 6px #00000029;
+}
+
+.add-on p {
+  padding: 22px;
+  font-size: 30px;
+  font-family: ProductR;
+  letter-spacing: 0px;
+  color: #FD585C;
+}
