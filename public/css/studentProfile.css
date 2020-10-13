@@ -253,7 +253,7 @@
 .input100 {
     display: block;
     width: 100%;
-    height: 50px;
+    height: 40px;
     padding: 0 5px;
     outline: none;
     margin-bottom: 30px;
@@ -553,4 +553,100 @@ button.close {
   font-family: ProductB;
   letter-spacing: 0px;
   color: #272727;
+}
+
+/* ---------------------------------------------------
+    Breadcrumb
+    ----------------------------------------------------- */
+
+  .breadcrumb {
+      display: -ms-flexbox;
+      font-family: ProductR;
+      font-size: 22px;
+      color: #272727;
+      padding: 1rem 0;
+      list-style: none;
+      background-color: #fcfcfc;
+      border-radius: .25rem;
+  }
+  
+  .breadcrumb-item.active {
+      color: #FD585C;
+  }
+  
+  .breadcrumb-item+.breadcrumb-item::before {
+      display: inline-block;
+      padding-right: .5rem;
+      color: #272727;
+      content: ">>";
+  }
+
+
+  .update {
+    width: 150px;
+    height: 40px;
+    margin: 20px 15px;
+    background: #FD585C 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 3px #00000033;
+    border-radius: 4px;
+    font-size: 16px;
+    font-size: ProductB;
+    letter-spacing: 1.43px;
+    color: #FFFFFF;  
+  }
+
+  .cancel {
+    width: 150px;
+    height: 40px;
+    margin: 20px 15px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #FD585C;
+    border-radius: 4px;
+    font-size: 16px;
+    font-size: ProductB;
+    letter-spacing: 1.43px;
+    color: #27272782;
+  }
+
+
+/* scrolling */
+
+.upcoming2 {
+  height: 600px;
+  overflow-y: scroll;
+  overflow-x: hidden;   
+}
+
+/* width */
+.upcoming2::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+.upcoming2::-webkit-scrollbar-track {
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  border-radius: 11px;
+  opacity: 1;
+}
+ 
+/* Handle */
+.upcoming2::-webkit-scrollbar-thumb {
+  background: #FD585CCC 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  opacity: 1;
+}
+
+/* Handle on hover */
+.upcoming2::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 0, 0); 
+}
+
+.inputcheck {
+  width: 20px;
+  height: 20px;
+}
+
+.memberfieldname {
+  font-size: 18px;
+  padding-left: 20px;
 }
