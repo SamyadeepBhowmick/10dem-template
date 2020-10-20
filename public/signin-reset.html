@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="css/util.css">
         <link rel="stylesheet" href="css/signup.css">
 
-        <title>10dem Education|Sign Up</title>
+        <title>10dem Education|Sign In</title>
 		<style>
         .sign_up_bg {
             background-image: url("img/resized_img.jpg");
@@ -50,7 +50,7 @@
                     <div class="col-lg-4 col-md-12">
                         <form class="validate-form">
                             <span class="login100-form-title m-t-30">
-                                Sign Up
+                                Sign In
                             </span>
 
                             <!-- <div class="text-center p-b-20">
@@ -78,41 +78,37 @@
                                 <p><span style="position: relative;top: -8px;">_________________&nbsp;&nbsp;</span>Or<span style="position: relative;top: -8px;">&nbsp;&nbsp;_________________</span></p>
                             </div> -->
 
-                            <div class="wrap-input100">
-                                <input class="input100" type="text" name="name">
-                                <span class="focus-input100"></span>
-                                <span class="label-input100">Full Name</span>
-                            </div>
-
                             
                             <div class="wrap-input100 validate-input" data-validate = "Please enter a valid email address">
-                                <input class="input100" type="text" name="email">
+                                <input class="input100" type="text" name="text">
                                 <span class="focus-input100"></span>
-                                <span class="label-input100">Email Address</span>
-                            </div>
-
-                            <div class="wrap-input100 validate-input" data-validate = "Please enter a valid email address">
-                                <input class="input100" type="text" name="email">
-                                <span class="focus-input100"></span>
-                                <span class="label-input100">Phone Number (optional)</span>
+                                <span class="label-input100">Email ID/Phone</span>
                             </div>
                             
                             <div class="wrap-input100 validate-input" data-validate="Please enter a valid password" data-toggle="tooltip">
-                                <input class="input100" type="password" id="psw" name="pass">
-                                <span class="focus-input100"></span>
-                                <span class="label-input100">Password</span>
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <input class="input100" type="password" id="psw" name="pass">
+                                        <span class="focus-input100"></span>
+                                        <span class="label-input100">Reset Password</span>
+                                    </div>
+                                    <img src="img/show.svg" style="position: relative;bottom: 25px;left: 180px;cursor: pointer;">
+                                </div>
                             </div>
 
         
                             <div class="container-login100-form-btn">
                                 <button class="login100-form-btn">
-                                    Sign Up
+                                    Sign In
                                 </button>
                             </div>
 
                             <div class="text-center p-t-20 p-b-20">
-                                <p>Already have an account? <span><a href="" class="txt1">Sign In</a></span></p>
-                                
+                                <a href="" class="txt1">Forget Password?</a>
+                            </div>
+
+                            <div class="text-center p-t-20 p-b-20">
+                                <p>Don't have an account? <span><a href="" class="txt1">Sign Up</a></span></p>
                             </div>
                             
                         </form>

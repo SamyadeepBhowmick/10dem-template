@@ -1379,7 +1379,8 @@ textarea::-webkit-input-placeholder {
   top: 15px;
   right: 10px;
   background: transparent linear-gradient(181deg, #FD585C7F 0%, #FD585C 100%) 0% 0% no-repeat padding-box;
-  border-radius: 7px;  
+  border-radius: 7px;
+  cursor: pointer;
 }
 
 .arrow-adjust img {
@@ -1434,7 +1435,7 @@ textarea::-webkit-input-placeholder {
 .feeds p {
   margin: 0;
   text-align: justify;
-  font-size: 15px;
+  font-size: 17px;
   font-family: ProductR;
 }
 
