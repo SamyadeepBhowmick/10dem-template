@@ -11,7 +11,37 @@
         <link rel="stylesheet" href="css/adminDashboard.css">
 
         <title>10dem Education|Dashboard</title>
-        
+        <style>
+            .modal-content {
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 0px 30px #0000003D;
+                border-radius: 4px;
+            }
+            .modal-body h4 {
+                margin: 0;
+                color: #686868;
+                font-size: 20px;
+            }
+            .modal-body p {
+                margin-bottom: 5px;
+                color: #686868CC;
+                font-size: 15px;
+            }
+            .modal-body textarea { 
+                padding: 5px;
+                margin-bottom: 20px;
+            }
+            .modal-body .input100 { 
+                height: 40px;
+            }
+            .modal-body button { 
+                width: 80px;
+                height: 40px;
+                color: #FFFFFF;
+                background: #FD585C 0% 0% no-repeat padding-box;
+                border-radius: 2px;            
+            }
+        </style>
     </head>
 
     <body>
@@ -28,7 +58,7 @@
                 <img src="img/language.svg" class="sidebarImg">
             </div>
             <div class="sidebarDiv">
-                <img src="img/language.svg" class="sidebarImg">
+                <img src="img/error.svg" class="sidebarImg" data-toggle="modal" data-target="#exampleModalCenter1">
             </div>
         </div>
 
@@ -233,6 +263,51 @@
 
         </div>
         <!-- end of container -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body" style="text-align:justify">
+                    <div style="padding: 0 20px 0 20px;">
+    
+                        <h4 style="padding-left: 0;">Report / Feedback</h4>
+                        <p style="margin-bottom: 20px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+    
+                        <p style="padding-left: 0;">Report type:</p>
+                        <div class="dropdown" style="width: 100%;">
+                            <div class="d-flex">
+                                <input class="input100" style="overflow-y: hidden;" placeholder="Select report type">
+                                <img src="img/expand.svg" style="float: right;position: absolute;top: 10px;right: 8px;">
+                            </div>
+                            <div class="dropdown-content" style="width: 100%;background: #FFFFFF 0% 0% no-repeat padding-box;box-shadow: 0px 3px 14px #00000029;border-radius: 6px;opacity: 1;top: 50px;">
+                                <div class="upcoming1" style="height: 150px;">
+                                    <a>Technical Issue</a>
+                                    <a>Feature request</a> 
+                                    <a>Report abuse</a>
+                                    <a>Other</a>     
+                                </div>
+
+                            </div>
+                        </div>
+                        <p style="padding-left: 0;">Report type:</p>
+                        <textarea class="textinput100" placeholder="Type something..."></textarea> 
+                        
+                        <div class="d-flex justify-content-between">
+                            <div style="position: relative;top: 8px;">
+                                <input type="checkbox" id="checks" name="checks">
+                                <label for="checks">&nbsp;Please keep me informed for any updates.</label><br>
+                            </div>
+                            <button type="button" class="btn" data-dismiss="modal">Send</button>
+                        </div>
+    
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+        <!-- Modal ENDS -->
         
 
 

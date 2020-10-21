@@ -9,6 +9,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
         <link rel="stylesheet" href="css/adminDashboard.css">
 
         <title>10dem Education|Dashboard</title>
@@ -28,8 +29,91 @@
             margin: 0;
             padding: 0;
             }
+
+            .stats {
+                width: 200px;
+                background: #ffffff 0% 0% no-repeat padding-box;
+                box-shadow: none;
+                border-radius: none;
+            }
+
+            .arrow-adjust {
+                position: absolute;
+                right: 5px;
+            }
+
+            .wholediv {
+                background: #ffffff 0% 0% no-repeat padding-box;box-shadow: 0px 20px 80px #00000011;border-radius: 10px;
+            }
+
+            .mem {
+                width: 100%;
+                padding: 20px 40px;
+            }
+
+            .mem h3 {
+                font-size: 30px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .mem p {
+                margin-bottom: 2px;
+                font-size: 16px;
+                color: #68686899;
+            }
+
+            #map {
+                height: 400px;
+                /* The height is 400 pixels */
+                width: 100%;
+                /* The width is the width of the web page */
+            }
+
+            /* Flatpickr */
+            .flatpickr-day.today{
+            background-color: #FD585C;
+            border: 0;
+            color: #ffffff
+            }
+
+            .flatpickr-day.selected{
+            background-color: #ffffff;
+            border: 2px solid #FD585C;
+            color: #272727;
+            }
+
+            .flatpickr-day:hover{
+            background-color: #fd585c;
+            color: #ffffff;
+            }
+
+            .flatpickr-day.selected:hover{
+            background-color: #fd585c;
+            color: #ffffff;
+            border: 2px solid #FD585C;
+            }
+
         
         </style>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" defer></script>
+        <script>
+            // Initialize and add the map
+            function initMap() {
+            // The location of Uluru
+            const uluru = { lat: -25.344, lng: 131.036 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+            }
+      </script>
         
     </head>
 
@@ -80,43 +164,55 @@
 
                 <div class="row" style="margin: 2rem 0;">
                     <div class="col-lg-3">
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex wholediv">
                             <div class="stats">
                                 <h1>150</h1>
                                 <p>Pro Members</p>
                             </div>
+                            <div style="background: #ffffff;">
+                                <div id="container1" style="position: relative;top: 10px;right: 30px;"></div>
+                            </div>
                             <div class="arrow-adjust">
                                 <img src="img/arrow-right.svg">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex wholediv">
                             <div class="stats">
                                 <h1>150</h1>
                                 <p>Org Members</p>
                             </div>
+                            <div style="background: #ffffff;">
+                                <div id="container2" style="position: relative;top: 10px;right: 30px;"></div>
+                            </div>
                             <div class="arrow-adjust">
                                 <img src="img/arrow-right.svg">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex wholediv">
                             <div class="stats">
                                 <h1>150</h1>
                                 <p>No-Profit Members</p>
                             </div>
+                            <div style="background: #ffffff;">
+                                <div id="container3" style="position: relative;top: 10px;right: 30px;"></div>
+                            </div>
                             <div class="arrow-adjust">
                                 <img src="img/arrow-right.svg">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex wholediv">
                             <div class="stats">
                                 <h1>200</h1>
                                 <p>Free Members</p>
+                            </div>
+                            <div style="background: #ffffff;">
+                                <div id="container4" style="position: relative;top: 10px;right: 30px;"></div>
                             </div>
                             <div class="arrow-adjust">
                                 <img src="img/arrow-right.svg">
@@ -134,7 +230,7 @@
 
                 <div class="row" style="margin: 2rem 0;">
                     <div class="col-lg-3">
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex wholediv">
                             <div class="stats">
                                 <h1>240</h1>
                                 <p>10dem Projects</p>
@@ -145,7 +241,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex wholediv">
                             <div class="stats">
                                 <h1>14</h1>
                                 <p>Projects In Draft</p>
@@ -156,7 +252,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex wholediv">
                             <div class="stats">
                                 <h1>14</h1>
                                 <p>Ongoing Projects</p>
@@ -167,7 +263,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex wholediv">
                             <div class="stats">
                                 <h1>14</h1>
                                 <p>Externally Collaborated Projects</p>
@@ -181,7 +277,45 @@
 
                 <div class="row" style="margin: 2rem 0;">
                     <div class="col-lg-8">
-                        
+                        <div class="d-flex justify-content-between">
+                            <div style="width: 100%;">
+                                <div id="map"></div>
+                                <div class="d-flex justify-content-between" style="background: #ffffff;">
+                                    <p style="color: #727373;padding: 12px;">Select the location</p>     
+                                    <div class="d-flex">
+                                        <p style="color: #727373;padding: 12px;border-top: 2px solid #FD585C    ;">All</p>
+                                        <p style="color: #727373;padding: 12px;">Delhi</p>
+                                        <p style="color: #727373;padding: 12px;">Australia</p>
+                                        <p style="color: #727373;padding: 12px;">Mumbai</p>
+                                        <p style="color: #727373;padding: 12px;">UAE</p>
+                                        <p style="color: #727373;padding: 12px;">More</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div style="height: 465px;background: #ffffff;">
+                                <div class="mem">
+                                    <p>Pro Members</p>
+                                    <h3>150</h3>
+                                    <div style="width: 40px;height: 5px;background: #2896E9 0% 0% no-repeat padding-box;"></div>
+                                </div>
+                                <div class="mem">
+                                    <p>Org Members</p>
+                                    <h3>150</h3>
+                                    <div style="width: 40px;height: 5px;background: #FFDB64 0% 0% no-repeat padding-box;"></div>
+                                </div>
+                                <div class="mem">
+                                    <p>Non-Profit Members</p>
+                                    <h3>150</h3>
+                                    <div style="width: 40px;height: 5px;background: #FF3D00 0% 0% no-repeat padding-box;"></div>
+                                </div>
+                                <div class="mem">
+                                    <p>Free Members</p>
+                                    <h3>200</h3>
+                                    <div style="width: 40px;height: 5px;background: #1CCB56 0% 0% no-repeat padding-box;"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="feeds">
@@ -234,14 +368,25 @@
                 <div class="row" style="margin: 2rem 0;">
                     <div class="col-lg-8">
                         <div style="background: #FFFFFF;padding: 20px;">
-                            <div>
-                                <h4 style="padding: 10px 5px 0px 5px;">Weekly Statistics</h4>
-                                <p style="margin-bottom: 10px;margin-left: 5px;font-size: 12px;color: #8D8D8D;">Registered Members Statistics</p>
-                                <div style="margin-left: 5px;width: 32px;height: 4px;background: transparent linear-gradient(90deg, #FD585C 0%, #FD585C80 100%) 0% 0% no-repeat padding-box;border-radius: 2px;"></div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h4 style="padding: 10px 5px 0px 5px;">Weekly Statistics</h4>
+                                    <p style="margin-bottom: 10px;margin-left: 5px;font-size: 12px;color: #8D8D8D;">Registered Members Statistics</p>
+                                    <div style="margin-left: 5px;width: 32px;height: 4px;background: transparent linear-gradient(90deg, #FD585C 0%, #FD585C80 100%) 0% 0% no-repeat padding-box;border-radius: 2px;"></div>
+                                </div>
+                                <div class="dropdown">
+                                    <box-icon size="md" name='calendar-edit' style="cursor: pointer;"></box-icon>
+                                    <div class="dropdown-content" id="Dropdown" style="min-width: 130px;position: absolute;top: 40px;display: none;">
+                                        <h4 class="h44">From</h4>
+                                        <input class="line flatpickr">
+                                        <h4 class="h44">To</h4>
+                                        <input class="line flatpickr">
+                                        <button class="btn" style="width: 75px;height: 31px;margin: 10px 20px 10px 20px;padding: 0px;background: #EBEBEB 0% 0% no-repeat padding-box;border-radius: 4px;">Done</button>
+                                    </div>
+                                </div>  
                             </div>
                             <div id="container" style="height: 400px;"></div>
-                        </div>
-                        
+                        </div> 
                     </div>
                     <div class="col-lg-4">
                         <div style="background: #FFFFFF;padding: 20px;height: 100%;">
@@ -549,6 +694,103 @@
             });
         
         </script>
-            
+        <script>
+            // create data
+            var data = [
+            ["1", 2],
+            ["2", 4],
+            ["3", 11],
+            ["4", 9]
+            ];
+                
+            // create a chart
+            chart = anychart.line();
+
+            // create a line series and set the data
+            var series = chart.line(data);
+
+            // set the container id
+            chart.container("container1");
+
+            // initiate drawing the chart
+            chart.draw();
+        </script>
+        <script>
+            // create data
+            var data = [
+            ["1", 2],
+            ["2", 4],
+            ["3", 11],
+            ["4", 9]
+            ];
+                
+            // create a chart
+            chart = anychart.line();
+
+            // create a line series and set the data
+            var series = chart.line(data);
+
+            // set the container id
+            chart.container("container2");
+
+            // initiate drawing the chart
+            chart.draw();
+        </script>
+        <script>
+            // create data
+            var data = [
+            ["1", 2],
+            ["2", 4],
+            ["3", 11],
+            ["4", 9]
+            ];
+                
+            // create a chart
+            chart = anychart.line();
+
+            // create a line series and set the data
+            var series = chart.line(data);
+
+            // set the container id
+            chart.container("container3");
+
+            // initiate drawing the chart
+            chart.draw();
+        </script>
+        <script>
+            // create data
+            var data = [
+            ["1", 2],
+            ["2", 4],
+            ["3", 11],
+            ["4", 9]
+            ];
+                
+            // create a chart
+            chart = anychart.line();
+
+            // create a line series and set the data
+            var series = chart.line(data);
+
+            // set the container id
+            chart.container("container4");
+
+            // initiate drawing the chart
+            chart.draw();
+        </script>
+        <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+        <!-- DatePicker -->
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script>
+            $('.flatpickr').flatpickr({
+                
+            });
+            $('.dropdown').on('click',function(){
+                $('#Dropdown').css('display','block');
+            })
+            $('').on('click',function(){
+                $('#Dropdown').css('display','none');
+            })
+        </script>
     </body>
 </html>
