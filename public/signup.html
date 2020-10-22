@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
     <head>
@@ -11,6 +10,8 @@
        
         <link rel="stylesheet" href="css/util.css">
         <link rel="stylesheet" href="css/signup.css">
+        <link rel="stylesheet" href="build/css/intlTelInput.css">
+        <!-- <link rel="stylesheet" href="build/css/demo.css"> -->
 
         <title>10dem Education|Sign Up</title>
 		<style>
@@ -91,10 +92,21 @@
                                 <span class="label-input100">Email Address</span>
                             </div>
 
-                            <div class="wrap-input100 validate-input" data-validate = "Please enter a valid email address">
-                                <input class="input100" type="text" name="email">
+                            <div class="wrap-input100 validate-input" data-validate = "Please enter a valid email address">                             
+                                <input class="input100" id="phone" name="phone" type="tel">
+                                <style>
+                                    .iti {
+                                        width: 100%;
+                                        display: block;
+                                    }
+                                    .iti--allow-dropdown .iti__flag-container, .iti--separate-dial-code .iti__flag-container {
+                                        right: auto;
+                                        bottom: 2px;
+                                    }
+                                </style>
+                                <!-- <input class="input100" type="text" name="email"> -->
                                 <span class="focus-input100"></span>
-                                <span class="label-input100">Phone Number (optional)</span>
+                                <span class="label-input100" style="position: absolute;top: 20px;">Phone Number (optional)</span>
                             </div>
                             
                             <div class="wrap-input100 validate-input" data-validate="Please enter a valid password" data-toggle="tooltip">
@@ -208,6 +220,33 @@
                 length.classList.add("invalid");
             }
             }
+        </script>
+        <script src="build/js/intlTelInput.js"></script>
+        <script>
+            var input = document.querySelector("#phone");
+            window.intlTelInput(input, {
+            // allowDropdown: false,
+            // autoHideDialCode: false,
+            // autoPlaceholder: "off",
+            // dropdownContainer: document.body,
+            // excludeCountries: ["us"],
+            // formatOnDisplay: false,
+            // geoIpLookup: function(callback) {
+            //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+            //     var countryCode = (resp && resp.country) ? resp.country : "";
+            //     callback(countryCode);
+            //   });
+            // },
+            // hiddenInput: "full_number",
+            // initialCountry: "auto",
+            // localizedCountries: { 'de': 'Deutschland' },
+            // nationalMode: false,
+            // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+            // placeholderNumberType: "MOBILE",
+            // preferredCountries: ['cn', 'jp'],
+            // separateDialCode: true,
+            utilsScript: "build/js/utils.js",
+            });
         </script>
     </body>
 </html>

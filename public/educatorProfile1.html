@@ -10,7 +10,8 @@
         
         <link rel="stylesheet" href="css/studentProfile.css">
         <link rel="stylesheet" href="css/header.css">
-
+        <link rel="stylesheet" href="build/css/intlTelInput.css">
+        <!-- <link rel="stylesheet" href="build/css/demo.css"> -->
 
         <title>10dem Education|Student Profile</title>
        
@@ -142,7 +143,13 @@
                                         <input class="input100" type="text" name="name" value="John_doe@2020" disabled>
         
                                         <h4>Phone Number</h4>
-                                        <input class="input100" type="text" name="name" value="8080808020" disabled>
+                                        <!-- <input class="input100" type="text" name="name" value="8080808020" disabled> -->
+                                        <input class="input100" id="phone" name="phone" type="tel" disabled>
+                                        <style>
+                                            .iti {
+                                                display: block;
+                                            }
+                                        </style>
                                     </div>
                                     <div class="col-lg-5">
                                         <h4>Last Name</h4>
@@ -225,5 +232,32 @@
 
         <script src="js/signup.js"></script>
 
+        <script src="build/js/intlTelInput.js"></script>
+        <script>
+            var input = document.querySelector("#phone");
+            window.intlTelInput(input, {
+            // allowDropdown: false,
+            // autoHideDialCode: false,
+            // autoPlaceholder: "off",
+            // dropdownContainer: document.body,
+            // excludeCountries: ["us"],
+            // formatOnDisplay: false,
+            // geoIpLookup: function(callback) {
+            //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+            //     var countryCode = (resp && resp.country) ? resp.country : "";
+            //     callback(countryCode);
+            //   });
+            // },
+            // hiddenInput: "full_number",
+            // initialCountry: "auto",
+            // localizedCountries: { 'de': 'Deutschland' },
+            // nationalMode: false,
+            // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+            // placeholderNumberType: "MOBILE",
+            // preferredCountries: ['cn', 'jp'],
+            // separateDialCode: true,
+            utilsScript: "build/js/utils.js",
+            });
+        </script>
     </body>
 </html>

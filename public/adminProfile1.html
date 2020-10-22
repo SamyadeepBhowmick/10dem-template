@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link rel="stylesheet" href="css/adminheader.css">
         <link rel="stylesheet" href="css/studentProfile.css">
+        <link rel="stylesheet" href="build/css/intlTelInput.css">
+        <!-- <link rel="stylesheet" href="build/css/demo.css"> -->
         
         <title>10dem Education|Dashboard</title>
         <style>
@@ -129,7 +131,13 @@
                                 <input class="input100" type="text" name="name" value="John_doe@2020" disabled>
 
                                 <h4>Phone Number</h4>
-                                <input class="input100" type="text" name="name" value="+91 7878787878" disabled>
+                                <!-- <input class="input100" type="text" name="name" value="+91 7878787878" disabled> -->
+                                <input class="input100" id="phone" name="phone" type="tel" disabled>
+                                <style>
+                                    .iti {
+                                        display: block;
+                                    }
+                                </style>
                             </div>
                             <div class="col-lg-6">
                                 <h4>Last Name</h4>
@@ -163,6 +171,32 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/6f24662773.js" crossorigin="anonymous"></script>
-        
+        <script src="build/js/intlTelInput.js"></script>
+        <script>
+            var input = document.querySelector("#phone");
+            window.intlTelInput(input, {
+            // allowDropdown: false,
+            // autoHideDialCode: false,
+            // autoPlaceholder: "off",
+            // dropdownContainer: document.body,
+            // excludeCountries: ["us"],
+            // formatOnDisplay: false,
+            // geoIpLookup: function(callback) {
+            //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+            //     var countryCode = (resp && resp.country) ? resp.country : "";
+            //     callback(countryCode);
+            //   });
+            // },
+            // hiddenInput: "full_number",
+            // initialCountry: "auto",
+            // localizedCountries: { 'de': 'Deutschland' },
+            // nationalMode: false,
+            // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+            // placeholderNumberType: "MOBILE",
+            // preferredCountries: ['cn', 'jp'],
+            // separateDialCode: true,
+            utilsScript: "build/js/utils.js",
+            });
+        </script>
     </body>
 </html>
