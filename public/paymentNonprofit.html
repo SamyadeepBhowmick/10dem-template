@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <link rel="stylesheet" href="css/payment.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/droparea.css">
+        <link rel="stylesheet" href="build/css/intlTelInput.css">
+        <!-- <link rel="stylesheet" href="build/css/demo.css"> -->
+        <title>10dem Education|Payment</title>
+    </head>
+
+    <body>
+        <header id="header">
+                
+            <nav id="nav-menu-container">
+
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-left">
+                        <!-- <div id="logo">
+                        
+                            <a class="navbar-brand" href="#"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span></a>
+                            
+                        </div> -->
+                        <ul class="nav-menu">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Ongoing Project</a></li>
+                            <li class="menu-has-children dropdown-toggle"><a href="">Membership</a>
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item navMember">
+                                        <h5 class="innerhead">Pro</h5>
+                                        <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                        <a href="#" class="innertag">View all</a>
+                                    </li>
+                                    <li class="nav-item navMember">
+                                        <h5 class="innerhead">Organization</h5>
+                                        <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                        <a href="#" class="innertag">View all</a>
+                                    </li>
+                                    <li class="nav-item navMember">
+                                        <h5 class="innerhead">Non Profits</h5>
+                                        <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                        <a href="#" class="innertag">View all</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li style="position: relative;top: -3px;"><a href="#"><i class="fas fa-crown" style="color: rgb(233, 233, 3);"></i>Try 10dem pro</a></li>
+                            <l1><a href="#"><img src="img/notifications.svg"><span style="position: relative;right: 10px;bottom: 10px;padding: 2px 6px;border-radius: 50%;background: red;font-size: 14px;">2</span></a></l1>
+                        </ul>
+                    </div>
+                    
+                    <ul class="nav-menu">
+                        <li><a class="btn-primary" style="border-radius: 5px;position: relative;top: -6px;padding: 4px 8px 6px 8px;" href="#"><i class="fas fa-plus" style="color: rgb(255, 255, 255);"></i>  Start Collaboration</a></li>
+                        <li class="menu-has-children dropdown-toggle navprofile" style="margin-top: 0;"><a href="#" style="color: #000;background: #FFFFFF;border-radius: 50%;height: 35px;width: 35px;text-align: center;padding: 7px;">S</a>
+                            <ul style="right: 0 !important;left: auto !important;width: fit-content;padding-left: 1px !important;padding-right: 1px !important;padding-inline-start: 0px;background: #fff !important;">
+                                <li><a href="#">My profile</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            
+            </nav><!-- #nav-menu-container -->
+
+        </header><!-- #header -->
+
+        <a href="#" class="float">
+            <img src="img/help.svg" class="my-float" style="width: 30px;height: 30px;" alt="">
+        </a>
+
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-lg-5 text-center"></div>
+                <div class="col-lg-4 text-center">
+                    <!-- progressbar -->
+                    <ul id="progressbar">
+                        <li id="account">Details</li>
+                        <li id="personal">Upload Documents</li>
+                        <!-- <li id="confirm"><strong>Finish</strong></li> -->
+                    </ul>
+                    <!-- <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div> <br> -->
+    
+                </div>
+                <div class="col-lg-3 text-center"></div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-1"></div>
+
+                <div class="col-lg-6">
+                    <!-- accordian start -->
+                    <div class="accordion" id="accordionExample275">
+                        <div class="card z-depth-0 bordered" style="border: 2px solid #80808029;">
+                            <div class="card-header" id="headingOne2" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                                <!-- <div class="row">
+                                    <div class="col-lg-12"> -->
+                                        <div class="d-flex justify-content-left">
+                                            <div class="accordianProgress" id="accordianProgressA1">
+                                                1
+                                            </div>
+                                            <h4 class="accordianhead">
+                                                Account Details
+                                            </h4>
+                                           
+                                        </div>
+
+                                    <!-- </div> -->
+                                    <!-- <div class="col-lg-4 pad">
+                                        <p style="text-align: right;line-height: 6.7em;">Already have an account ? <span id="redheading">Sign In</span></p>
+                                    </div> -->
+                                <!-- </div> -->
+                            </div>
+                            <div id="collapseOne2" class="collapse show" aria-labelledby="headingOne2" data-parent="#accordionExample275">
+                                <div class="card-body">
+                                    <div class="card px-0 pb-0 mb-3">
+                                        <!-- <h2 id="heading">Sign Up Your User Account</h2>
+                                        <p>Fill all form field to go to next step</p> -->
+                                        <p style="text-align: right;margin-bottom: 30px;font-size: 17px;">Already have an account ? <span id="redheading"><a href="#">Sign In</a></span></p>
+                                        <form id="msform">
+                                            <fieldset>
+                                                <div class="form-card">
+                                                    <div class="row">
+                                                        <!-- <div class="col-7">
+                                                            <h2 class="fs-title">Account Information:</h2>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <h2 class="steps">Step 1 - 4</h2>
+                                                        </div> -->
+                                                        <div class="col-lg-6">
+                                                            <label class="fieldlabels">First Name</label> 
+                                                            <input type="text" name="" placeholder="" />
+                                                            <label class="fieldlabels">Email</label> 
+                                                            <input type="email" name="" placeholder="" /> 
+                                                            <label class="fieldlabels">Name of Institution</label> 
+                                                            <input type="text" name="" placeholder="" /> 
+                                                            
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <label class="fieldlabels">Last Name</label> 
+                                                            <input type="text" name="" placeholder="" />
+                                                            <label class="fieldlabels">Country</label> 
+                                                            <input type="country" name="" placeholder="" />
+                                                            <label class="fieldlabels">Contact Number (Optional)</label> 
+                                                            <!-- <input type="number" name="" placeholder="" />  -->
+                                                            <input id="phone" name="" type="tel" style="padding-left: 50px;">
+                                                            <style>
+                                                                .iti {
+                                                                    display: block;
+                                                                }
+                                                            </style>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <div class="d-flex justify-content-left">
+                                                                <input type="checkbox" name="" style="width: 20px;height: 20px;margin-right: 10px;">
+                                                                <p style="font-size: 19px;">Sign <span id="redheading"><a href="#">Code of Conduct</a></span> & <span id="redheading"><a href="#">Data Policy</a></span> (Mandatory, kindly read before submitting this form)</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <input type="button" id="A1" name="next" class="next action-button" value="Continue" />
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="card z-depth-0 bordered" style="border: 2px solid #80808029;">
+                            <div class="card-header" id="headingTwo2" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                                <div class="row">
+                                    <div class="col-lg-12">
+
+                                        <div class="d-flex justify-content-left">
+                                            <div class="accordianProgress" id="accordianProgressA2">
+                                                2
+                                            </div>
+                                            <h4 class="accordianhead">
+                                                Upload Documents
+                                            </h4>
+                                        </div>
+
+                                    </div>
+                                    
+                                </div>      
+                            </div>
+                            <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2" data-parent="#accordionExample275">
+                                <div class="card-body">
+                                    <div class="card px-0 pb-0 mb-3">
+                                    <form id="msform">
+                                        <fieldset>
+                                            <div class="form-card">
+                                                <div style="margin-left: 30px;">
+                                                    <p style="font-size: 18px;font-family: ProductB;color: #272727;padding-left: 35px;">Documents List :</p>
+                                                    <ul style="font-size: 18px;color: #2727274D;margin: 0;padding-left: 35px;">
+                                                        <li>Articles of incorporation Form</li>
+                                                        <li>Corporate Bylaws Template</li>
+                                                        <li>Meeting Minutes Template</li>
+                                                    </ul>
+                                                    <div id="drop-area" style="margin: 30px 0;">
+                                                        <div class="my-form">
+                                                            <input type="file" id="fileElem" multiple accept=".doc,.docx,.xls,.xlsx,.csv,.ppt,.pptx,.pdf,.png,.jpeg,.jpg" onchange="handleFiles(this.files)">
+                                                            <label class="button" for="fileElem"><img src="img/pin.svg">Drop your files here or choose files</label>
+                                                        </div>
+                                                        <div id="gallery" class="row"></div>
+                                                    </div>
+                                                </div> 
+                                            </div> 
+                                            <input type="button" id="A2" name="next" class="next action-button" value="Continue" data-toggle="modal" data-target="#exampleModalCenter1" />
+                                            <!-- <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> -->
+                                        </fieldset>
+                                        
+                                    </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- accordian ends -->
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="orderSummary">
+                        <h1>Order Summary</h1>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h4>Plan</h4>
+                                <p>10Dem Pro</p>
+                                <div style="height: 50px;"></div>
+                                <h4>Subtotal</h4>
+                                <h4>Tax</h4>
+                                <div style="height: 50px;"></div>
+                                <h4>Total amount</h4>
+                            </div>
+                            <div class="col-lg-4">
+                                
+                            </div>
+                            <div class="col-lg-4">
+                                <h4>Price</h4>
+                                <p>US $ 0</p>
+                                <div style="height: 50px;"></div>
+                                <p>US $ 0</p>
+                                <p>US $ 0</p>
+                                <div style="height: 60px;"></div>
+                                <h4>US $ 0</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-1"></div>
+
+            </div>
+        </div>
+
+        <!-- modal starts -->
+        <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width: 600px;">
+            <div class="modal-content">
+                <div class="modal-body" style="text-align: center;padding: 30px;">
+                    <img src="img/assignProject.png">
+                    <h3 style="color: #272727;">Request Successfully Sent</h3>
+                    <p style="color: #797979;">We will get back to you after successful verification of documents</p>
+                    <button type="button" class="btn" data-dismiss="modal" style="font-family: ProductB;color: #ffffff;background: #FD585C;">Ok, Thanks!</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- modal ends -->
+
+        <footer>
+            <p>10dem © 2020</p>
+        </footer>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+        <script src="https://kit.fontawesome.com/6f24662773.js" crossorigin="anonymous"></script>
+
+        <script src="js/payment.js"></script>
+        <script>
+            $('.next').click(function(){  
+                    
+                var idName=$(this).attr('id')
+                $("#accordianProgress"+idName).css({"border-color": "#008D2F"});
+                  
+            })
+
+            $('.product-list').on('change', function() {
+
+                $('.product-list').each(function(){
+                    $(this).prop('checked', false);
+   
+                    var idName=$(this).attr('id')
+                    $('#plan'+idName).css('border-color','#80808029');
+                       
+                })
+
+                $(this).prop('checked', true);
+                var idName=$(this).attr('id')
+
+                $("#plan"+idName).css({"border-color": "#FD585CCC"})
+
+            });
+
+            $('.pay-list').on('change', function() {
+
+                $('.pay-list').each(function(){
+                    $(this).prop('checked', false);
+
+                    var idName=$(this).attr('id')
+                    $('#mode'+idName).css('display','none');
+                    
+                })
+
+                $(this).prop('checked', true);
+                var idName=$(this).attr('id')
+
+                $('#mode'+idName).css('display','block');
+
+            });
+
+        </script>
+        <script src="build/js/intlTelInput.js"></script>
+        <script>
+            var input = document.querySelector("#phone");
+            window.intlTelInput(input, {
+            // allowDropdown: false,
+            // autoHideDialCode: false,
+            // autoPlaceholder: "off",
+            // dropdownContainer: document.body,
+            // excludeCountries: ["us"],
+            // formatOnDisplay: false,
+            // geoIpLookup: function(callback) {
+            //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+            //     var countryCode = (resp && resp.country) ? resp.country : "";
+            //     callback(countryCode);
+            //   });
+            // },
+            // hiddenInput: "full_number",
+            // initialCountry: "auto",
+            // localizedCountries: { 'de': 'Deutschland' },
+            // nationalMode: false,
+            // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+            // placeholderNumberType: "MOBILE",
+            // preferredCountries: ['cn', 'jp'],
+            // separateDialCode: true,
+            utilsScript: "build/js/utils.js",
+            });
+        </script>
+         <script>
+            
+            let dropArea = document.getElementById('drop-area')
+
+            ;['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, preventDefaults, false)
+            })
+
+            function preventDefaults (e) {
+                e.preventDefault()
+                e.stopPropagation()
+            }
+
+
+            ;['dragenter', 'dragover'].forEach(eventName => {
+                dropArea.addEventListener(eventName, highlight, false)
+            })
+
+            ;['dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, unhighlight, false)
+            })
+
+            function highlight(e) {
+                dropArea.classList.add('highlight')
+            }
+
+            function unhighlight(e) {
+                dropArea.classList.remove('highlight')
+            }
+
+            dropArea.addEventListener('drop', handleDrop, false)
+
+            function handleDrop(e) {
+                let dt = e.dataTransfer
+                let files = dt.files
+
+                handleFiles(files)
+            }
+
+            function handleFiles(files) {
+                files = [...files]
+                files.forEach(uploadFile)
+                files.forEach(previewFile)
+            }
+
+            function uploadFile(file) {
+                let url = 'YOUR URL HERE'
+                let formData = new FormData()
+                formData.append('file', file)
+                fetch(url, {
+                method: 'POST',
+                body: formData
+                })
+                .then(() => { /* Done. Inform the user */ })
+                .catch(() => { /* Error. Inform the user */ })
+            }
+
+
+            function previewFile(file) {
+                // let reader = new FileReader()
+                // reader.readAsDataURL(file)
+                // reader.onloadend = function() {
+                // let img = document.createElement('img')
+                // img.src = reader.result
+                // document.getElementById('gallery').appendChild(img)
+                var src;
+                switch (file.type) {
+                    case 'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
+                        src = 'img/doc.png'
+                        break;
+                    case 'application/vnd.openxmlformats-officedocument.presentationml.presentation':
+                        src = 'img/doc.png'
+                        break;
+                    case 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
+                        src = 'img/doc.png'
+                        break;
+                    case 'application/msword':
+                        src = 'img/doc.png'
+                        break;
+                    case 'application/vnd.ms-excel':
+                        src = 'img/doc.png'
+                        break; 
+                    case 'application/vnd.ms-powerpoint':
+                        src = 'img/doc.png'
+                        break;
+                    case 'text/csv':
+                        src = 'img/doc.png'
+                        break;
+                    case 'application/pdf':
+                        src = 'img/pdf.png'
+                        break;
+                    case 'image/jpg':
+                        src = 'img/image.svg'
+                        break;
+                    case 'image/png':
+                        src = 'img/image.svg'
+                        break;
+                    case 'image/jpeg':
+                        src = 'img/image.svg'
+                        break;  
+                }
+
+
+                let files=document.createElement('div')
+                files.classList.add('col-lg-5')
+                files.innerHTML=`
+                    <div style="margin: 10px;">
+                        <div class="row" style="padding: 10px;background: #FCFCFC 0% 0% no-repeat padding-box;border: 2px solid #70707029">
+                            <div class="col-lg-11 p-0">
+                                <p>${file.name}</p> 
+                            </div>
+                            <div class="col-lg-1 p-0">
+                                <img src="img/cross.svg" style="height: 24px;width: 24px;margin: 0;position: relative;top: 4px;">
+                            </div>
+                        </div>
+                    </div>
+                    `
+                document.getElementById('gallery').appendChild(files)
+
+            }
+        </script>
+    </body>
+</html>
